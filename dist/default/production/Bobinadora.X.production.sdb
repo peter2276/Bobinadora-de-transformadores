@@ -1,0 +1,1546 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K50 ]
+[d frameptr 4065 ]
+"141 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[e E5031 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"717
+[e E4780 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2021
+[e E5040 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"49 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+[e E46 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"96
+[e E114 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"424 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+[e E46 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"442
+[e E306 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"39 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+[e E297 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"83 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+[e E4607 . `uc
+channel_AN0 0
+channel_Temp 28
+channel_CTMU 29
+channel_DAC 30
+channel_FVRBuf2 31
+]
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"26 /Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"62 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"60 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+[v _CCP2_Initialize CCP2_Initialize `(v  1 e 1 0 ]
+"52 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"66
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"59 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/memory.c
+[v _FLASH_ReadByte FLASH_ReadByte `(uc  1 e 1 0 ]
+"94
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"153
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"55 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"66 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"63 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"114
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"62 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"63 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"114
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+"37 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+[v _MCC_USB_CDC_DemoTasks MCC_USB_CDC_DemoTasks `(v  1 e 1 0 ]
+"281 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"481
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"999
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1356
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2133
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2206
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2249
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2307
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2376
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2469
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2542
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2596
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2690
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2758
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"3029
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+"147 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+[v _USBCheckCDCRequest USBCheckCDCRequest `(v  1 e 1 0 ]
+"294
+[v _CDCInitEP CDCInitEP `(v  1 e 1 0 ]
+"503
+[v _getsUSBUSART getsUSBUSART `(uc  1 e 1 0 ]
+"574
+[v _putUSBUSART putUSBUSART `(v  1 e 1 0 ]
+"854
+[v _CDCTxService CDCTxService `(v  1 e 1 0 ]
+"49 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+[s S3349 . 1 `uc 1 C1TSEL 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 C2TSEL 1 0 :1:3 
+]
+"198 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
+[u S3353 . 1 `S3349 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES3353  1 e 1 @3929 ]
+"233
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"278
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"328
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+"362
+[v _UCON UCON `VEuc  1 e 1 @3936 ]
+[s S288 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"378
+[u S296 . 1 `S288 1 . 1 0 ]
+[v _UCONbits UCONbits `VES296  1 e 1 @3936 ]
+"413
+[v _USTAT USTAT `VEuc  1 e 1 @3937 ]
+"473
+[v _UCFG UCFG `VEuc  1 e 1 @3938 ]
+"552
+[v _UADDR UADDR `VEuc  1 e 1 @3939 ]
+"616
+[v _UIE UIE `VEuc  1 e 1 @3940 ]
+[s S327 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"632
+[u S335 . 1 `S327 1 . 1 0 ]
+[v _UIEbits UIEbits `VES335  1 e 1 @3940 ]
+"672
+[v _UIR UIR `VEuc  1 e 1 @3941 ]
+[s S308 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"688
+[u S316 . 1 `S308 1 . 1 0 ]
+[v _UIRbits UIRbits `VES316  1 e 1 @3941 ]
+"728
+[v _UEIE UEIE `VEuc  1 e 1 @3942 ]
+"779
+[v _UEIR UEIR `VEuc  1 e 1 @3943 ]
+"955
+[v _UEP0 UEP0 `VEuc  1 e 1 @3946 ]
+[s S507 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"983
+[s S513 . 1 `uc 1 EP0STALL 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+`uc 1 EP0OUTEN 1 0 :1:2 
+`uc 1 EP0CONDIS 1 0 :1:3 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S519 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+`uc 1 EPOUTEN0 1 0 :1:2 
+`uc 1 EPCONDIS0 1 0 :1:3 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[u S525 . 1 `S507 1 . 1 0 `S513 1 . 1 0 `S519 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES525  1 e 1 @3946 ]
+"1063
+[v _UEP1 UEP1 `VEuc  1 e 1 @3947 ]
+"3239
+[v _WPUB WPUB `VEuc  1 e 1 @3973 ]
+"3473
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3585
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3697
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"4116
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @3984 ]
+"4136
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @3985 ]
+"4156
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4378
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4600
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"4778
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @3991 ]
+"5242
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S2653 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
+]
+"5510
+[s S2662 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
+]
+[s S2669 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S2672 . 1 `S2653 1 . 1 0 `S2662 1 . 1 0 `S2669 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES2672  1 e 1 @3998 ]
+[s S2426 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C2IF 1 0 :1:5 
+`uc 1 C1IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"5807
+[s S2435 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CM2IF 1 0 :1:5 
+`uc 1 CM1IF 1 0 :1:6 
+]
+[s S2442 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S2445 . 1 `S2426 1 . 1 0 `S2435 1 . 1 0 `S2442 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES2445  1 e 1 @4001 ]
+[s S243 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+]
+"5999
+[s S248 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+[s S253 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+[u S256 . 1 `S243 1 . 1 0 `S248 1 . 1 0 `S253 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES256  1 e 1 @4003 ]
+[s S350 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+]
+"6066
+[s S355 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+[u S358 . 1 `S350 1 . 1 0 `S355 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES358  1 e 1 @4004 ]
+[s S442 . 1 `uc 1 TMR1GIP 1 0 :1:0 
+`uc 1 TMR3GIP 1 0 :1:1 
+`uc 1 USBIP 1 0 :1:2 
+`uc 1 CTMUIP 1 0 :1:3 
+]
+"6113
+[s S447 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+]
+[u S450 . 1 `S442 1 . 1 0 `S447 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES450  1 e 1 @4005 ]
+[s S3248 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"6164
+[s S3257 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S3260 . 1 `S3248 1 . 1 0 `S3257 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES3260  1 e 1 @4006 ]
+"6209
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"6229
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"6236
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"7095
+[v _T3CON T3CON `VEuc  1 e 1 @4017 ]
+[s S2470 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"7134
+[s S2473 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+[s S2480 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 T3RD16 1 0 :1:1 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 T3SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[s S2489 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3OSCEN 1 0 :1:3 
+]
+[s S2492 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD163 1 0 :1:7 
+]
+[u S2497 . 1 `S2470 1 . 1 0 `S2473 1 . 1 0 `S2480 1 . 1 0 `S2489 1 . 1 0 `S2492 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES2497  1 e 1 @4017 ]
+"7224
+[v _TMR3 TMR3 `VEus  1 e 2 @4018 ]
+"7231
+[v _TMR3L TMR3L `VEuc  1 e 1 @4018 ]
+"7251
+[v _TMR3H TMR3H `VEuc  1 e 1 @4019 ]
+"7271
+[v _T3GCON T3GCON `VEuc  1 e 1 @4020 ]
+[s S2531 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_NOT_T3DONE 1 0 :1:3 
+]
+"7317
+[s S2534 . 1 `uc 1 T3GSS 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO_nT3DONE 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 TMR3GE 1 0 :1:7 
+]
+[s S2542 . 1 `uc 1 T3GSS0 1 0 :1:0 
+`uc 1 T3GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T3GGO 1 0 :1:3 
+]
+[s S2547 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T3DONE 1 0 :1:3 
+]
+[s S2550 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT3DONE 1 0 :1:3 
+]
+[s S2553 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3DONE 1 0 :1:3 
+]
+[s S2556 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_NOT_DONE 1 0 :1:3 
+]
+[s S2559 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_nDONE 1 0 :1:3 
+]
+[u S2562 . 1 `S2531 1 . 1 0 `S2534 1 . 1 0 `S2542 1 . 1 0 `S2547 1 . 1 0 `S2550 1 . 1 0 `S2553 1 . 1 0 `S2556 1 . 1 0 `S2559 1 . 1 0 ]
+[v _T3GCONbits T3GCONbits `VES2562  1 e 1 @4020 ]
+"7402
+[v _ACTCON ACTCON `VEuc  1 e 1 @4021 ]
+"8478
+[v _T2CON T2CON `VEuc  1 e 1 @4026 ]
+[s S2697 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"8499
+[s S2701 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S2709 . 1 `S2697 1 . 1 0 `S2701 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES2709  1 e 1 @4026 ]
+"8549
+[v _PR2 PR2 `VEuc  1 e 1 @4027 ]
+"8569
+[v _TMR2 TMR2 `VEuc  1 e 1 @4028 ]
+"8828
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"8899
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"8967
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S3041 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"9007
+[s S3044 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S3048 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S3051 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S3054 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S3057 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S3060 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[s S3063 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S3066 . 1 `S3041 1 . 1 0 `S3044 1 . 1 0 `S3048 1 . 1 0 `S3051 1 . 1 0 `S3054 1 . 1 0 `S3057 1 . 1 0 `S3060 1 . 1 0 `S3063 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES3066  1 e 1 @4034 ]
+"9062
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"9069
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"11018
+[v _T1GCON T1GCON `VEuc  1 e 1 @4044 ]
+[s S2837 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
+]
+"11064
+[s S2840 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nT1DONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S2848 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[s S2853 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[s S2856 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT1DONE 1 0 :1:3 
+]
+[s S2859 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1DONE 1 0 :1:3 
+]
+[s S2862 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+[s S2865 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+]
+[u S2868 . 1 `S2837 1 . 1 0 `S2840 1 . 1 0 `S2848 1 . 1 0 `S2853 1 . 1 0 `S2856 1 . 1 0 `S2859 1 . 1 0 `S2862 1 . 1 0 `S2865 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES2868  1 e 1 @4044 ]
+"11149
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S2776 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"11188
+[s S2779 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[s S2786 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S2795 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+]
+[s S2798 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN1 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD161 1 0 :1:7 
+]
+[u S2803 . 1 `S2776 1 . 1 0 `S2779 1 . 1 0 `S2786 1 . 1 0 `S2795 1 . 1 0 `S2798 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES2803  1 e 1 @4045 ]
+"11278
+[v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
+"11285
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"11305
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S2208 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"11368
+[s S2210 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S2213 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S2216 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S2219 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S2222 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S2231 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S2237 . 1 `S2208 1 . 1 0 `S2210 1 . 1 0 `S2213 1 . 1 0 `S2216 1 . 1 0 `S2219 1 . 1 0 `S2222 1 . 1 0 `S2231 1 . 1 0 ]
+[v _RCONbits RCONbits `VES2237  1 e 1 @4048 ]
+"11486
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"11548
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"11631
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S2979 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"11651
+[s S2986 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S2990 . 1 `S2979 1 . 1 0 `S2986 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES2990  1 e 1 @4053 ]
+"11708
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"11728
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S3130 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"12367
+[s S3133 . 1 `uc 1 IOCIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S3142 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S3147 . 1 `S3130 1 . 1 0 `S3133 1 . 1 0 `S3142 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES3147  1 e 1 @4081 ]
+[s S2275 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"12449
+[s S2284 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S2297 . 1 `S2275 1 . 1 0 `S2284 1 . 1 0 `S2293 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES2297  1 e 1 @4082 ]
+"12581
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"12610
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"12630
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"12650
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"14654
+[v _PLLRDY PLLRDY `VEb  1 e 0 @32407 ]
+"59 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"57 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"57 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
+"34 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+[v _readBuffer readBuffer `[64]uc  1 s 64 readBuffer ]
+"35
+[v _writeBuffer writeBuffer `[64]uc  1 s 64 writeBuffer ]
+[s S473 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"155 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_descriptors.c
+[v _device_dsc device_dsc `CS473  1 e 18 0 ]
+"174
+[v _configDescriptor1 configDescriptor1 `C[67]uc  1 e 67 0 ]
+[s S1676 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
+"259
+[v _sd000 sd000 `CS1676  1 e 4 0 ]
+[s S1680 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
+"263
+[v _sd001 sd001 `CS1680  1 e 52 0 ]
+[s S1684 . 22 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[10]us 1 string 20 2 ]
+"269
+[v _sd002 sd002 `CS1684  1 e 22 0 ]
+"275
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.25Cuc  1 e 2 0 ]
+"281
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
+"141 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBDeviceState USBDeviceState `VEE5031  1 e 1 0 ]
+"142
+[v _USBActiveConfiguration USBActiveConfiguration `VEuc  1 e 1 0 ]
+"143
+[v _USBAlternateInterface USBAlternateInterface `VE[2]uc  1 e 2 0 ]
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"144
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES66  1 e 2 0 ]
+"145
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES66  1 e 2 0 ]
+"146
+[v _pBDTEntryOut pBDTEntryOut `[3]*.39VES66  1 e 6 0 ]
+"147
+[v _pBDTEntryIn pBDTEntryIn `[3]*.39VES66  1 e 6 0 ]
+"148
+[v _shortPacketStatus shortPacketStatus `VEuc  1 e 1 0 ]
+"149
+[v _controlTransferState controlTransferState `VEuc  1 e 1 0 ]
+[u S71 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2us 1 wRam 3 0 `*.2Cus 1 wRom 3 0 ]
+"150
+[s S76 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S81 . 1 `S76 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S84 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S87 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S84 1 byte 2 0 ]
+[s S91 . 6 `S71 1 pSrc 3 0 `S81 1 info 1 3 `S87 1 wCount 2 4 ]
+[v _inPipes inPipes `VE[1]S91  1 e 6 0 ]
+[u S95 . 3 `*.2uc 1 bRam 3 0 `*.2us 1 wRam 3 0 ]
+"151
+[s S98 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S101 . 1 `S98 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S105 . 8 `S95 1 pDst 3 0 `S101 1 info 1 3 `S87 1 wCount 2 4 `*.37(v 1 pFunc 2 6 ]
+[v _outPipes outPipes `VE[1]S105  1 e 8 0 ]
+"152
+[v _pDst pDst `*.39VEuc  1 e 2 0 ]
+"153
+[v _RemoteWakeup RemoteWakeup `VEa  1 e 1 0 ]
+"154
+[v _USBBusIsSuspended USBBusIsSuspended `VEa  1 e 1 0 ]
+[s S110 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"155
+[u S115 __USTAT 1 `S110 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `VES115  1 e 1 0 ]
+"156
+[v _endpoint_number endpoint_number `VEuc  1 e 1 0 ]
+"157
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `VEa  1 e 1 0 ]
+[s S118 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"158
+[u S121 . 1 `S118 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `VE[3]S121  1 e 3 0 ]
+"159
+[v _ep_data_out ep_data_out `VE[3]S121  1 e 3 0 ]
+"160
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `VEuc  1 e 1 0 ]
+"161
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEa  1 e 1 0 ]
+"162
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEa  1 e 1 0 ]
+"163
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEa  1 e 1 0 ]
+"164
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEa  1 e 1 0 ]
+"165
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEa  1 e 1 0 ]
+"166
+[v _USB1msTickCount USB1msTickCount `VEul  1 e 4 0 ]
+"167
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `VEuc  1 e 1 0 ]
+"174
+[v _BDT BDT `VE[12]S66  1 e 48 @1024 ]
+[s S124 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
+"179
+[s S151 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S87 1 W_Value 2 2 `S87 1 W_Index 2 4 `S87 1 W_Length 2 6 ]
+[s S157 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S168 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S172 . 1 `uc 1 bmRequestType 1 0 `S168 1 . 1 0 ]
+[s S175 . 1 `S172 1 requestInfo 1 0 ]
+[s S177 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `us 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S185 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S194 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S203 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S212 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S221 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S232 . 8 `S124 1 . 8 0 `S151 1 . 8 0 `S157 1 . 8 0 `S175 1 . 1 0 `S177 1 . 8 0 `S185 1 . 8 0 `S194 1 . 8 0 `S203 1 . 8 0 `S212 1 . 8 0 `S221 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES232  1 e 8 @1072 ]
+"180
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1080 ]
+"65 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+[v _cdc_data_tx cdc_data_tx `VE[64]uc  1 e 64 @1280 ]
+"66
+[v _cdc_data_rx cdc_data_rx `VE[64]uc  1 e 64 @1344 ]
+[s S1761 . 7 `[7]uc 1 _byte 7 0 ]
+"76
+[s S1763 . 7 `ul 1 dwDTERate 4 0 `uc 1 bCharFormat 1 4 `uc 1 bParityType 1 5 `uc 1 bDataBits 1 6 ]
+[u S1768 _LINE_CODING 7 `S1761 1 . 7 0 `S1763 1 . 7 0 ]
+[v _line_coding line_coding `S1768  1 e 7 0 ]
+"83
+[v _cdc_rx_len cdc_rx_len `uc  1 e 1 0 ]
+"84
+[v _cdc_trf_state cdc_trf_state `uc  1 e 1 0 ]
+[s S1775 . 2 `uc 1 bLow 1 0 `uc 1 bHigh 1 1 ]
+"85
+[u S1778 _POINTER 3 `S1775 1 . 2 0 `us 1 _word 2 0 `*.2uc 1 bRam 3 0 `*.2us 1 wRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2Cus 1 wRom 3 0 ]
+[v _pCDCSrc pCDCSrc `S1778  1 e 3 0 ]
+"86
+[v _pCDCDst pCDCDst `S1778  1 e 3 0 ]
+"87
+[v _cdc_tx_len cdc_tx_len `uc  1 e 1 0 ]
+"88
+[v _cdc_mem_type cdc_mem_type `uc  1 e 1 0 ]
+"90
+[v _CDCDataOutHandle CDCDataOutHandle `*.39v  1 e 2 0 ]
+"91
+[v _CDCDataInHandle CDCDataInHandle `*.39v  1 e 2 0 ]
+[s S1785 . 1 `uc 1 DTE_PRESENT 1 0 :1:0 
+`uc 1 CARRIER_CONTROL 1 0 :1:1 
+]
+"94
+[u S1788 _CONTROL_SIGNAL_BITMAP 1 `uc 1 _byte 1 0 `S1785 1 . 1 0 ]
+[v _control_signal_bitmap control_signal_bitmap `S1788  1 e 1 0 ]
+"110
+[v _dummy_encapsulated_cmd_response dummy_encapsulated_cmd_response `[8]uc  1 e 8 0 ]
+"26 /Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"54
+} 0
+"50 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"281 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"283
+[v USBDeviceInit@i i `uc  1 a 1 12 ]
+"375
+} 0
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v memset@k k `ui  1 a 2 8 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"1356 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBDeviceAttach USBDeviceAttach `(v  1 e 1 0 ]
+{
+"1386
+} 0
+"63 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"62 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"63 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"66 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"55 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"66 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"52 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"60 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+[v _CCP2_Initialize CCP2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"81
+} 0
+"37 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+[v _MCC_USB_CDC_DemoTasks MCC_USB_CDC_DemoTasks `(v  1 e 1 0 ]
+{
+"51
+[v MCC_USB_CDC_DemoTasks@i i `uc  1 a 1 18 ]
+"52
+[v MCC_USB_CDC_DemoTasks@numBytesRead numBytesRead `uc  1 a 1 17 ]
+"80
+} 0
+"574 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+[v _putUSBUSART putUSBUSART `(v  1 e 1 0 ]
+{
+[v putUSBUSART@data data `*.39uc  1 p 2 0 ]
+[v putUSBUSART@length length `uc  1 p 1 2 ]
+"605
+} 0
+"503
+[v _getsUSBUSART getsUSBUSART `(uc  1 e 1 0 ]
+{
+[v getsUSBUSART@buffer buffer `*.39uc  1 p 2 11 ]
+[v getsUSBUSART@len len `uc  1 p 1 13 ]
+"532
+} 0
+"854
+[v _CDCTxService CDCTxService `(v  1 e 1 0 ]
+{
+"856
+[v CDCTxService@byte_to_send byte_to_send `uc  1 a 1 12 ]
+"857
+[v CDCTxService@i i `uc  1 a 1 11 ]
+"950
+} 0
+"999 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1001
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.39VES66  1 a 2 9 ]
+"999
+[v USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1004
+[v USBTransferOnePacket@ep ep `uc  1 a 1 8 ]
+"1051
+} 0
+"58 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"76
+} 0
+"481 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+"483
+[v USBDeviceTasks@i i `uc  1 a 1 30 ]
+"831
+} 0
+"281
+[v i2_USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"283
+[v i2USBDeviceInit@i i `uc  1 a 1 12 ]
+"375
+} 0
+"2307
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+{
+"2353
+} 0
+"2249
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+{
+"2290
+} 0
+"2206
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+{
+"2231
+} 0
+"3029
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+{
+"3047
+} 0
+"2376
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+{
+"2427
+} 0
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"2469 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+{
+"2519
+} 0
+"1620
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+{
+"1752
+} 0
+"1492
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+{
+"1522
+} 0
+"2690
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+{
+"2737
+} 0
+"1972
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+{
+"1974
+[v USBStdSetCfgHandler@i i `uc  1 a 1 20 ]
+"2028
+} 0
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+[v i2_memset memset `(*.39v  1 e 2 0 ]
+{
+"6
+[v i2memset@s s `*.39uc  1 a 2 10 ]
+"7
+[v i2memset@k k `ui  1 a 2 8 ]
+"4
+[v i2memset@dest dest `*.39v  1 p 2 0 ]
+[v i2memset@c c `i  1 p 2 2 ]
+[v i2memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"2133 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+{
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2165
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.39S66  1 a 2 2 ]
+"2188
+} 0
+"2047
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+{
+"2116
+} 0
+"2758
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+{
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2760
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.39S66  1 a 2 25 ]
+"2765
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 22 ]
+[s S118 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"2761
+[u S121 . 1 `S118 1 bits 1 0 `uc 1 Val 1 0 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S121  1 a 1 24 ]
+"2984
+} 0
+"49 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(a  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `E46  1 p 2 12 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.39v  1 p 2 14 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `us  1 p 2 16 ]
+"98
+} 0
+"147 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+[v _USBCheckCDCRequest USBCheckCDCRequest `(v  1 e 1 0 ]
+{
+"260
+} 0
+"294
+[v _CDCInitEP CDCInitEP `(v  1 e 1 0 ]
+{
+"347
+} 0
+"999 /Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+[v i2_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+{
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1001
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v i2USBTransferOnePacket@handle handle `*.39VES66  1 a 2 9 ]
+"999
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 wreg ]
+[v i2USBTransferOnePacket@dir dir `uc  1 p 1 0 ]
+[v i2USBTransferOnePacket@data data `*.39uc  1 p 2 1 ]
+[v i2USBTransferOnePacket@len len `uc  1 p 1 3 ]
+"1004
+[v i2USBTransferOnePacket@ep ep `uc  1 a 1 8 ]
+"1051
+} 0
+"882
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+"884
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 9 ]
+"882
+[v USBEnableEndpoint@ep ep `uc  1 a 1 wreg ]
+[v USBEnableEndpoint@options options `uc  1 p 1 8 ]
+"888
+[v USBEnableEndpoint@ep ep `uc  1 a 1 11 ]
+"906
+} 0
+"1547
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+{
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[s S32 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1549
+[s S41 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S52 _BD_STAT 1 `uc 1 Val 1 0 `S32 1 . 1 0 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[s S57 . 4 `S52 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S62 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S66 __BDT 4 `S57 1 . 4 0 `S62 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.39VES66  1 a 2 6 ]
+"1547
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 0 ]
+"1553
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 5 ]
+"1589
+} 0
+"2542
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+{
+"2571
+} 0
+"1856
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+{
+"1858
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 1 ]
+"1859
+[v USBCtrlTrfRxService@i i `uc  1 a 1 0 ]
+"1951
+} 0
+"1420
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+{
+"1463
+} 0
+"2596
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+{
+"2598
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 1 ]
+"2671
+} 0
+"1775
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+{
+"1777
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 0 ]
+"1829
+} 0

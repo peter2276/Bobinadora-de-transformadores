@@ -1,0 +1,1701 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcmbJk9Vo.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 9C 9C 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production/Bobinadora.X.production.o
+cinit CODE 0 2A7C 2A7C 32 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 2BCE 2BCE 14 1 2
+text1 CODE 0 2AAE 2AAE 2E 1 2
+text2 CODE 0 142C 142C 14C 1 2
+text3 CODE 0 FCA FCA 178 1 2
+text4 CODE 0 29C4 29C4 42 1 2
+text5 CODE 0 2B80 2B80 1C 1 2
+text6 CODE 0 2C06 2C06 E 1 2
+text7 CODE 0 2B9C 2B9C 1C 1 2
+text8 CODE 0 2BE2 2BE2 12 1 2
+text9 CODE 0 2B36 2B36 2A 1 2
+text10 CODE 0 2B60 2B60 20 1 2
+text11 CODE 0 2C14 2C14 4 1 2
+text12 CODE 0 2BF4 2BF4 12 1 2
+text13 CODE 0 2BB8 2BB8 16 1 2
+text14 CODE 0 2124 2124 108 1 2
+text15 CODE 0 2B0A 2B0A 2C 1 2
+text16 CODE 0 2408 2408 B8 1 2
+text17 CODE 0 E32 E32 198 1 2
+text18 CODE 0 1808 1808 142 1 2
+text20 CODE 0 C0A C0A 228 1 2
+text21 CODE 0 1578 1578 14C 1 2
+text22 CODE 0 2A06 2A06 42 1 2
+text23 CODE 0 2ADC 2ADC 2E 1 2
+text24 CODE 0 28C8 28C8 60 1 2
+text25 CODE 0 2A48 2A48 34 1 2
+text26 CODE 0 24C0 24C0 B8 1 2
+text27 CODE 0 2928 2928 50 1 2
+text28 CODE 0 26D8 26D8 90 1 2
+text29 CODE 0 194A 194A 142 1 2
+text30 CODE 0 2578 2578 B4 1 2
+text31 CODE 0 1BCA 1BCA 126 1 2
+text32 CODE 0 231E 231E EA 1 2
+text33 CODE 0 1142 1142 176 1 2
+text34 CODE 0 1E00 1E00 10E 1 2
+text35 CODE 0 12B8 12B8 174 1 2
+text36 CODE 0 8AE 8AE 35C 1 2
+text37 CODE 0 2768 2768 88 1 2
+text38 CODE 0 1F0E 1F0E 10C 1 2
+text39 CODE 0 2864 2864 64 1 2
+text40 CODE 0 1A8C 1A8C 13E 1 2
+text41 CODE 0 2978 2978 4C 1 2
+text42 CODE 0 262C 262C AC 1 2
+text43 CODE 0 27F0 27F0 74 1 2
+text44 CODE 0 16C4 16C4 144 1 2
+text45 CODE 0 222C 222C F2 1 2
+text46 CODE 0 201A 201A 10A 1 2
+text47 CODE 0 1CF0 1CF0 110 1 2
+cstackCOMRAM COMRAM 1 1 1 2B 1 1
+cstackBANK0 BANK0 1 E8 E8 13 1 1
+temp COMRAM 1 53 53 1 1 1
+bssBANK0 BANK0 1 60 60 88 1 1
+bssBANK1 BANK1 1 100 100 40 1 1
+intcode CODE 0 8 8 94 1 2
+smallconst SMALLCONST 0 800 800 AE 1 2
+bssCOMRAM COMRAM 1 2C 2C 27 1 1
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM FB-FF 1
+RAM 140-3FF 1
+RAM 440-4FF 1
+RAM 580-7FF 1
+SFR F53-FFF 1
+BANK0 FB-FF 1
+BANK1 140-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 440-4FF 1
+BANK5 580-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST A0-7FF 1
+CONST 2C18-7FFF 1
+SMALLCONST 2C18-7FFF 1
+CODE 4-7 1
+CODE A0-7FF 1
+CODE 2C18-7FFF 1
+BIGRAM 54-5F 1
+BIGRAM FB-FF 1
+BIGRAM 140-3FF 1
+BIGRAM 440-4FF 1
+BIGRAM 580-7FF 1
+BIGSFR F53-FFF 1
+COMRAM 54-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2C18-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/Bobinadora.X.production.o
+8 intcode CODE >10918:/tmp/xc8joEvey.s
+8 intcode CODE >58:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+3A intcode CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+48 intcode CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+64 intcode CODE >65:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+68 intcode CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+1CF0 text47 CODE >1775:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CF0 text47 CODE >1781:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CF4 text47 CODE >1782:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D0C text47 CODE >1784:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D10 text47 CODE >1791:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D20 text47 CODE >1793:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D24 text47 CODE >1794:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D28 text47 CODE >1795:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D38 text47 CODE >1797:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D3C text47 CODE >1803:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D44 text47 CODE >1808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D54 text47 CODE >1812:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D5C text47 CODE >1813:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1D6E text47 CODE >1817:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DA2 text47 CODE >1818:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DA4 text47 CODE >1815:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DB8 text47 CODE >1825:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DEC text47 CODE >1826:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DEE text47 CODE >1823:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1DFE text47 CODE >1829:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+201A text46 CODE >2596:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+201A text46 CODE >2600:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+202C text46 CODE >2603:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2036 text46 CODE >2608:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2048 text46 CODE >2610:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2050 text46 CODE >2611:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2060 text46 CODE >2613:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2064 text46 CODE >2614:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2068 text46 CODE >2617:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+206C text46 CODE >2622:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+207C text46 CODE >2624:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2092 text46 CODE >2625:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2096 text46 CODE >2631:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20A8 text46 CODE >2635:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20B4 text46 CODE >2636:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20C0 text46 CODE >2637:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20C4 text46 CODE >2640:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20D4 text46 CODE >2642:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20E0 text46 CODE >2643:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20EC text46 CODE >2644:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20F0 text46 CODE >2647:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20FC text46 CODE >2648:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+210C text46 CODE >2652:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+210C text46 CODE >2657:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+211C text46 CODE >2659:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+211C text46 CODE >2662:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+211C text46 CODE >2663:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+211E text46 CODE >2666:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2122 text46 CODE >2671:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+222C text45 CODE >1420:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+222C text45 CODE >1427:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+223C text45 CODE >1429:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2240 text45 CODE >1430:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2250 text45 CODE >1432:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2254 text45 CODE >1436:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2266 text45 CODE >1438:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2278 text45 CODE >1439:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2284 text45 CODE >1440:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2290 text45 CODE >1441:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2294 text45 CODE >1442:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22A4 text45 CODE >1444:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22A8 text45 CODE >1449:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22B8 text45 CODE >1450:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22CC text45 CODE >1451:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22D8 text45 CODE >1452:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22E4 text45 CODE >1453:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22E8 text45 CODE >1457:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+22F8 text45 CODE >1458:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+230C text45 CODE >1459:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+231C text45 CODE >1461:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+231C text45 CODE >1463:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16C4 text44 CODE >1856:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16C4 text44 CODE >1863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16D4 text44 CODE >1869:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16EC text44 CODE >1871:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16F0 text44 CODE >1874:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16F8 text44 CODE >1878:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1700 text44 CODE >1880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+171C text44 CODE >1881:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1730 text44 CODE >1885:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1742 text44 CODE >1887:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1752 text44 CODE >1888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1766 text44 CODE >1889:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+177C text44 CODE >1891:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1788 text44 CODE >1892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1794 text44 CODE >1893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1798 text44 CODE >1896:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17A4 text44 CODE >1897:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17B4 text44 CODE >1905:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17C4 text44 CODE >1906:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17D8 text44 CODE >1910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17E4 text44 CODE >1911:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17F0 text44 CODE >1918:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17F0 text44 CODE >1930:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17F0 text44 CODE >1931:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+17F2 text44 CODE >1945:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1802 text44 CODE >1947:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1806 text44 CODE >1951:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27F0 text43 CODE >2542:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27F0 text43 CODE >2544:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2802 text43 CODE >2546:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2806 text43 CODE >2547:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+280A text43 CODE >2552:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+280E text43 CODE >2559:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+281E text43 CODE >2561:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+282E text43 CODE >2562:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2842 text43 CODE >2563:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+284E text43 CODE >2564:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+285A text43 CODE >2565:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+285E text43 CODE >2568:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2862 text43 CODE >2571:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+262C text42 CODE >1547:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+262E text42 CODE >1553:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2636 text42 CODE >1554:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2670 text42 CODE >1556:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+267A text42 CODE >1561:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+268A text42 CODE >1563:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26A2 text42 CODE >1564:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26A6 text42 CODE >1567:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26BE text42 CODE >1571:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26C8 text42 CODE >1572:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26D6 text42 CODE >1589:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2978 text41 CODE >882:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+297A text41 CODE >888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2988 text41 CODE >890:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2992 text41 CODE >892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29A0 text41 CODE >894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29AA text41 CODE >903:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29B6 text41 CODE >905:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29C2 text41 CODE >906:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A8C text40 CODE >999:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A8E text40 CODE >1004:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A9E text40 CODE >1007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AB6 text40 CODE >1008:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1ABA text40 CODE >1012:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AD2 text40 CODE >1017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AE4 text40 CODE >1019:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AF0 text40 CODE >1033:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B04 text40 CODE >1034:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B14 text40 CODE >1035:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B20 text40 CODE >1036:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B2C text40 CODE >1037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B38 text40 CODE >1040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B48 text40 CODE >1043:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B82 text40 CODE >1044:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B86 text40 CODE >1048:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BC0 text40 CODE >1050:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BC8 text40 CODE >1051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2864 text39 CODE >294:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2864 text39 CODE >297:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2876 text39 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+287A text39 CODE >299:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+287E text39 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2882 text39 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2886 text39 CODE >315:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2890 text39 CODE >316:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+289A text39 CODE >318:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+28B8 text39 CODE >319:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+28C2 text39 CODE >346:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+28C6 text39 CODE >347:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F0E text38 CODE >147:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F0E text38 CODE >152:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F28 text38 CODE >157:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F42 text38 CODE >163:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F66 text38 CODE >171:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F70 text38 CODE >172:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F78 text38 CODE >173:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F7A text38 CODE >174:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F7C text38 CODE >175:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F80 text38 CODE >178:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F8A text38 CODE >179:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F8C text38 CODE >180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F90 text38 CODE >184:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F90 text38 CODE >185:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1F98 text38 CODE >186:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FA2 text38 CODE >187:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FAA text38 CODE >188:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FAC text38 CODE >189:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FB0 text38 CODE >192:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FC6 text38 CODE >196:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FCA text38 CODE >198:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FCA text38 CODE >199:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FCE text38 CODE >231:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FD2 text38 CODE >232:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FD6 text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FE0 text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FEE text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FF6 text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1FFE text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2006 text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+200E text38 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2018 text38 CODE >260:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2768 text37 CODE >49:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2768 text37 CODE >51:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+276C text37 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2770 text37 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2774 text37 CODE >85:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2778 text37 CODE >86:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+277C text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2788 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+2790 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+279E text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27A6 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27AE text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27B6 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27BE text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27C6 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27CE text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27D6 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27E4 text37 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+27EE text37 CODE >98:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+8AE text36 CODE >2758:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8AE text36 CODE >2803:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8D4 text36 CODE >2806:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8D8 text36 CODE >2807:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8EC text36 CODE >2808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8F4 text36 CODE >2810:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8F8 text36 CODE >2811:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+8F8 text36 CODE >2814:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+958 text36 CODE >2821:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+95C text36 CODE >2824:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+96C text36 CODE >2826:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+98A text36 CODE >2827:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9A2 text36 CODE >2828:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9A6 text36 CODE >2831:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9C4 text36 CODE >2832:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9DC text36 CODE >2839:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9EA text36 CODE >2841:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9F6 text36 CODE >2842:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+9FA text36 CODE >2845:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A04 text36 CODE >2851:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A12 text36 CODE >2853:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A30 text36 CODE >2854:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A34 text36 CODE >2857:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A52 text36 CODE >2861:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A64 text36 CODE >2863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A7A text36 CODE >2867:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+A88 text36 CODE >2869:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AA0 text36 CODE >2870:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AA4 text36 CODE >2873:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+ABC text36 CODE >2875:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+ABC text36 CODE >2878:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AC8 text36 CODE >2879:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AD4 text36 CODE >2880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AD8 text36 CODE >2886:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AE2 text36 CODE >2888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+AF8 text36 CODE >2892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B04 text36 CODE >2893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B10 text36 CODE >2894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B2C text36 CODE >2895:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B30 text36 CODE >2899:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B3C text36 CODE >2904:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B46 text36 CODE >2910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B6A text36 CODE >2912:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B7A text36 CODE >2914:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B92 text36 CODE >2915:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B96 text36 CODE >2918:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BAE text36 CODE >2921:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BBA text36 CODE >2924:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BD6 text36 CODE >2925:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BDA text36 CODE >2929:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BE6 text36 CODE >2977:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BFC text36 CODE >2981:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C08 text36 CODE >2984:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12B8 text35 CODE >2047:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12B8 text35 CODE >2049:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12CC text35 CODE >2051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12D2 text35 CODE >2053:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12D6 text35 CODE >2059:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12E0 text35 CODE >2061:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12E8 text35 CODE >2062:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12EC text35 CODE >2067:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12FC text35 CODE >2072:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1318 text35 CODE >2078:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+134A text35 CODE >2079:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+137A text35 CODE >2080:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+137E text35 CODE >2083:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1388 text35 CODE >2090:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1398 text35 CODE >2093:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13B4 text35 CODE >2095:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13DE text35 CODE >2096:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13E2 text35 CODE >2108:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13EC text35 CODE >2112:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13F2 text35 CODE >2113:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13F6 text35 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1402 text35 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1410 text35 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1418 text35 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1420 text35 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+142A text35 CODE >2116:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E00 text34 CODE >2133:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E00 text34 CODE >2135:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E06 text34 CODE >2136:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E0A text34 CODE >2138:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E0E text34 CODE >2140:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E0E text34 CODE >2141:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E12 text34 CODE >2151:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E22 text34 CODE >2153:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E2A text34 CODE >2156:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E2A text34 CODE >2157:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E2E text34 CODE >2158:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E32 text34 CODE >2159:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E32 text34 CODE >2160:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E36 text34 CODE >2167:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E46 text34 CODE >2169:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E64 text34 CODE >2170:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E68 text34 CODE >2173:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1E86 text34 CODE >2176:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EB2 text34 CODE >2177:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EBA text34 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EC6 text34 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1ED4 text34 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EDC text34 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EE4 text34 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EEE text34 CODE >2182:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1EFE text34 CODE >2184:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F06 text34 CODE >2185:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F08 text34 CODE >2186:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F0C text34 CODE >2188:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1142 text33 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1142 text33 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+114A text33 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1160 text33 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+116C text33 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1188 text33 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+11A2 text33 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+11B2 text33 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+11C2 text33 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+11DE text33 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+11FA text33 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1214 text33 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1224 text33 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1240 text33 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+125A text33 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1272 text33 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+127A text33 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1282 text33 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+128A text33 CODE >86:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+12B6 text33 CODE >90:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+231E text32 CODE >1972:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+231E text32 CODE >1977:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2322 text32 CODE >1980:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+233E text32 CODE >1983:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+235A text32 CODE >1986:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+235C text32 CODE >1991:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2360 text32 CODE >1993:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2370 text32 CODE >1994:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2380 text32 CODE >1995:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2392 text32 CODE >1998:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23AE text32 CODE >2001:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23B0 text32 CODE >2003:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23BA text32 CODE >2006:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23C2 text32 CODE >2007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23CA text32 CODE >2010:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23CE text32 CODE >2013:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23DE text32 CODE >2016:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23E2 text32 CODE >2017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23E6 text32 CODE >2021:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2402 text32 CODE >2026:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2406 text32 CODE >2028:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BCA text31 CODE >2690:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BCA text31 CODE >2692:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BE6 text31 CODE >2696:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BE6 text31 CODE >2697:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BEA text31 CODE >2698:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BEE text31 CODE >2700:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BF2 text31 CODE >2702:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BF6 text31 CODE >2703:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BFA text31 CODE >2705:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BFE text31 CODE >2706:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C02 text31 CODE >2708:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C0C text31 CODE >2709:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C0E text31 CODE >2710:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C12 text31 CODE >2711:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C14 text31 CODE >2712:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C18 text31 CODE >2714:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C1C text31 CODE >2715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C20 text31 CODE >2718:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C24 text31 CODE >2719:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C28 text31 CODE >2721:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C36 text31 CODE >2722:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C38 text31 CODE >2723:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C3C text31 CODE >2724:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C3E text31 CODE >2725:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C42 text31 CODE >2726:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C42 text31 CODE >2727:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C46 text31 CODE >2728:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C58 text31 CODE >2729:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C5C text31 CODE >2731:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C78 text31 CODE >2732:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C7C text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C86 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C94 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1C9C text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CA4 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CAC text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CB4 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CBC text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CC4 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CCC text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CD4 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CDC text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CE4 text31 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1CEE text31 CODE >2737:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2578 text30 CODE >1492:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2578 text30 CODE >1494:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+257C text30 CODE >1495:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2580 text30 CODE >1497:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2592 text30 CODE >1500:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25A2 text30 CODE >1501:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25B6 text30 CODE >1502:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25C2 text30 CODE >1503:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25CE text30 CODE >1504:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25D2 text30 CODE >1509:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25F0 text30 CODE >1511:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25F8 text30 CODE >1513:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25FC text30 CODE >1518:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2612 text30 CODE >1519:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+261E text30 CODE >1520:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+262A text30 CODE >1522:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+194A text29 CODE >1620:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+194A text29 CODE >1626:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+194C text29 CODE >1632:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+195C text29 CODE >1634:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+196A text29 CODE >1636:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+196E text29 CODE >1647:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+197E text29 CODE >1649:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1982 text29 CODE >1654:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1986 text29 CODE >1655:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+198A text29 CODE >1656:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+198E text29 CODE >1663:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+199E text29 CODE >1664:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19B2 text29 CODE >1665:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19BE text29 CODE >1666:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19CA text29 CODE >1667:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19D6 text29 CODE >1668:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19E6 text29 CODE >1671:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19E6 text29 CODE >1673:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19F6 text29 CODE >1675:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19FA text29 CODE >1689:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A0A text29 CODE >1691:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A0E text29 CODE >1714:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A12 text29 CODE >1715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A16 text29 CODE >1716:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A26 text29 CODE >1718:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A2E text29 CODE >1733:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A32 text29 CODE >1736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A42 text29 CODE >1737:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A56 text29 CODE >1738:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A62 text29 CODE >1739:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A6E text29 CODE >1742:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A72 text29 CODE >1743:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A76 text29 CODE >1744:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A8A text29 CODE >1752:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26D8 text28 CODE >2469:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26D8 text28 CODE >2474:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26DC text28 CODE >2475:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26E0 text28 CODE >2476:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26E4 text28 CODE >2477:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26E8 text28 CODE >2478:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26EC text28 CODE >2479:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26F0 text28 CODE >2488:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26FC text28 CODE >2490:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2708 text28 CODE >2491:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2714 text28 CODE >2492:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+271E text28 CODE >2493:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+272A text28 CODE >2495:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+272E text28 CODE >2496:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2736 text28 CODE >2497:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+273A text28 CODE >2498:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2742 text28 CODE >2504:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2746 text28 CODE >2505:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2762 text28 CODE >2518:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2766 text28 CODE >2519:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2928 text27 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+2928 text27 CODE >11:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+2930 text27 CODE >12:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+2938 text27 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+293C text27 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+294C text27 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+295C text27 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+2976 text27 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+24C0 text26 CODE >2376:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24C0 text26 CODE >2382:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24C4 text26 CODE >2386:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24DA text26 CODE >2390:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24F6 text26 CODE >2398:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24FE text26 CODE >2400:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2508 text26 CODE >2403:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2526 text26 CODE >2409:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+254E text26 CODE >2412:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2552 text26 CODE >2413:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2556 text26 CODE >2417:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+255E text26 CODE >2420:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2572 text26 CODE >2424:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2576 text26 CODE >2427:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A48 text25 CODE >3029:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A48 text25 CODE >3037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A54 text25 CODE >3038:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A66 text25 CODE >3040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A68 text25 CODE >3042:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A78 text25 CODE >3044:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A7A text25 CODE >3047:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28C8 text24 CODE >2206:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28C8 text24 CODE >2218:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28D6 text24 CODE >2221:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+290A text24 CODE >2224:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2916 text24 CODE >2225:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2922 text24 CODE >2227:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2924 text24 CODE >2228:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2924 text24 CODE >2230:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2926 text24 CODE >2231:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ADC text23 CODE >2249:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ADC text23 CODE >2274:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ADE text23 CODE >2275:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AE0 text23 CODE >2278:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AE2 text23 CODE >2281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AE8 text23 CODE >2282:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AEC text23 CODE >2289:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B08 text23 CODE >2290:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A06 text22 CODE >2307:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A06 text22 CODE >2309:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A0C text22 CODE >2315:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A28 text22 CODE >2322:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A2A text22 CODE >2327:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A2C text22 CODE >2345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A30 text22 CODE >2348:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A32 text22 CODE >2345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A40 text22 CODE >2351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A46 text22 CODE >2353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1578 text21 CODE >281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1578 text21 CODE >285:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+157A text21 CODE >292:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+157E text21 CODE >295:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1582 text21 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1586 text21 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15A2 text21 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15AE text21 CODE >311:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15B2 text21 CODE >313:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15CA text21 CODE >314:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15DC text21 CODE >317:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15DE text21 CODE >320:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15E2 text21 CODE >323:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15E4 text21 CODE >326:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15E6 text21 CODE >331:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15E8 text21 CODE >333:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15EE text21 CODE >334:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15F2 text21 CODE >335:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+15FA text21 CODE >336:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1608 text21 CODE >340:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+160C text21 CODE >341:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1610 text21 CODE >343:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1614 text21 CODE >344:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1618 text21 CODE >345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+161C text21 CODE >349:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1620 text21 CODE >351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1638 text21 CODE >352:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1650 text21 CODE >353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1660 text21 CODE >354:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1670 text21 CODE >355:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1682 text21 CODE >358:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+168C text21 CODE >360:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1690 text21 CODE >362:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+169A text21 CODE >363:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+169E text21 CODE >364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16A2 text21 CODE >365:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16A4 text21 CODE >368:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16A8 text21 CODE >370:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16B8 text21 CODE >371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16BE text21 CODE >374:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+16C2 text21 CODE >375:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C0A text20 CODE >481:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C0A text20 CODE >594:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C1A text20 CODE >605:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C28 text20 CODE >612:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C2C text20 CODE >618:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C2E text20 CODE >619:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C30 text20 CODE >620:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C34 text20 CODE >638:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C50 text20 CODE >640:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C52 text20 CODE >644:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C56 text20 CODE >651:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C64 text20 CODE >653:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C66 text20 CODE >654:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C6A text20 CODE >655:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C6A text20 CODE >667:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C86 text20 CODE >669:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C8A text20 CODE >673:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C8C text20 CODE >675:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C90 text20 CODE >685:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C92 text20 CODE >691:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CAE text20 CODE >698:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CB2 text20 CODE >712:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CC0 text20 CODE >715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CCE text20 CODE >717:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CEA text20 CODE >719:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CEC text20 CODE >722:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CF0 text20 CODE >739:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D00 text20 CODE >741:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D02 text20 CODE >748:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D12 text20 CODE >750:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D16 text20 CODE >755:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D32 text20 CODE >757:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D36 text20 CODE >760:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D52 text20 CODE >762:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D6C text20 CODE >763:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D70 text20 CODE >778:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D80 text20 CODE >780:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D82 text20 CODE >781:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D86 text20 CODE >782:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D86 text20 CODE >787:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D94 text20 CODE >789:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D98 text20 CODE >791:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DA6 text20 CODE >794:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DAA text20 CODE >795:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DB4 text20 CODE >797:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DB6 text20 CODE >802:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DC4 text20 CODE >804:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DD4 text20 CODE >805:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DD8 text20 CODE >808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DE8 text20 CODE >814:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DF8 text20 CODE >816:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+DFC text20 CODE >817:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E00 text20 CODE >820:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E1C text20 CODE >827:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E2E text20 CODE >828:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E2E text20 CODE >830:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E30 text20 CODE >831:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1808 text18 CODE >999:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+180C text18 CODE >1004:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+181E text18 CODE >1007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1836 text18 CODE >1008:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+183A text18 CODE >1012:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1852 text18 CODE >1017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1864 text18 CODE >1019:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1870 text18 CODE >1033:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1884 text18 CODE >1034:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1894 text18 CODE >1035:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+18A0 text18 CODE >1036:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+18AC text18 CODE >1037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+18B8 text18 CODE >1040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+18C8 text18 CODE >1043:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1902 text18 CODE >1044:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1906 text18 CODE >1048:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1940 text18 CODE >1050:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1948 text18 CODE >1051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+E32 text17 CODE >854:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E32 text17 CODE >859:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E34 text17 CODE >863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E5E text17 CODE >865:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E60 text17 CODE >866:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E64 text17 CODE >874:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E76 text17 CODE >875:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E7A text17 CODE >880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E8A text17 CODE >882:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E8C text17 CODE >883:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+E90 text17 CODE >889:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EA2 text17 CODE >891:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EC0 text17 CODE >893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EC4 text17 CODE >894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EC8 text17 CODE >895:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+ED8 text17 CODE >900:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EE8 text17 CODE >901:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EF0 text17 CODE >902:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EF0 text17 CODE >903:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EF4 text17 CODE >908:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+EFA text17 CODE >910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F02 text17 CODE >912:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F06 text17 CODE >913:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F1A text17 CODE >917:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F2E text17 CODE >918:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F32 text17 CODE >919:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F36 text17 CODE >920:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F38 text17 CODE >915:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F4C text17 CODE >927:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F60 text17 CODE >928:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F64 text17 CODE >929:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F68 text17 CODE >930:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F6A text17 CODE >925:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F7A text17 CODE >938:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F8A text17 CODE >940:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+F9C text17 CODE >941:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+FA4 text17 CODE >943:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+FA8 text17 CODE >945:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+FC6 text17 CODE >949:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+FC8 text17 CODE >950:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2408 text16 CODE >503:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2408 text16 CODE >505:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+240E text16 CODE >507:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2436 text16 CODE >513:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2454 text16 CODE >514:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2464 text16 CODE >519:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+246C text16 CODE >520:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+249C text16 CODE >526:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+24BA text16 CODE >530:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+24BE text16 CODE >532:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B0A text15 CODE >574:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B0A text15 CODE >599:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B0C text15 CODE >600:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B1C text15 CODE >602:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B32 text15 CODE >604:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2B34 text15 CODE >605:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2124 text14 CODE >37:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2124 text14 CODE >39:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2138 text14 CODE >42:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2138 text14 CODE >44:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+214A text14 CODE >49:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+215A text14 CODE >54:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2170 text14 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2178 text14 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2194 text14 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2198 text14 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21B8 text14 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21BC text14 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21D2 text14 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21E0 text14 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21E8 text14 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+21F2 text14 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2206 text14 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2216 text14 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2226 text14 CODE >79:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+222A text14 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c
+2BB8 text13 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BB8 text13 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BBC text13 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BC0 text13 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BC4 text13 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BC8 text13 CODE >79:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BCC text13 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+2BF4 text12 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2BF4 text12 CODE >65:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2BF8 text12 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2BFC text12 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2C00 text12 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2C04 text12 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+2C14 text11 CODE >52:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+2C14 text11 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+2C16 text11 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+2B60 text10 CODE >66:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B60 text10 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B64 text10 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B68 text10 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B6C text10 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B70 text10 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B70 text10 CODE >79:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B7E text10 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2B36 text9 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B36 text9 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B3A text9 CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B3E text9 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B42 text9 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B44 text9 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B46 text9 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B4A text9 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B50 text9 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B54 text9 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B58 text9 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B5C text9 CODE >82:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2B5E text9 CODE >91:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+2BE2 text8 CODE >66:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BE2 text8 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BE6 text8 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BEA text8 CODE >78:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BEE text8 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BF0 text8 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2BF2 text8 CODE >85:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+2B9C text7 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2B9C text7 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BA0 text7 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BA4 text7 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BA8 text7 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BB0 text7 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BB2 text7 CODE >83:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2BB6 text7 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+2C06 text6 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2C06 text6 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2C08 text6 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2C0C text6 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2C0E text6 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2C12 text6 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+2B80 text5 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B80 text5 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B84 text5 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B88 text5 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B8C text5 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B94 text5 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B96 text5 CODE >83:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+2B9A text5 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+29C4 text4 CODE >1356:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29C4 text4 CODE >1359:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29D4 text4 CODE >1364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29D8 text4 CODE >1367:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29DC text4 CODE >1371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29E8 text4 CODE >1373:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29EC text4 CODE >1376:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A00 text4 CODE >1379:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2A04 text4 CODE >1386:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+FCA text3 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+FCA text3 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+FD2 text3 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+FEA text3 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+FF6 text3 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1012 text3 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+102C text3 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+103C text3 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+104C text3 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1068 text3 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1084 text3 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+109E text3 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+10AE text3 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+10CA text3 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+10E4 text3 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+10FC text3 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1104 text3 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+110C text3 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1114 text3 CODE >86:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1140 text3 CODE >90:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+142C text2 CODE >281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+142C text2 CODE >285:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+142E text2 CODE >292:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1432 text2 CODE >295:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1436 text2 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+143A text2 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1458 text2 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1464 text2 CODE >311:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+146A text2 CODE >313:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1482 text2 CODE >314:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1494 text2 CODE >317:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1496 text2 CODE >320:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+149A text2 CODE >323:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+149C text2 CODE >326:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+149E text2 CODE >331:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14A0 text2 CODE >333:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14A4 text2 CODE >334:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14A8 text2 CODE >335:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14B0 text2 CODE >336:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14BE text2 CODE >340:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14C2 text2 CODE >341:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14C6 text2 CODE >343:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14CA text2 CODE >344:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14CE text2 CODE >345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14D2 text2 CODE >349:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14D6 text2 CODE >351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14EE text2 CODE >352:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1506 text2 CODE >353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1516 text2 CODE >354:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1526 text2 CODE >355:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1538 text2 CODE >358:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1540 text2 CODE >360:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1544 text2 CODE >362:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+154E text2 CODE >363:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1552 text2 CODE >364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1556 text2 CODE >365:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1558 text2 CODE >368:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+155C text2 CODE >370:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+156C text2 CODE >371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1572 text2 CODE >374:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1576 text2 CODE >375:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AAE text1 CODE >50:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AAE text1 CODE >53:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AB2 text1 CODE >54:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AB6 text1 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2ABA text1 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2ABE text1 CODE >57:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AC2 text1 CODE >58:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AC6 text1 CODE >59:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2ACA text1 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2ACE text1 CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AD2 text1 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2AD6 text1 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2ADA text1 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+2BCE text0 CODE >26:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2BCE text0 CODE >29:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2BD2 text0 CODE >36:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2BD4 text0 CODE >42:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2BD6 text0 CODE >49:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2A7C cinit CODE >6996:/tmp/xc8joEvey.s
+2A7C cinit CODE >6998:/tmp/xc8joEvey.s
+2A7C cinit CODE >7001:/tmp/xc8joEvey.s
+2A7C cinit CODE >7154:/tmp/xc8joEvey.s
+2A80 cinit CODE >7155:/tmp/xc8joEvey.s
+2A82 cinit CODE >7156:/tmp/xc8joEvey.s
+2A82 cinit CODE >7157:/tmp/xc8joEvey.s
+2A84 cinit CODE >7158:/tmp/xc8joEvey.s
+2A86 cinit CODE >7159:/tmp/xc8joEvey.s
+2A88 cinit CODE >7162:/tmp/xc8joEvey.s
+2A8C cinit CODE >7163:/tmp/xc8joEvey.s
+2A8E cinit CODE >7164:/tmp/xc8joEvey.s
+2A8E cinit CODE >7165:/tmp/xc8joEvey.s
+2A90 cinit CODE >7166:/tmp/xc8joEvey.s
+2A92 cinit CODE >7167:/tmp/xc8joEvey.s
+2A94 cinit CODE >7170:/tmp/xc8joEvey.s
+2A98 cinit CODE >7171:/tmp/xc8joEvey.s
+2A9A cinit CODE >7172:/tmp/xc8joEvey.s
+2A9A cinit CODE >7173:/tmp/xc8joEvey.s
+2A9C cinit CODE >7174:/tmp/xc8joEvey.s
+2A9E cinit CODE >7175:/tmp/xc8joEvey.s
+2AA0 cinit CODE >7181:/tmp/xc8joEvey.s
+2AA0 cinit CODE >7183:/tmp/xc8joEvey.s
+2AA2 cinit CODE >7184:/tmp/xc8joEvey.s
+2AA4 cinit CODE >7186:/tmp/xc8joEvey.s
+2AA6 cinit CODE >7187:/tmp/xc8joEvey.s
+2AA8 cinit CODE >7188:/tmp/xc8joEvey.s
+2AAA cinit CODE >7189:/tmp/xc8joEvey.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Bobinadora.X.production.o
+USBStdGetStatusHandler@p 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__Hspace_0 2C18 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hspace_1 140 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_USB1msTickCount 30 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+USBTransferOnePacket@dir E8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+USBTransferOnePacket@len EB 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Bobinadora.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcmbJk9Vo.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Bobinadora.X.production.o
+__end_of_USBStdSetCfgHandler 2408 0 CODE 0 text32 dist/default/production/Bobinadora.X.production.o
+USBEnableEndpoint@options 9 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_TBLPTRH FF7 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TBLPTRL FF6 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TBLPTRU FF8 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_INTERRUPT_Initialize 2C18 0 CODE 0 text11 dist/default/production/Bobinadora.X.production.o
+_T1CONbits FCD 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_CDCTxService E32 0 CODE 0 text17 dist/default/production/Bobinadora.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR1 FCE 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR2 FBC 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR3 FB2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UCFG F62 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UCON F60 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UEIE F66 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UEIR F67 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UEP0 F6A 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UEP1 F6B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_WPUB F85 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcmbJk9Vo.o
+_main 2BCE 0 CODE 0 text0 dist/default/production/Bobinadora.X.production.o
+_pDst 3A 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+btemp 53 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+start 9C 0 CODE 0 init /tmp/xcmbJk9Vo.o
+_USBTransferOnePacket 1808 0 CODE 0 text18 dist/default/production/Bobinadora.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBDeviceInit 142C 0 CODE 0 text2 dist/default/production/Bobinadora.X.production.o
+_pBDTEntryEP0OutNext 3C 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+i2memset@dest 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+USBCtrlTrfInHandler@lastDTS 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBConfigureEndpoint 262C 0 CODE 0 text42 dist/default/production/Bobinadora.X.production.o
+__Hpowerup 9C 0 CODE 0 powerup dist/default/production/Bobinadora.X.production.o
+_UEP0bits F6A 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_CDCDataOutHandle 92 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_TMR2_Initialize 2C06 0 CODE 0 text6 dist/default/production/Bobinadora.X.production.o
+_CtrlTrfData 438 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+ttemp5 54 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+ttemp6 57 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+ttemp7 5B 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+__accesstop 60 0 ABS 0 - /tmp/xcmbJk9Vo.o
+intlevel0 0 0 CODE 0 text /tmp/xcmbJk9Vo.o
+intlevel1 0 0 CODE 0 text /tmp/xcmbJk9Vo.o
+intlevel2 0 0 CODE 0 text /tmp/xcmbJk9Vo.o
+intlevel3 0 0 CODE 0 text /tmp/xcmbJk9Vo.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_writeBuffer 100 0 BANK1 1 bssBANK1 dist/default/production/Bobinadora.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Bobinadora.X.production.o
+_pBDTEntryIn 78 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+wtemp8 54 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+_CDCDataInHandle 90 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/Bobinadora.X.production.o
+_controlTransferState 4C 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBCtrlTrfTxService 1CF0 0 CODE 0 text47 dist/default/production/Bobinadora.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/Bobinadora.X.production.o
+USBDeviceInit@i F4 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__end_of_TMR3_Initialize 2B9C 0 CODE 0 text5 dist/default/production/Bobinadora.X.production.o
+_ACTCON FB5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_line_coding E1 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_ANSELA F5B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ANSELB F5C 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_ANSELC F5D 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_MCC_USB_CDC_DemoTasks 222C 0 CODE 0 text14 dist/default/production/Bobinadora.X.production.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcmbJk9Vo.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcmbJk9Vo.o
+_EECON1bits FA6 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_CCPR2H F91 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_CCPR2L F90 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlEPServiceComplete 1A8C 0 CODE 0 text29 dist/default/production/Bobinadora.X.production.o
+__end_of_CDCTxService FCA 0 CODE 0 text17 dist/default/production/Bobinadora.X.production.o
+__end_of_INTERRUPT_InterruptManager 9C 0 CODE 0 intcode dist/default/production/Bobinadora.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/Bobinadora.X.production.o
+__end_of_CCP2_Initialize 2C06 0 CODE 0 text12 dist/default/production/Bobinadora.X.production.o
+?_USBTransferOnePacket E8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__end_of_USBStdGetStatusHandler 1F0E 0 CODE 0 text34 dist/default/production/Bobinadora.X.production.o
+_EECON2 FA7 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_EEDATA FA8 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Bobinadora.X.production.o
+_SetupPkt 430 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
+USBEnableEndpoint@ep C 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Bobinadora.X.production.o
+__Hintcodelo 9C 0 CODE 0 intcodelo dist/default/production/Bobinadora.X.production.o
+_MCC_USB_CDC_DemoTasks 2124 0 CODE 0 text14 dist/default/production/Bobinadora.X.production.o
+__end_of_USBStallHandler 2928 0 CODE 0 text24 dist/default/production/Bobinadora.X.production.o
+_USBCtrlTrfSetupHandler 26D8 0 CODE 0 text28 dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlEPAllowStatusStage 231E 0 CODE 0 text45 dist/default/production/Bobinadora.X.production.o
+_USBCtrlTrfRxService 16C4 0 CODE 0 text44 dist/default/production/Bobinadora.X.production.o
+USBStdFeatureReqHandler@pUEP 17 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+USBCtrlTrfRxService@byteToRead 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlTrfOutHandler 2864 0 CODE 0 text43 dist/default/production/Bobinadora.X.production.o
+_USBBusIsSuspended 98 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+memcpy@tmp B 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_TMR3_Initialize 2B80 0 CODE 0 text5 dist/default/production/Bobinadora.X.production.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_USBDeferOUTDataStagePackets 43 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lintcodelo 9C 0 CODE 0 intcodelo dist/default/production/Bobinadora.X.production.o
+_PIN_MANAGER_Initialize 2B36 0 CODE 0 text9 dist/default/production/Bobinadora.X.production.o
+start_initialization 2A7C 0 CODE 0 cinit dist/default/production/Bobinadora.X.production.o
+_CCPTMRSbits F59 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Bobinadora.X.production.o
+_PLLRDY 7E97 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+i2USBTransferOnePacket@ep 9 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USBCheckStdRequest 1CF0 0 CODE 0 text31 dist/default/production/Bobinadora.X.production.o
+_CCP2_Initialize 2BF4 0 CODE 0 text12 dist/default/production/Bobinadora.X.production.o
+MCC_USB_CDC_DemoTasks@i FA 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_device_dsc 896 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_of_memcpy 2978 0 CODE 0 text27 dist/default/production/Bobinadora.X.production.o
+__end_of_memset 1142 0 CODE 0 text3 dist/default/production/Bobinadora.X.production.o
+_USBTicksSinceSuspendEnd 97 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__end_of_SYSTEM_Initialize 2ADC 0 CODE 0 text1 dist/default/production/Bobinadora.X.production.o
+__end_of_USBDeviceInit 1578 0 CODE 0 text2 dist/default/production/Bobinadora.X.production.o
+_T3GCONbits FB4 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_USBStdGetDscHandler 12B8 0 CODE 0 text35 dist/default/production/Bobinadora.X.production.o
+__pcstackBANK0 E8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__end_of_USER_USB_CALLBACK_EVENT_HANDLER 27F0 0 CODE 0 text37 dist/default/production/Bobinadora.X.production.o
+_T1GCON FCC 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_T3GCON FB4 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_IPR3bits FA5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TABLAT FF5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlTrfTxService 1E00 0 CODE 0 text47 dist/default/production/Bobinadora.X.production.o
+_USBStallHandler 28C8 0 CODE 0 text24 dist/default/production/Bobinadora.X.production.o
+_cdc_data_rx 540 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
+_cdc_data_tx 500 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
+_getsUSBUSART 2408 0 CODE 0 text16 dist/default/production/Bobinadora.X.production.o
+isa$xinst 0 0 ABS 0 - /tmp/xcmbJk9Vo.o
+__end_of_USBEnableEndpoint 29C4 0 CODE 0 text41 dist/default/production/Bobinadora.X.production.o
+_readBuffer 99 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_UIEbits F64 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+i2_USBTransferOnePacket 1A8C 0 CODE 0 text40 dist/default/production/Bobinadora.X.production.o
+_UIRbits F65 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/Bobinadora.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/Bobinadora.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/Bobinadora.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/Bobinadora.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/Bobinadora.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/Bobinadora.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production/Bobinadora.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production/Bobinadora.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production/Bobinadora.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production/Bobinadora.X.production.o
+__end_of_USBWakeFromSuspend 2A48 0 CODE 0 text22 dist/default/production/Bobinadora.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production/Bobinadora.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production/Bobinadora.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/Bobinadora.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/Bobinadora.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/Bobinadora.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production/Bobinadora.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production/Bobinadora.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production/Bobinadora.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production/Bobinadora.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production/Bobinadora.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production/Bobinadora.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production/Bobinadora.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production/Bobinadora.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production/Bobinadora.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production/Bobinadora.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production/Bobinadora.X.production.o
+_USBCtrlEPService 24C0 0 CODE 0 text26 dist/default/production/Bobinadora.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Bobinadora.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production/Bobinadora.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production/Bobinadora.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcmbJk9Vo.o
+_USBCheckStdRequest 1BCA 0 CODE 0 text31 dist/default/production/Bobinadora.X.production.o
+_USBIncrement1msInternalTimers 2A48 0 CODE 0 text25 dist/default/production/Bobinadora.X.production.o
+USBStdFeatureReqHandler@p 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production/Bobinadora.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production/Bobinadora.X.production.o
+USER_USB_CALLBACK_EVENT_HANDLER@event D 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+USER_USB_CALLBACK_EVENT_HANDLER@size 11 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+USBTransferOnePacket@handle F1 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+USER_USB_CALLBACK_EVENT_HANDLER@pdata F 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_cdc_notice 60 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/Bobinadora.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/Bobinadora.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/Bobinadora.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/Bobinadora.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/Bobinadora.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/Bobinadora.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production/Bobinadora.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production/Bobinadora.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production/Bobinadora.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production/Bobinadora.X.production.o
+_T1GCONbits FCC 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production/Bobinadora.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production/Bobinadora.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/Bobinadora.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/Bobinadora.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/Bobinadora.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production/Bobinadora.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production/Bobinadora.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production/Bobinadora.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production/Bobinadora.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production/Bobinadora.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production/Bobinadora.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production/Bobinadora.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production/Bobinadora.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production/Bobinadora.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production/Bobinadora.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production/Bobinadora.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/Bobinadora.X.production.o
+i2_memset 1142 0 CODE 0 text33 dist/default/production/Bobinadora.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlTrfRxService 1808 0 CODE 0 text44 dist/default/production/Bobinadora.X.production.o
+memcpy@d1 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+memcpy@s1 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_pCDCDst 84 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_pCDCSrc 87 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_INTERRUPT_Initialize 2C14 0 CODE 0 text11 dist/default/production/Bobinadora.X.production.o
+CDCTxService@i F3 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production/Bobinadora.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production/Bobinadora.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production/Bobinadora.X.production.o
+__Hinit A0 0 CODE 0 init dist/default/production/Bobinadora.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/Bobinadora.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/Bobinadora.X.production.o
+__Htemp 54 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production/Bobinadora.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production/Bobinadora.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production/Bobinadora.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production/Bobinadora.X.production.o
+__Linit 9C 0 CODE 0 init dist/default/production/Bobinadora.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/Bobinadora.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/Bobinadora.X.production.o
+__Ltemp 53 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production/Bobinadora.X.production.o
+memcpy@d 7 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+memcpy@n 5 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+memcpy@s 9 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+memset@dest E8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+memset@c EA 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+memset@k F0 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+memset@n EC 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+memset@s F2 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+int$flags 53 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
+_cdc_rx_len 96 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_device_dsc 8A8 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_ofi2_memset 12B8 0 CODE 0 text33 dist/default/production/Bobinadora.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production/Bobinadora.X.production.o
+_USBSuspend 2ADC 0 CODE 0 text23 dist/default/production/Bobinadora.X.production.o
+_cdc_trf_state 42 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production/Bobinadora.X.production.o
+_BDT 400 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
+_PR2 FBB 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UIE F64 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UIR F65 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__S0 2C18 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__S1 140 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__S4 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__S5 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+?i2_USBTransferOnePacket 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_ADC_InterruptHandler 34 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBWakeFromSuspend 2A06 0 CODE 0 text22 dist/default/production/Bobinadora.X.production.o
+_cdc_tx_len 95 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_USBStdFeatureReqHandler 8AE 0 CODE 0 text36 dist/default/production/Bobinadora.X.production.o
+_BothEP0OutUOWNsSet 49 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_UCONbits F60 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+USBCtrlTrfRxService@i 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USBStdFeatureReqHandler C0A 0 CODE 0 text36 dist/default/production/Bobinadora.X.production.o
+_putUSBUSART 2B0A 0 CODE 0 text15 dist/default/production/Bobinadora.X.production.o
+_BaudRateGen 2C 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Bobinadora.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/Bobinadora.X.production.o
+_SYSTEM_Initialize 2AAE 0 CODE 0 text1 dist/default/production/Bobinadora.X.production.o
+__end_of_getsUSBUSART 24C0 0 CODE 0 text16 dist/default/production/Bobinadora.X.production.o
+_USBAlternateInterface 4F 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBDeviceState 4E 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBDeviceTasks C0A 0 CODE 0 text20 dist/default/production/Bobinadora.X.production.o
+__end_ofi2_USBDeviceInit 16C4 0 CODE 0 text21 dist/default/production/Bobinadora.X.production.o
+__end_of_USBStdGetDscHandler 142C 0 CODE 0 text35 dist/default/production/Bobinadora.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlTrfSetupHandler 2768 0 CODE 0 text28 dist/default/production/Bobinadora.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production/Bobinadora.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/Bobinadora.X.production.o
+_USBEnableEndpoint 2978 0 CODE 0 text41 dist/default/production/Bobinadora.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/Bobinadora.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/Bobinadora.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production/Bobinadora.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production/Bobinadora.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production/Bobinadora.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production/Bobinadora.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production/Bobinadora.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production/Bobinadora.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production/Bobinadora.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production/Bobinadora.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production/Bobinadora.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production/Bobinadora.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production/Bobinadora.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production/Bobinadora.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production/Bobinadora.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production/Bobinadora.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production/Bobinadora.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production/Bobinadora.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production/Bobinadora.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production/Bobinadora.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production/Bobinadora.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production/Bobinadora.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production/Bobinadora.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production/Bobinadora.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production/Bobinadora.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production/Bobinadora.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production/Bobinadora.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production/Bobinadora.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production/Bobinadora.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production/Bobinadora.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production/Bobinadora.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production/Bobinadora.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production/Bobinadora.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production/Bobinadora.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production/Bobinadora.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production/Bobinadora.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production/Bobinadora.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production/Bobinadora.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production/Bobinadora.X.production.o
+_control_signal_bitmap 41 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlEPService 2578 0 CODE 0 text26 dist/default/production/Bobinadora.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production/Bobinadora.X.production.o
+i2USBTransferOnePacket@data 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBCtrlTrfInHandler 201A 0 CODE 0 text46 dist/default/production/Bobinadora.X.production.o
+_ADC_Initialize 2BB8 0 CODE 0 text13 dist/default/production/Bobinadora.X.production.o
+_PIE3bits FA3 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_memcpy 2928 0 CODE 0 text27 dist/default/production/Bobinadora.X.production.o
+_memset FCA 0 CODE 0 text3 dist/default/production/Bobinadora.X.production.o
+USBConfigureEndpoint@handle 7 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+i2memset@c 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+i2memset@k 9 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+i2memset@n 5 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+i2memset@s B 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__ptext10 2B60 0 CODE 0 text10 dist/default/production/Bobinadora.X.production.o
+__ptext11 2C14 0 CODE 0 text11 dist/default/production/Bobinadora.X.production.o
+__ptext12 2BF4 0 CODE 0 text12 dist/default/production/Bobinadora.X.production.o
+__ptext13 2BB8 0 CODE 0 text13 dist/default/production/Bobinadora.X.production.o
+__ptext14 2124 0 CODE 0 text14 dist/default/production/Bobinadora.X.production.o
+__ptext15 2B0A 0 CODE 0 text15 dist/default/production/Bobinadora.X.production.o
+__ptext16 2408 0 CODE 0 text16 dist/default/production/Bobinadora.X.production.o
+__ptext17 E32 0 CODE 0 text17 dist/default/production/Bobinadora.X.production.o
+__ptext18 1808 0 CODE 0 text18 dist/default/production/Bobinadora.X.production.o
+__ptext20 C0A 0 CODE 0 text20 dist/default/production/Bobinadora.X.production.o
+__ptext21 1578 0 CODE 0 text21 dist/default/production/Bobinadora.X.production.o
+__ptext22 2A06 0 CODE 0 text22 dist/default/production/Bobinadora.X.production.o
+__ptext23 2ADC 0 CODE 0 text23 dist/default/production/Bobinadora.X.production.o
+__ptext24 28C8 0 CODE 0 text24 dist/default/production/Bobinadora.X.production.o
+__ptext25 2A48 0 CODE 0 text25 dist/default/production/Bobinadora.X.production.o
+__ptext26 24C0 0 CODE 0 text26 dist/default/production/Bobinadora.X.production.o
+__ptext27 2928 0 CODE 0 text27 dist/default/production/Bobinadora.X.production.o
+__ptext28 26D8 0 CODE 0 text28 dist/default/production/Bobinadora.X.production.o
+__ptext29 194A 0 CODE 0 text29 dist/default/production/Bobinadora.X.production.o
+__ptext30 2578 0 CODE 0 text30 dist/default/production/Bobinadora.X.production.o
+__ptext31 1BCA 0 CODE 0 text31 dist/default/production/Bobinadora.X.production.o
+__ptext32 231E 0 CODE 0 text32 dist/default/production/Bobinadora.X.production.o
+__ptext33 1142 0 CODE 0 text33 dist/default/production/Bobinadora.X.production.o
+__ptext34 1E00 0 CODE 0 text34 dist/default/production/Bobinadora.X.production.o
+__ptext35 12B8 0 CODE 0 text35 dist/default/production/Bobinadora.X.production.o
+__ptext36 8AE 0 CODE 0 text36 dist/default/production/Bobinadora.X.production.o
+__ptext37 2768 0 CODE 0 text37 dist/default/production/Bobinadora.X.production.o
+__ptext38 1F0E 0 CODE 0 text38 dist/default/production/Bobinadora.X.production.o
+__ptext39 2864 0 CODE 0 text39 dist/default/production/Bobinadora.X.production.o
+__ptext40 1A8C 0 CODE 0 text40 dist/default/production/Bobinadora.X.production.o
+__ptext41 2978 0 CODE 0 text41 dist/default/production/Bobinadora.X.production.o
+__ptext42 262C 0 CODE 0 text42 dist/default/production/Bobinadora.X.production.o
+__ptext43 27F0 0 CODE 0 text43 dist/default/production/Bobinadora.X.production.o
+__ptext44 16C4 0 CODE 0 text44 dist/default/production/Bobinadora.X.production.o
+__ptext45 222C 0 CODE 0 text45 dist/default/production/Bobinadora.X.production.o
+__ptext46 201A 0 CODE 0 text46 dist/default/production/Bobinadora.X.production.o
+__ptext47 1CF0 0 CODE 0 text47 dist/default/production/Bobinadora.X.production.o
+__end_of_PIN_MANAGER_Initialize 2B60 0 CODE 0 text9 dist/default/production/Bobinadora.X.production.o
+__end_of_configDescriptor1 84C 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_of_TMR0_Initialize 2BF4 0 CODE 0 text8 dist/default/production/Bobinadora.X.production.o
+__end_of_USBSuspend 2B0A 0 CODE 0 text23 dist/default/production/Bobinadora.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Bobinadora.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production/Bobinadora.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production/Bobinadora.X.production.o
+_USB_CD_Ptr 807 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_ep_data_in 8D 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_USBActiveConfiguration 52 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBCtrlEPAllowStatusStage 222C 0 CODE 0 text45 dist/default/production/Bobinadora.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production/Bobinadora.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production/Bobinadora.X.production.o
+__end_of_USBTransferOnePacket 194A 0 CODE 0 text18 dist/default/production/Bobinadora.X.production.o
+_RemoteWakeup 4B 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/Bobinadora.X.production.o
+i2USBDeviceInit@i D 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USBDeviceAttach 2A06 0 CODE 0 text4 dist/default/production/Bobinadora.X.production.o
+__end_of_USBDeviceTasks E32 0 CODE 0 text20 dist/default/production/Bobinadora.X.production.o
+_ep_data_out 8A 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/Bobinadora.X.production.o
+isa$std 1 0 ABS 0 - /tmp/xcmbJk9Vo.o
+i2_USBDeviceInit 1578 0 CODE 0 text21 dist/default/production/Bobinadora.X.production.o
+USBEnableEndpoint@p A 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_dummy_encapsulated_cmd_response D9 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+putUSBUSART@length EA 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+stackhi 0 0 ABS 0 - /tmp/xcmbJk9Vo.o
+stacklo 0 0 ABS 0 - /tmp/xcmbJk9Vo.o
+_cdc_mem_type 94 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__end_of_USBConfigureEndpoint 26D8 0 CODE 0 text42 dist/default/production/Bobinadora.X.production.o
+_USBCtrlEPAllowDataStage 2578 0 CODE 0 text30 dist/default/production/Bobinadora.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production/Bobinadora.X.production.o
+_OSCCON2 FD2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_OSCTUNE F9B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production/Bobinadora.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production/Bobinadora.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlEPAllowDataStage 262C 0 CODE 0 text30 dist/default/production/Bobinadora.X.production.o
+putUSBUSART@data E8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+getsUSBUSART@len F5 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__pbssCOMRAM 2C 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_ofi2_USBTransferOnePacket 1BCA 0 CODE 0 text40 dist/default/production/Bobinadora.X.production.o
+__end_of_ADC_Initialize 2BCE 0 CODE 0 text13 dist/default/production/Bobinadora.X.production.o
+_USBCtrlTrfOutHandler 27F0 0 CODE 0 text43 dist/default/production/Bobinadora.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_PIR2bits FA1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_PIR3bits FA4 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+getsUSBUSART@buffer F3 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+USBStdSetCfgHandler@i 15 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+end_of_initialization 2AA0 0 CODE 0 cinit dist/default/production/Bobinadora.X.production.o
+_TMR0_Initialize 2BE2 0 CODE 0 text8 dist/default/production/Bobinadora.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/Bobinadora.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production/Bobinadora.X.production.o
+_USBDeferStatusStagePacket 47 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_RCONbits FD0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_CDCInitEP 28C8 0 CODE 0 text39 dist/default/production/Bobinadora.X.production.o
+_USER_USB_CALLBACK_EVENT_HANDLER 2768 0 CODE 0 text37 dist/default/production/Bobinadora.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/Bobinadora.X.production.o
+_inPipes 72 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_shortPacketStatus 4D 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USB_CD_Ptr 809 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+USBTransferOnePacket@ep F0 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/Bobinadora.X.production.o
+_endpoint_number 4A 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production/Bobinadora.X.production.o
+USBConfigureEndpoint@EPNum 6 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/Bobinadora.X.production.o
+_USB_SD_Ptr 801 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__pcinit 2A7C 0 CODE 0 cinit dist/default/production/Bobinadora.X.production.o
+__ptext0 2BCE 0 CODE 0 text0 dist/default/production/Bobinadora.X.production.o
+__ptext1 2AAE 0 CODE 0 text1 dist/default/production/Bobinadora.X.production.o
+__ptext2 142C 0 CODE 0 text2 dist/default/production/Bobinadora.X.production.o
+__ptext3 FCA 0 CODE 0 text3 dist/default/production/Bobinadora.X.production.o
+__ptext4 29C4 0 CODE 0 text4 dist/default/production/Bobinadora.X.production.o
+__ptext5 2B80 0 CODE 0 text5 dist/default/production/Bobinadora.X.production.o
+__ptext6 2C06 0 CODE 0 text6 dist/default/production/Bobinadora.X.production.o
+__ptext7 2B9C 0 CODE 0 text7 dist/default/production/Bobinadora.X.production.o
+__ptext8 2BE2 0 CODE 0 text8 dist/default/production/Bobinadora.X.production.o
+__ptext9 2B36 0 CODE 0 text9 dist/default/production/Bobinadora.X.production.o
+_USBDeviceAttach 29C4 0 CODE 0 text4 dist/default/production/Bobinadora.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/Bobinadora.X.production.o
+__end_of_USBIncrement1msInternalTimers 2A7C 0 CODE 0 text25 dist/default/production/Bobinadora.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production/Bobinadora.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production/Bobinadora.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production/Bobinadora.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production/Bobinadora.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production/Bobinadora.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production/Bobinadora.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production/Bobinadora.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production/Bobinadora.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production/Bobinadora.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production/Bobinadora.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production/Bobinadora.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production/Bobinadora.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production/Bobinadora.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production/Bobinadora.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production/Bobinadora.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production/Bobinadora.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production/Bobinadora.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production/Bobinadora.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production/Bobinadora.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production/Bobinadora.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production/Bobinadora.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production/Bobinadora.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production/Bobinadora.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production/Bobinadora.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production/Bobinadora.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production/Bobinadora.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production/Bobinadora.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production/Bobinadora.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production/Bobinadora.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production/Bobinadora.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production/Bobinadora.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production/Bobinadora.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production/Bobinadora.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production/Bobinadora.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production/Bobinadora.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production/Bobinadora.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production/Bobinadora.X.production.o
+__end_of_USBCheckCDCRequest 201A 0 CODE 0 text38 dist/default/production/Bobinadora.X.production.o
+__end_of_USBCtrlTrfInHandler 2124 0 CODE 0 text46 dist/default/production/Bobinadora.X.production.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcmbJk9Vo.o
+_CDCInitEP 2864 0 CODE 0 text39 dist/default/production/Bobinadora.X.production.o
+_USBCtrlEPServiceComplete 194A 0 CODE 0 text29 dist/default/production/Bobinadora.X.production.o
+__Lpowerup 9C 0 CODE 0 powerup dist/default/production/Bobinadora.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Bobinadora.X.production.o
+_configDescriptor1 809 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+USBStdFeatureReqHandler@current_ep_data 19 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_TMR1_Initialize 2BB8 0 CODE 0 text7 dist/default/production/Bobinadora.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_pBDTEntryEP0OutCurrent 3E 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+USBTransferOnePacket@data E9 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/Bobinadora.X.production.o
+_pBDTEntryOut 7E 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+___heap_hi 0 0 ABS 0 - /tmp/xcmbJk9Vo.o
+___heap_lo 0 0 ABS 0 - /tmp/xcmbJk9Vo.o
+___param_bank 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_USBStdSetCfgHandler 231E 0 CODE 0 text32 dist/default/production/Bobinadora.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Bobinadora.X.production.o
+__end_of__initialization 2AA0 0 CODE 0 cinit dist/default/production/Bobinadora.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/Bobinadora.X.production.o
+_timer0ReloadVal 40 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+MCC_USB_CDC_DemoTasks@numBytesRead F9 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+USBCtrlTrfTxService@byteToSend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_USTATcopy 51 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/Bobinadora.X.production.o
+_timer1ReloadVal 36 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBCheckCDCRequest 1F0E 0 CODE 0 text38 dist/default/production/Bobinadora.X.production.o
+_outPipes 6A 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+_USBStatusStageTimeoutCounter 48 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_T3CONbits FB1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_timer3ReloadVal 38 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_USB_SD_Ptr 807 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_of_main 2BE2 0 CODE 0 text0 dist/default/production/Bobinadora.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production/Bobinadora.X.production.o
+__end_of_putUSBUSART 2B36 0 CODE 0 text15 dist/default/production/Bobinadora.X.production.o
+_EEADR FA9 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_T1CON FCD 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_T2CON FBA 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_T3CON FB1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR0H FD7 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR1H FCF 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR1L FCE 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR3H FB3 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TMR3L FB2 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_UADDR F63 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+_USTAT F61 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_sd000 8AC 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_of_sd001 880 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__end_of_sd002 896 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production/Bobinadora.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production/Bobinadora.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production/Bobinadora.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production/Bobinadora.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production/Bobinadora.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production/Bobinadora.X.production.o
+_TMR1_Initialize 2B9C 0 CODE 0 text7 dist/default/production/Bobinadora.X.production.o
+_USBStdGetStatusHandler 1E00 0 CODE 0 text34 dist/default/production/Bobinadora.X.production.o
+_USBDeferINDataStagePackets 44 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+i2USBTransferOnePacket@dir 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+i2USBTransferOnePacket@len 4 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+_sd000 8A8 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_sd001 84C 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_sd002 880 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+_CCP2CON F97 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+__end_of_OSCILLATOR_Initialize 2B80 0 CODE 0 text10 dist/default/production/Bobinadora.X.production.o
+__initialization 2A7C 0 CODE 0 cinit dist/default/production/Bobinadora.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production/Bobinadora.X.production.o
+_T2CONbits FBA 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
+USBDeviceTasks@i 1F 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+USBConfigureEndpoint@direction 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/Bobinadora.X.production.o
+__Hsmallconst 8AE 0 SMALLCONST 0 smallconst dist/default/production/Bobinadora.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/Bobinadora.X.production.o
+CDCTxService@byte_to_send F4 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Bobinadora.X.production.o
+__Hintcode 9C 0 CODE 0 intcode dist/default/production/Bobinadora.X.production.o
+_USBStatusStageEnabledFlag1 46 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_USBStatusStageEnabledFlag2 45 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
+_OSCILLATOR_Initialize 2B60 0 CODE 0 text10 dist/default/production/Bobinadora.X.production.o
+i2USBTransferOnePacket@handle A 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
+__end_of_TMR2_Initialize 2C14 0 CODE 0 text6 dist/default/production/Bobinadora.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_CtrlTrfData 1 438 8
+_SetupPkt 1 430 8
+_cdc_data_rx 1 540 40
+_cdc_data_tx 1 500 40
+_BDT 1 400 30
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text36 0 8AE 8AE 236A 1
+cstackCOMRAM 1 1 1 53 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 9B 1
+bssBANK1 1 100 100 40 1
+intcode 0 8 8 98 1
+smallconst 0 800 800 AE 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
