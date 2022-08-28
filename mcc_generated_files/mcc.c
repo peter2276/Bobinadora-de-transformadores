@@ -74,9 +74,9 @@ void OSCILLATOR_Initialize(void)
     // ACTSRC SOSC; ACTUD enabled; ACTEN disabled; 
     ACTCON = 0x00;
     // Wait for PLL to stabilize
-    while(PLLRDY == 0)
-    {
-    }
+    //while(PLLRDY == 0)
+    //{
+    //}
 }
 
 

@@ -19,10 +19,18 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "fila.h"
+#include <string.h>
 void MCC_USB_CDC_DemoTasks(void);
 /*
                          Main application
  */
+
+static uint8_t readBuffer[64];
+static uint8_t writeBuffer[64];
+uint8_t numBytesRead=0;
+void MCC_USB_WRITE(char* str, int nBytes);
+void MCC_USB_READ(void);
 void main(void)
 {
     // Initialize the device
@@ -43,14 +51,56 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
+    char* send;
+    Fila_T CommandList;
+    Fila_Init(&CommandList);
     while (1)
     {
-       MCC_USB_CDC_DemoTasks();
-        // Add your application code
+       //MCC_USB_READ();
+       Fila_Agregar(&CommandList,"a casa",strlen("a casa"));
+       send=FilaPop(&CommandList);
+       //if(send!=0) MCC_USB_WRITE(send,strlen(send));
+       MCC_USB_WRITE(send,strlen(send));
+       __delay_ms(500);
        //Fetch next command
        //execute 
     }
+}
+
+
+void MCC_USB_WRITE(char* str, int nBytes){
+   putUSBUSART(str,nBytes);
+   CDCTxService();
+}
+void MCC_USB_READ(void)
+{
+    if( USBGetDeviceState() < CONFIGURED_STATE )
+    {
+        return;
+    }
+    if( USBIsDeviceSuspended()== true )
+    {
+        return;
+    }
+
+    if( USBUSARTIsTxTrfReady() == true)
+    {
+        uint8_t i;
+        uint8_t numBytesRead;
+
+        numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
+
+        for(i=0; i<numBytesRead; i++)
+        {
+            writeBuffer[i] = readBuffer[i];
+        }
+
+        if(numBytesRead > 0)
+        {
+            //putUSBUSART(writeBuffer,numBytesRead);
+        }
+    }
+    CDCTxService();
 }
 
 //USB interruption

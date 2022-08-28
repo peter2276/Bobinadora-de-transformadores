@@ -19,4 +19,5 @@ mcc_generated_files/usb/fixed_address_memory.h  \
 mcc_generated_files/usb/usb_device_cdc.h  \
 mcc_generated_files/ccp2.h  \
 mcc_generated_files/memory.h  \
-mcc_generated_files/adc.h 
+mcc_generated_files/adc.h  \
+fila.h 

@@ -9006,10 +9006,34 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 21 "main.c" 2
 
+# 1 "./fila.h" 1
+# 15 "./fila.h"
+typedef struct NodoComando_T{
+   char* comando;
+   struct NodoComando_T* next;
+}NodoComando_T;
+
+typedef struct Fila_T{
+   NodoComando_T* cabeza;
+   NodoComando_T* cola;
+   int size;
+}Fila_T;
+void Fila_Init(Fila_T* fila);
+int Fila_Agregar(Fila_T* fila, char* comando,int);
+char* FilaPop(Fila_T* CommandList);
+# 22 "main.c" 2
+
+
 void MCC_USB_CDC_DemoTasks(void);
 
 
 
+
+static uint8_t readBuffer[64];
+static uint8_t writeBuffer[64];
+uint8_t numBytesRead=0;
+void MCC_USB_WRITE(char* str, int nBytes);
+void MCC_USB_READ(void);
 void main(void)
 {
 
@@ -9030,12 +9054,54 @@ void main(void)
 
 
 
-
+    char* send;
+    Fila_T CommandList;
+    Fila_Init(&CommandList);
     while (1)
     {
-       MCC_USB_CDC_DemoTasks();
 
+       Fila_Agregar(&CommandList,"a casa",strlen("a casa"));
+       send=FilaPop(&CommandList);
+
+       MCC_USB_WRITE(send,strlen(send));
+       _delay((unsigned long)((500)*(48000000/4000.0)));
 
 
     }
+}
+
+
+void MCC_USB_WRITE(char* str, int nBytes){
+   putUSBUSART(str,nBytes);
+   CDCTxService();
+}
+void MCC_USB_READ(void)
+{
+    if( USBDeviceState < CONFIGURED_STATE )
+    {
+        return;
+    }
+    if( UCONbits.SUSPND== 1 )
+    {
+        return;
+    }
+
+    if( (cdc_trf_state == 0) == 1)
+    {
+        uint8_t i;
+        uint8_t numBytesRead;
+
+        numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
+
+        for(i=0; i<numBytesRead; i++)
+        {
+            writeBuffer[i] = readBuffer[i];
+        }
+
+        if(numBytesRead > 0)
+        {
+
+        }
+    }
+    CDCTxService();
 }

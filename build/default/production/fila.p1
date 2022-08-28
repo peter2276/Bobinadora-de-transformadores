@@ -1,0 +1,183 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"15 ./fila.h
+[; ;./fila.h: 15: typedef struct NodoComando_T{
+[s S1 `*uc 1 `*S1 1 ]
+[n S1 NodoComando_T comando next ]
+"20
+[; ;./fila.h: 20: typedef struct Fila_T{
+[s S2 `*S1 1 `*S1 1 `i 1 ]
+[n S2 Fila_T cabeza cola size ]
+"42 /Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h: 42: void *malloc (size_t);
+[v _malloc `(*v ~T0 @X0 0 ef1`ui ]
+"33 /Applications/microchip/xc8/v2.36/pic/include/c99/string.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 33: char *strcpy (char *restrict, const char *restrict);
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"45 /Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h: 45: void free (void *);
+[v _free `(v ~T0 @X0 0 ef1`*v ]
+"6 fila.c
+[; ;fila.c: 6: void Fila_Init(Fila_T* fila){
+[v _Fila_Init `(v ~T0 @X0 1 ef1`*S2 ]
+{
+[e :U _Fila_Init ]
+[v _fila `*S2 ~T0 @X0 1 r1 ]
+[f ]
+"7
+[; ;fila.c: 7:    fila->cabeza=0;
+[e = . *U _fila 0 -> -> 0 `i `*S1 ]
+"8
+[; ;fila.c: 8:    fila->cola=0;
+[e = . *U _fila 1 -> -> 0 `i `*S1 ]
+"9
+[; ;fila.c: 9:    fila->size=0;
+[e = . *U _fila 2 -> 0 `i ]
+"10
+[; ;fila.c: 10: }
+[e :UE 9 ]
+}
+"12
+[; ;fila.c: 12: int Fila_Agregar(Fila_T* fila, char* comando, int nBytes){
+[v _Fila_Agregar `(i ~T0 @X0 1 ef3`*S2`*uc`i ]
+{
+[e :U _Fila_Agregar ]
+[v _fila `*S2 ~T0 @X0 1 r1 ]
+[v _comando `*uc ~T0 @X0 1 r2 ]
+[v _nBytes `i ~T0 @X0 1 r3 ]
+[f ]
+"14
+[; ;fila.c: 14:    if(comando==((void*)0))return 1;
+[e $ ! == _comando -> -> -> 0 `i `*v `*uc 11  ]
+[e ) -> 1 `i ]
+[e $UE 10  ]
+[e :U 11 ]
+"16
+[; ;fila.c: 16:    NodoComando_T* nuevo;
+[v _nuevo `*S1 ~T0 @X0 1 a ]
+"17
+[; ;fila.c: 17:    nuevo = (NodoComando_T*)malloc(sizeof(NodoComando_T));
+[e = _nuevo -> ( _malloc (1 -> # `S1 `ui `*S1 ]
+"18
+[; ;fila.c: 18:    nuevo->comando=(char*)malloc(sizeof(char)*nBytes);
+[e = . *U _nuevo 0 -> ( _malloc (1 * -> # `uc `ui -> _nBytes `ui `*uc ]
+"21
+[; ;fila.c: 21:    if(nuevo==((void*)0)||nuevo->comando==((void*)0)) return 1;
+[e $ ! || == _nuevo -> -> -> 0 `i `*v `*S1 == . *U _nuevo 0 -> -> -> 0 `i `*v `*uc 12  ]
+[e ) -> 1 `i ]
+[e $UE 10  ]
+[e :U 12 ]
+"23
+[; ;fila.c: 23:    strcpy(nuevo->comando,comando);
+[e ( _strcpy (2 , . *U _nuevo 0 -> _comando `*Cuc ]
+"25
+[; ;fila.c: 25:    if(fila->size>0){
+[e $ ! > . *U _fila 2 -> 0 `i 13  ]
+{
+"26
+[; ;fila.c: 26:       fila->cola->next = nuevo;
+[e = . *U . *U _fila 1 1 _nuevo ]
+"27
+[; ;fila.c: 27:       fila->cola= nuevo;
+[e = . *U _fila 1 _nuevo ]
+"28
+[; ;fila.c: 28:    }
+}
+[e $U 14  ]
+"29
+[; ;fila.c: 29:    else{
+[e :U 13 ]
+{
+"30
+[; ;fila.c: 30:       fila->cola= nuevo;
+[e = . *U _fila 1 _nuevo ]
+"31
+[; ;fila.c: 31:       fila->cabeza=nuevo;
+[e = . *U _fila 0 _nuevo ]
+"32
+[; ;fila.c: 32:    }
+}
+[e :U 14 ]
+"33
+[; ;fila.c: 33:    fila->size+=1;
+[e =+ . *U _fila 2 -> 1 `i ]
+"34
+[; ;fila.c: 34:    return 0;
+[e ) -> 0 `i ]
+[e $UE 10  ]
+"35
+[; ;fila.c: 35: }
+[e :UE 10 ]
+}
+"37
+[; ;fila.c: 37: char* FilaPop(Fila_T* fila){
+[v _FilaPop `(*uc ~T0 @X0 1 ef1`*S2 ]
+{
+[e :U _FilaPop ]
+[v _fila `*S2 ~T0 @X0 1 r1 ]
+[f ]
+"38
+[; ;fila.c: 38:    char* r;
+[v _r `*uc ~T0 @X0 1 a ]
+"39
+[; ;fila.c: 39:    NodoComando_T* viejo;
+[v _viejo `*S1 ~T0 @X0 1 a ]
+"40
+[; ;fila.c: 40:    if(fila->size>0){
+[e $ ! > . *U _fila 2 -> 0 `i 16  ]
+{
+"41
+[; ;fila.c: 41:       fila->size=fila->size-1;
+[e = . *U _fila 2 - . *U _fila 2 -> 1 `i ]
+"42
+[; ;fila.c: 42:       r=fila->cabeza->comando;
+[e = _r . *U . *U _fila 0 0 ]
+"43
+[; ;fila.c: 43:       viejo=fila->cabeza;
+[e = _viejo . *U _fila 0 ]
+"44
+[; ;fila.c: 44:       fila->cabeza=fila->cabeza->next;
+[e = . *U _fila 0 . *U . *U _fila 0 1 ]
+"45
+[; ;fila.c: 45:       if(fila->size==0){
+[e $ ! == . *U _fila 2 -> 0 `i 17  ]
+{
+"46
+[; ;fila.c: 46:          fila->cola=((void*)0);
+[e = . *U _fila 1 -> -> -> 0 `i `*v `*S1 ]
+"47
+[; ;fila.c: 47:          fila->cabeza=((void*)0);
+[e = . *U _fila 0 -> -> -> 0 `i `*v `*S1 ]
+"48
+[; ;fila.c: 48:       }
+}
+[e $U 18  ]
+"49
+[; ;fila.c: 49:       else{
+[e :U 17 ]
+{
+"50
+[; ;fila.c: 50:          fila->cabeza=fila->cabeza->next;
+[e = . *U _fila 0 . *U . *U _fila 0 1 ]
+"51
+[; ;fila.c: 51:       }
+}
+[e :U 18 ]
+"52
+[; ;fila.c: 52:       free(viejo);
+[e ( _free (1 -> _viejo `*v ]
+"53
+[; ;fila.c: 53:       return r;
+[e ) _r ]
+[e $UE 15  ]
+"54
+[; ;fila.c: 54:    }
+}
+[e :U 16 ]
+"55
+[; ;fila.c: 55:    return 0;
+[e ) -> -> 0 `i `*uc ]
+[e $UE 15  ]
+"56
+[; ;fila.c: 56: }
+[e :UE 15 ]
+}
