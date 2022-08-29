@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=/Applications/microchip/xc8/v2.36/pic/dat/en_msgs.txt -cn \
   -h+dist/default/production/Bobinadora.X.production.sym \
   --cmf=dist/default/production/Bobinadora.X.production.cmf -z -Q18F25K50 \
-  -o/tmp/xc2rFbmR6 --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcx85jUps --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Bobinadora.X.production.map \
-  --md=/tmp/xcc7oVzE2.dat -E1 -ver=XC8 Compiler --acfsm=1493 \
+  --md=/tmp/xcsZXBM30.dat -E1 -ver=XC8 Compiler --acfsm=1493 \
   -AHEAP=0580h-07FFh -pheap=HEAP -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcqnIsHEL.o dist/default/production/Bobinadora.X.production.o 
+  /tmp/xcOiVBIR2.o dist/default/production/Bobinadora.X.production.o 
 
 Object code version is 3.11
 
@@ -32,7 +32,7 @@ Machine type is 18F25K50
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcqnIsHEL.o
+/tmp/xcOiVBIR2.o
                 heap                                580      580      280      580       7
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4

@@ -11,6 +11,12 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$/tmp/xcOiVBIR2.o
+idloc IDLOC 5 200000 200000 8 1 1
+heap HEAP 7 580 580 280 1 1
+init CODE 0 9C 9C 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
 $dist/default/production/Bobinadora.X.production.o
 cinit CODE 0 324A 324A 3A 1 2
 idloc IDLOC 5 200000 200000 8 1 1
@@ -78,12 +84,6 @@ intcode CODE 0 8 8 94 1 2
 smallconst SMALLCONST 0 800 800 B4 1 2
 bssCOMRAM COMRAM 1 2C 2C 29 1 1
 config CONFIG 4 300000 300000 E 1 1
-$/tmp/xcqnIsHEL.o
-idloc IDLOC 5 200000 200000 8 1 1
-heap HEAP 7 580 580 280 1 1
-init CODE 0 9C 9C 4 1 2
-reset_vec CODE 0 0 0 4 1 2
-config CONFIG 4 300000 300000 E 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -132,7 +132,7 @@ MEDIUMCONST 3416-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/Bobinadora.X.production.o
-8 intcode CODE >12976:/tmp/xcXfXZvl4.s
+8 intcode CODE >12976:/tmp/xcwp2uBq9.s
 8 intcode CODE >58:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
 3A intcode CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
 48 intcode CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
@@ -1124,37 +1124,37 @@ E8A text23 CODE >65:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lit
 2DB2 text0 CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
 2DC8 text0 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
 2DE8 text0 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
-324A cinit CODE >7022:/tmp/xcXfXZvl4.s
-324A cinit CODE >7024:/tmp/xcXfXZvl4.s
-324A cinit CODE >7027:/tmp/xcXfXZvl4.s
-324A cinit CODE >7202:/tmp/xcXfXZvl4.s
-324E cinit CODE >7203:/tmp/xcXfXZvl4.s
-3252 cinit CODE >7204:/tmp/xcXfXZvl4.s
-3252 cinit CODE >7205:/tmp/xcXfXZvl4.s
-3254 cinit CODE >7206:/tmp/xcXfXZvl4.s
-3256 cinit CODE >7207:/tmp/xcXfXZvl4.s
-3258 cinit CODE >7208:/tmp/xcXfXZvl4.s
-325A cinit CODE >7209:/tmp/xcXfXZvl4.s
-325C cinit CODE >7210:/tmp/xcXfXZvl4.s
-325E cinit CODE >7213:/tmp/xcXfXZvl4.s
-3262 cinit CODE >7214:/tmp/xcXfXZvl4.s
-3264 cinit CODE >7215:/tmp/xcXfXZvl4.s
-3264 cinit CODE >7216:/tmp/xcXfXZvl4.s
-3266 cinit CODE >7217:/tmp/xcXfXZvl4.s
-3268 cinit CODE >7218:/tmp/xcXfXZvl4.s
-326A cinit CODE >7221:/tmp/xcXfXZvl4.s
-326E cinit CODE >7222:/tmp/xcXfXZvl4.s
-3270 cinit CODE >7223:/tmp/xcXfXZvl4.s
-3270 cinit CODE >7224:/tmp/xcXfXZvl4.s
-3272 cinit CODE >7225:/tmp/xcXfXZvl4.s
-3274 cinit CODE >7226:/tmp/xcXfXZvl4.s
-3276 cinit CODE >7232:/tmp/xcXfXZvl4.s
-3276 cinit CODE >7234:/tmp/xcXfXZvl4.s
-3278 cinit CODE >7235:/tmp/xcXfXZvl4.s
-327A cinit CODE >7237:/tmp/xcXfXZvl4.s
-327C cinit CODE >7238:/tmp/xcXfXZvl4.s
-327E cinit CODE >7239:/tmp/xcXfXZvl4.s
-3280 cinit CODE >7240:/tmp/xcXfXZvl4.s
+324A cinit CODE >7022:/tmp/xcwp2uBq9.s
+324A cinit CODE >7024:/tmp/xcwp2uBq9.s
+324A cinit CODE >7027:/tmp/xcwp2uBq9.s
+324A cinit CODE >7202:/tmp/xcwp2uBq9.s
+324E cinit CODE >7203:/tmp/xcwp2uBq9.s
+3252 cinit CODE >7204:/tmp/xcwp2uBq9.s
+3252 cinit CODE >7205:/tmp/xcwp2uBq9.s
+3254 cinit CODE >7206:/tmp/xcwp2uBq9.s
+3256 cinit CODE >7207:/tmp/xcwp2uBq9.s
+3258 cinit CODE >7208:/tmp/xcwp2uBq9.s
+325A cinit CODE >7209:/tmp/xcwp2uBq9.s
+325C cinit CODE >7210:/tmp/xcwp2uBq9.s
+325E cinit CODE >7213:/tmp/xcwp2uBq9.s
+3262 cinit CODE >7214:/tmp/xcwp2uBq9.s
+3264 cinit CODE >7215:/tmp/xcwp2uBq9.s
+3264 cinit CODE >7216:/tmp/xcwp2uBq9.s
+3266 cinit CODE >7217:/tmp/xcwp2uBq9.s
+3268 cinit CODE >7218:/tmp/xcwp2uBq9.s
+326A cinit CODE >7221:/tmp/xcwp2uBq9.s
+326E cinit CODE >7222:/tmp/xcwp2uBq9.s
+3270 cinit CODE >7223:/tmp/xcwp2uBq9.s
+3270 cinit CODE >7224:/tmp/xcwp2uBq9.s
+3272 cinit CODE >7225:/tmp/xcwp2uBq9.s
+3274 cinit CODE >7226:/tmp/xcwp2uBq9.s
+3276 cinit CODE >7232:/tmp/xcwp2uBq9.s
+3276 cinit CODE >7234:/tmp/xcwp2uBq9.s
+3278 cinit CODE >7235:/tmp/xcwp2uBq9.s
+327A cinit CODE >7237:/tmp/xcwp2uBq9.s
+327C cinit CODE >7238:/tmp/xcwp2uBq9.s
+327E cinit CODE >7239:/tmp/xcwp2uBq9.s
+3280 cinit CODE >7240:/tmp/xcwp2uBq9.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1178,7 +1178,7 @@ _USB1msTickCount 2C 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.pr
 USBTransferOnePacket@dir B5 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 USBTransferOnePacket@len B8 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Bobinadora.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcqnIsHEL.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcOiVBIR2.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Bobinadora.X.production.o
 __end_of_USBStdSetCfgHandler 2AAA 0 CODE 0 text40 dist/default/production/Bobinadora.X.production.o
 USBEnableEndpoint@options 9 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
@@ -1202,7 +1202,7 @@ _UEIR F67 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _UEP0 F6A 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _UEP1 F6B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _WPUB F85 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcqnIsHEL.o
+___sp 0 0 STACK 2 stack /tmp/xcOiVBIR2.o
 _brkp 30 0 COMRAM 1 bssCOMRAM dist/default/production/Bobinadora.X.production.o
 _free 16AE 0 CODE 0 text26 dist/default/production/Bobinadora.X.production.o
 _main 2D72 0 CODE 0 text0 dist/default/production/Bobinadora.X.production.o
@@ -1211,7 +1211,7 @@ ___simple_search_fl@best C7 0 BANK0 1 cstackBANK0 dist/default/production/Bobina
 ___simple_search_fl@last C1 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 ___simple_search_fl@next C3 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 btemp 55 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
-start 9C 0 CODE 0 init /tmp/xcqnIsHEL.o
+start 9C 0 CODE 0 init /tmp/xcOiVBIR2.o
 _USBTransferOnePacket 1E80 0 CODE 0 text18 dist/default/production/Bobinadora.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Bobinadora.X.production.o
 _USBDeviceInit 1816 0 CODE 0 text3 dist/default/production/Bobinadora.X.production.o
@@ -1230,11 +1230,11 @@ _T0CONbits FD5 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 ttemp5 56 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
 ttemp6 59 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
 ttemp7 5D 0 COMRAM 1 temp dist/default/production/Bobinadora.X.production.o
-__accesstop 60 0 ABS 0 - /tmp/xcqnIsHEL.o
-intlevel0 0 0 CODE 0 text /tmp/xcqnIsHEL.o
-intlevel1 0 0 CODE 0 text /tmp/xcqnIsHEL.o
-intlevel2 0 0 CODE 0 text /tmp/xcqnIsHEL.o
-intlevel3 0 0 CODE 0 text /tmp/xcqnIsHEL.o
+__accesstop 60 0 ABS 0 - /tmp/xcOiVBIR2.o
+intlevel0 0 0 CODE 0 text /tmp/xcOiVBIR2.o
+intlevel1 0 0 CODE 0 text /tmp/xcOiVBIR2.o
+intlevel2 0 0 CODE 0 text /tmp/xcOiVBIR2.o
+intlevel3 0 0 CODE 0 text /tmp/xcOiVBIR2.o
 FilaPop@viejo C7 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 _MCC_USB_WRITE 33B8 0 CODE 0 text15 dist/default/production/Bobinadora.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Bobinadora.X.production.o
@@ -1261,8 +1261,8 @@ _line_coding AE 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.producti
 _ANSELA F5B 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _ANSELB F5C 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _ANSELC F5D 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcqnIsHEL.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcqnIsHEL.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcOiVBIR2.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcOiVBIR2.o
 _EECON1bits FA6 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _CCPR2H F91 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _CCPR2L F90 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
@@ -1334,7 +1334,7 @@ __end_of_USBCtrlTrfTxService 25AA 0 CODE 0 text55 dist/default/production/Bobina
 _USBStallHandler 2FFA 0 CODE 0 text32 dist/default/production/Bobinadora.X.production.o
 _cdc_data_rx 540 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
 _cdc_data_tx 500 0 ABS 1 - dist/default/production/Bobinadora.X.production.o
-isa$xinst 0 0 ABS 0 - /tmp/xcqnIsHEL.o
+isa$xinst 0 0 ABS 0 - /tmp/xcOiVBIR2.o
 __end_of_USBEnableEndpoint 3148 0 CODE 0 text49 dist/default/production/Bobinadora.X.production.o
 _readBuffer 1C0 0 BANK1 1 bssBANK1 dist/default/production/Bobinadora.X.production.o
 ?___expand_heap B5 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
@@ -1375,7 +1375,7 @@ __end_of_MCC_USB_WRITE 33CE 0 CODE 0 text15 dist/default/production/Bobinadora.X
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Bobinadora.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/Bobinadora.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production/Bobinadora.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcqnIsHEL.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcOiVBIR2.o
 _USBCheckStdRequest 2374 0 CODE 0 text39 dist/default/production/Bobinadora.X.production.o
 _USBIncrement1msInternalTimers 3284 0 CODE 0 text33 dist/default/production/Bobinadora.X.production.o
 USBStdFeatureReqHandler@p 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
@@ -1641,14 +1641,14 @@ __end_of_USBDeviceTasks 10B4 0 CODE 0 text28 dist/default/production/Bobinadora.
 ___expand_heap 2C16 0 CODE 0 text24 dist/default/production/Bobinadora.X.production.o
 _ep_data_out 92 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/Bobinadora.X.production.o
-isa$std 1 0 ABS 0 - /tmp/xcqnIsHEL.o
+isa$std 1 0 ABS 0 - /tmp/xcOiVBIR2.o
 ___simple_search_fl@best_last BD 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 i2_USBDeviceInit 1962 0 CODE 0 text29 dist/default/production/Bobinadora.X.production.o
 USBEnableEndpoint@p A 0 COMRAM 1 cstackCOMRAM dist/default/production/Bobinadora.X.production.o
 _dummy_encapsulated_cmd_response A6 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
 putUSBUSART@length B7 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
-stackhi 0 0 ABS 0 - /tmp/xcqnIsHEL.o
-stacklo 0 0 ABS 0 - /tmp/xcqnIsHEL.o
+stackhi 0 0 ABS 0 - /tmp/xcOiVBIR2.o
+stacklo 0 0 ABS 0 - /tmp/xcOiVBIR2.o
 _cdc_mem_type A2 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
 __end_of_USBConfigureEndpoint 2D72 0 CODE 0 text50 dist/default/production/Bobinadora.X.production.o
 _USBCtrlEPAllowDataStage 2B62 0 CODE 0 text38 dist/default/production/Bobinadora.X.production.o
@@ -1759,7 +1759,7 @@ __Ltext54 0 0 ABS 0 text54 dist/default/production/Bobinadora.X.production.o
 __Ltext55 0 0 ABS 0 text55 dist/default/production/Bobinadora.X.production.o
 __end_of_USBCheckCDCRequest 27C4 0 CODE 0 text46 dist/default/production/Bobinadora.X.production.o
 __end_of_USBCtrlTrfInHandler 28CE 0 CODE 0 text54 dist/default/production/Bobinadora.X.production.o
-__ramtop 800 0 RAM 0 ramtop /tmp/xcqnIsHEL.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcOiVBIR2.o
 __end_of_Fila_Init 324A 0 CODE 0 text19 dist/default/production/Bobinadora.X.production.o
 _CDCInitEP 2F96 0 CODE 0 text47 dist/default/production/Bobinadora.X.production.o
 _USBCtrlEPServiceComplete 1FC2 0 CODE 0 text37 dist/default/production/Bobinadora.X.production.o
@@ -1775,8 +1775,8 @@ __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/Bobinadora.X.productio
 _pBDTEntryOut 7E 0 BANK0 1 bssBANK0 dist/default/production/Bobinadora.X.production.o
 Fila_Agregar@nuevo DD 0 BANK0 1 cstackBANK0 dist/default/production/Bobinadora.X.production.o
 __end_of_FilaPop 1D3C 0 CODE 0 text25 dist/default/production/Bobinadora.X.production.o
-___heap_hi 800 0 HEAP 7 heap /tmp/xcqnIsHEL.o
-___heap_lo 580 0 HEAP 7 heap /tmp/xcqnIsHEL.o
+___heap_hi 800 0 HEAP 7 heap /tmp/xcOiVBIR2.o
+___heap_lo 580 0 HEAP 7 heap /tmp/xcOiVBIR2.o
 ___param_bank 0 0 ABS 0 - dist/default/production/Bobinadora.X.production.o
 _USBStdSetCfgHandler 29C0 0 CODE 0 text40 dist/default/production/Bobinadora.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Bobinadora.X.production.o
