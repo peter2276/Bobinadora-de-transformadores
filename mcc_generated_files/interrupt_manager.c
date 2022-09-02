@@ -58,11 +58,19 @@ void  INTERRUPT_Initialize (void)
 void __interrupt() INTERRUPT_InterruptManager (void)
 {
     // interrupt handler
-    if(INTCONbits.PEIE == 1)
+    if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
+    {
+        TMR0_ISR();
+    }
+    else if(INTCONbits.PEIE == 1)
     {
         if(PIE3bits.USBIE == 1 && PIR3bits.USBIF == 1)
         {
             USB_USBDeviceTasks();
+        } 
+        else if(PIE2bits.TMR3IE == 1 && PIR2bits.TMR3IF == 1)
+        {
+            TMR3_ISR();
         } 
         else
         {

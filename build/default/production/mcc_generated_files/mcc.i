@@ -7673,9 +7673,9 @@ unsigned char __t3rd16on(void);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 108 "mcc_generated_files/pin_manager.h"
+# 238 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 120 "mcc_generated_files/pin_manager.h"
+# 250 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -7859,8 +7859,14 @@ void TMR3_Reload(void);
 void TMR3_StartSinglePulseAcquisition(void);
 # 329 "mcc_generated_files/tmr3.h"
 uint8_t TMR3_CheckGateValueStatus(void);
-# 367 "mcc_generated_files/tmr3.h"
-_Bool TMR3_HasOverflowOccured(void);
+# 345 "mcc_generated_files/tmr3.h"
+void TMR3_ISR(void);
+# 364 "mcc_generated_files/tmr3.h"
+ void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
+# 382 "mcc_generated_files/tmr3.h"
+extern void (*TMR3_InterruptHandler)(void);
+# 400 "mcc_generated_files/tmr3.h"
+void TMR3_DefaultInterruptHandler(void);
 # 56 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/tmr1.h" 1
@@ -7914,8 +7920,14 @@ uint8_t TMR0_ReadTimer(void);
 void TMR0_WriteTimer(uint8_t timerVal);
 # 271 "mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
-# 310 "mcc_generated_files/tmr0.h"
-_Bool TMR0_HasOverflowOccured(void);
+# 290 "mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 309 "mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 327 "mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 345 "mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
 # 59 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/usb/usb.h" 1

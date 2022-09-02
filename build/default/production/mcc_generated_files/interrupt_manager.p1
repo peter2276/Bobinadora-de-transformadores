@@ -55,7 +55,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12449
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 12449: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
 [v _INTCONbits `VS583 ~T0 @X0 0 e@4082 ]
-"5982
+"290 mcc_generated_files/tmr0.h
+[; ;mcc_generated_files/tmr0.h: 290: void TMR0_ISR(void);
+[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
+"5982 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5982:     struct {
 [s S247 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S247 . TMR1GIE TMR3GIE USBIE CTMUIE ]
@@ -92,6 +95,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "303 mcc_generated_files/usb/usb_device.h
 [; ;mcc_generated_files/usb/usb_device.h: 303: void USBDeviceTasks(void);
 [v _USBDeviceTasks `(v ~T0 @X0 0 ef ]
+"5685 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5685:     struct {
+[s S235 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S235 . CCP2IE TMR3IE HLVDIE BCLIE EEIE C2IE C1IE OSCFIE ]
+"5695
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5695:     struct {
+[s S236 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S236 . . LVDIE BCL1IE . CM2IE CM1IE ]
+"5703
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5703:     struct {
+[s S237 :6 `uc 1 :1 `uc 1 ]
+[n S237 . . CMIE ]
+"5684
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5684: typedef union {
+[u S234 `S235 1 `S236 1 `S237 1 ]
+[n S234 . . . . ]
+"5708
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5708: extern volatile PIE2bits_t PIE2bits __attribute__((address(0xFA0)));
+[v _PIE2bits `VS234 ~T0 @X0 0 e@4000 ]
+"5784
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5784:     struct {
+[s S239 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S239 . CCP2IF TMR3IF HLVDIF BCLIF EEIF C2IF C1IF OSCFIF ]
+"5794
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5794:     struct {
+[s S240 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S240 . . LVDIF BCL1IF . CM2IF CM1IF ]
+"5802
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5802:     struct {
+[s S241 :6 `uc 1 :1 `uc 1 ]
+[n S241 . . CMIF ]
+"5783
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5783: typedef union {
+[u S238 `S239 1 `S240 1 `S241 1 ]
+[n S238 . . . . ]
+"5807
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5807: extern volatile PIR2bits_t PIR2bits __attribute__((address(0xFA1)));
+[v _PIR2bits `VS238 ~T0 @X0 0 e@4001 ]
+"345 mcc_generated_files/tmr3.h
+[; ;mcc_generated_files/tmr3.h: 345: void TMR3_ISR(void);
+[v _TMR3_ISR `(v ~T0 @X0 0 ef ]
 "55 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 55: __asm("SRCON1 equ 0F57h");
 [; <" SRCON1 equ 0F57h ;# ">
@@ -714,49 +758,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _INTERRUPT_InterruptManager ]
 [f ]
 "61
-[; ;mcc_generated_files/interrupt_manager.c: 61:     if(INTCONbits.PEIE == 1)
-[e $ ! == -> . . _INTCONbits 1 6 `i -> 1 `i 683  ]
+[; ;mcc_generated_files/interrupt_manager.c: 61:     if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
+[e $ ! && == -> . . _INTCONbits 0 5 `i -> 1 `i == -> . . _INTCONbits 0 2 `i -> 1 `i 683  ]
 "62
 [; ;mcc_generated_files/interrupt_manager.c: 62:     {
 {
 "63
-[; ;mcc_generated_files/interrupt_manager.c: 63:         if(PIE3bits.USBIE == 1 && PIR3bits.USBIF == 1)
-[e $ ! && == -> . . _PIE3bits 0 2 `i -> 1 `i == -> . . _PIR3bits 0 2 `i -> 1 `i 684  ]
+[; ;mcc_generated_files/interrupt_manager.c: 63:         TMR0_ISR();
+[e ( _TMR0_ISR ..  ]
 "64
-[; ;mcc_generated_files/interrupt_manager.c: 64:         {
-{
-"65
-[; ;mcc_generated_files/interrupt_manager.c: 65:             USBDeviceTasks();
-[e ( _USBDeviceTasks ..  ]
-"66
-[; ;mcc_generated_files/interrupt_manager.c: 66:         }
+[; ;mcc_generated_files/interrupt_manager.c: 64:     }
 }
-[e $U 685  ]
+[e $U 684  ]
+"65
+[; ;mcc_generated_files/interrupt_manager.c: 65:     else if(INTCONbits.PEIE == 1)
+[e :U 683 ]
+[e $ ! == -> . . _INTCONbits 1 6 `i -> 1 `i 685  ]
+"66
+[; ;mcc_generated_files/interrupt_manager.c: 66:     {
+{
 "67
-[; ;mcc_generated_files/interrupt_manager.c: 67:         else
-[e :U 684 ]
+[; ;mcc_generated_files/interrupt_manager.c: 67:         if(PIE3bits.USBIE == 1 && PIR3bits.USBIF == 1)
+[e $ ! && == -> . . _PIE3bits 0 2 `i -> 1 `i == -> . . _PIR3bits 0 2 `i -> 1 `i 686  ]
 "68
 [; ;mcc_generated_files/interrupt_manager.c: 68:         {
 {
+"69
+[; ;mcc_generated_files/interrupt_manager.c: 69:             USBDeviceTasks();
+[e ( _USBDeviceTasks ..  ]
 "70
 [; ;mcc_generated_files/interrupt_manager.c: 70:         }
 }
-[e :U 685 ]
+[e $U 687  ]
 "71
-[; ;mcc_generated_files/interrupt_manager.c: 71:     }
-}
-[e $U 686  ]
-"72
-[; ;mcc_generated_files/interrupt_manager.c: 72:     else
-[e :U 683 ]
-"73
-[; ;mcc_generated_files/interrupt_manager.c: 73:     {
-{
-"75
-[; ;mcc_generated_files/interrupt_manager.c: 75:     }
-}
+[; ;mcc_generated_files/interrupt_manager.c: 71:         else if(PIE2bits.TMR3IE == 1 && PIR2bits.TMR3IF == 1)
 [e :U 686 ]
+[e $ ! && == -> . . _PIE2bits 0 1 `i -> 1 `i == -> . . _PIR2bits 0 1 `i -> 1 `i 688  ]
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72:         {
+{
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:             TMR3_ISR();
+[e ( _TMR3_ISR ..  ]
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74:         }
+}
+[e $U 689  ]
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:         else
+[e :U 688 ]
 "76
-[; ;mcc_generated_files/interrupt_manager.c: 76: }
+[; ;mcc_generated_files/interrupt_manager.c: 76:         {
+{
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78:         }
+}
+[e :U 689 ]
+[e :U 687 ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:     }
+}
+[e $U 690  ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     else
+[e :U 685 ]
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81:     {
+{
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83:     }
+}
+[e :U 690 ]
+[e :U 684 ]
+"84
+[; ;mcc_generated_files/interrupt_manager.c: 84: }
 [e :UE 682 ]
 }

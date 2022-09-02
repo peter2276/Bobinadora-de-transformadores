@@ -7,7 +7,7 @@
 # 1 "/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 21 "main.c"
+# 27 "main.c"
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/xc.h" 1 3
@@ -7673,9 +7673,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 108 "./mcc_generated_files/pin_manager.h"
+# 238 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 120 "./mcc_generated_files/pin_manager.h"
+# 250 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -7859,8 +7859,14 @@ void TMR3_Reload(void);
 void TMR3_StartSinglePulseAcquisition(void);
 # 329 "./mcc_generated_files/tmr3.h"
 uint8_t TMR3_CheckGateValueStatus(void);
-# 367 "./mcc_generated_files/tmr3.h"
-_Bool TMR3_HasOverflowOccured(void);
+# 345 "./mcc_generated_files/tmr3.h"
+void TMR3_ISR(void);
+# 364 "./mcc_generated_files/tmr3.h"
+ void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
+# 382 "./mcc_generated_files/tmr3.h"
+extern void (*TMR3_InterruptHandler)(void);
+# 400 "./mcc_generated_files/tmr3.h"
+void TMR3_DefaultInterruptHandler(void);
 # 56 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr1.h" 1
@@ -7914,8 +7920,14 @@ uint8_t TMR0_ReadTimer(void);
 void TMR0_WriteTimer(uint8_t timerVal);
 # 271 "./mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
-# 310 "./mcc_generated_files/tmr0.h"
-_Bool TMR0_HasOverflowOccured(void);
+# 290 "./mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 309 "./mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 327 "./mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 345 "./mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
 # 59 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/usb/usb.h" 1
@@ -9004,7 +9016,7 @@ void ADC_TemperatureAcquisitionDelay(void);
 void SYSTEM_Initialize(void);
 # 91 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 21 "main.c" 2
+# 27 "main.c" 2
 
 # 1 "./fila.h" 1
 # 15 "./fila.h"
@@ -9021,7 +9033,33 @@ typedef struct Fila_T{
 void Fila_Init(Fila_T* fila);
 int Fila_Agregar(Fila_T* fila, char* comando,int);
 char* FilaPop(Fila_T* CommandList);
-# 22 "main.c" 2
+# 28 "main.c" 2
+
+
+# 1 "./StringHandler.h" 1
+# 14 "./StringHandler.h"
+# 1 "./GCODE.h" 1
+# 14 "./GCODE.h"
+    typedef struct Comando_T{
+       char code;
+       float number;
+    }Comando_T;
+    void G_00(Comando_T* axis, int n);
+    void G_53(Comando_T* axis, int n);
+# 15 "./StringHandler.h" 2
+int getTokens(char** token,char* str);
+void getComands(Comando_T* comandos, char** tokens, int size);
+# 30 "main.c" 2
+
+# 1 "./guia.h" 1
+# 25 "./guia.h"
+    void MY_TMR3_ISR(void);
+    void mover(int distancia, int direccion);
+    void mover_2(int distancia);
+# 31 "main.c" 2
+
+
+
 
 
 void MCC_USB_CDC_DemoTasks(void);
@@ -9034,11 +9072,12 @@ static uint8_t writeBuffer[64];
 uint8_t numBytesRead=0;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
+ void (*G[100])(Comando_T* axis, int n);
 void main(void)
 {
 
     SYSTEM_Initialize();
-
+    G[0]=G_00;
 
 
 
@@ -9054,16 +9093,50 @@ void main(void)
 
 
 
+    TMR3_StopTimer();
+    TMR3_SetInterruptHandler(MY_TMR3_ISR);
     char* send;
+    char* TokensCom[10];
+    int numTokens=0;
     Fila_T CommandList;
     Fila_Init(&CommandList);
+    PORTBbits.RB0=0;
+    PORTBbits.RB4=1;
+    PORTBbits.RB5=1;
+    PORTBbits.RB1=0;
+    PORTBbits.RB2=0;
+    PORTBbits.RB3=0;
+
+
+    numBytesRead=0;
+    Comando_T comando[10];
     while (1)
     {
 
-       Fila_Agregar(&CommandList,"a casa",strlen("a casa"));
-       send=FilaPop(&CommandList);
 
-       MCC_USB_WRITE(send,strlen(send));
+
+
+
+
+       MCC_USB_READ();
+
+
+
+
+
+       if(numBytesRead>0){
+         numTokens=getTokens(TokensCom,readBuffer);
+         MCC_USB_WRITE(TokensCom[0],strlen(TokensCom[0]));
+         numBytesRead=0;
+         getComands(comando,TokensCom,numTokens);
+         MCC_USB_WRITE(comando[0].code,1);
+         if(comando[0].code=='G'){
+            G[(int)comando[0].number](&comando[1],numTokens-1);
+         }
+       }
+       numTokens=0;
+       TokensCom[0]=((void*)0);
+
        _delay((unsigned long)((500)*(48000000/4000.0)));
 
 
@@ -9089,7 +9162,7 @@ void MCC_USB_READ(void)
     if( (cdc_trf_state == 0) == 1)
     {
         uint8_t i;
-        uint8_t numBytesRead;
+
 
         numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
 

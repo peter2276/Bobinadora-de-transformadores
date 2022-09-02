@@ -20,4 +20,7 @@ mcc_generated_files/usb/usb_device_cdc.h  \
 mcc_generated_files/ccp2.h  \
 mcc_generated_files/memory.h  \
 mcc_generated_files/adc.h  \
-fila.h 
+fila.h  \
+StringHandler.h  \
+GCODE.h  \
+guia.h 
