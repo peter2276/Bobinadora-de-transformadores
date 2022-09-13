@@ -9055,7 +9055,7 @@ void getComands(Comando_T* comandos, char** tokens, int size);
 # 25 "./guia.h"
     void MY_TMR3_ISR(void);
     void mover(int distancia, int direccion);
-    void mover_2(int distancia);
+    void mover_2(float distancia);
 # 31 "main.c" 2
 
 
@@ -9078,6 +9078,7 @@ void main(void)
 
     SYSTEM_Initialize();
     G[0]=G_00;
+    G[53]=G_53;
 
 
 
@@ -9110,6 +9111,8 @@ void main(void)
 
     numBytesRead=0;
     Comando_T comando[10];
+    char buffer[10];
+    char str[100];
     while (1)
     {
 
@@ -9125,19 +9128,40 @@ void main(void)
 
 
        if(numBytesRead>0){
+          PORTBbits.RB0=0;
+
+          sprintf(str,"%s",readBuffer);
+          _delay((unsigned long)((100)*(48000000/4000.0)));
          numTokens=getTokens(TokensCom,readBuffer);
-         MCC_USB_WRITE(TokensCom[0],strlen(TokensCom[0]));
-         numBytesRead=0;
+
+
          getComands(comando,TokensCom,numTokens);
-         MCC_USB_WRITE(comando[0].code,1);
+         comando[0].code=TokensCom[0][0];
+
+
+
          if(comando[0].code=='G'){
-            G[(int)comando[0].number](&comando[1],numTokens-1);
+
+
+
+
+
+         }
+
+         numBytesRead=0;
+         sprintf(str,"%s %c %c %f %f %d",str,comando[0].code,comando[1].code, comando[0].number, comando[1].number,numTokens);
+         sprintf(str,"%s %s",str,TokensCom[0]);
+
+         for(int i=0; i<sizeof(readBuffer);i++){
+            readBuffer[i]=0;
          }
        }
+       CDCTxService();
+       PORTBbits.RB0=1;
        numTokens=0;
        TokensCom[0]=((void*)0);
 
-       _delay((unsigned long)((500)*(48000000/4000.0)));
+
 
 
     }
@@ -9145,8 +9169,11 @@ void main(void)
 
 
 void MCC_USB_WRITE(char* str, int nBytes){
-   putUSBUSART(str,nBytes);
-   CDCTxService();
+   if( (cdc_trf_state == 0) == 1)
+    {
+      putUSBUSART(str,nBytes);
+   }
+
 }
 void MCC_USB_READ(void)
 {

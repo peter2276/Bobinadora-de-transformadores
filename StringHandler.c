@@ -6,6 +6,8 @@
 
 int getTokens(char** token,char* str){
    char s[2]=" ";
+   char buffer[20];
+   //strcpy(str,buffer);
    token[0] = strtok(str, s);
    if(token[0]==NULL) return 0;
    int i=0;

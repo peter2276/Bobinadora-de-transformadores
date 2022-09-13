@@ -30,17 +30,13 @@
 #include "StringHandler.h"
 #include "guia.h"
 #include "GCODE.h"
-//#include "GCODE.h"
 
 
-void MCC_USB_CDC_DemoTasks(void);
-/*
-                         Main application
- */
 
 static uint8_t readBuffer[64];
 static uint8_t writeBuffer[64];
 uint8_t numBytesRead=0;
+extern uint8_t busy;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
  void (*G[100])(Comando_T* axis, int n);
@@ -49,6 +45,7 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
     G[0]=G_00;
+    G[53]=G_53;
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
@@ -65,7 +62,8 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
     TMR3_StopTimer();
-    TMR3_SetInterruptHandler(MY_TMR3_ISR);
+    TMR2_StopTimer();
+    TMR2_SetInterruptHandler(MY_TMR2_ISR);
     char* send;
     char* TokensCom[10];
     int numTokens=0;
@@ -81,43 +79,71 @@ void main(void)
            //PORTBbits.RB0=1; 
     numBytesRead=0;
     Comando_T comando[10];
+    char buffer[10];
+    char str[200];
+    char comandoLista[30];
+    char* readTokens[10];
+    char s[2]="\n";
+    int i=0;
     while (1)
     {
-       //guia.position=10;
-       //G[0](&guia,1);
-       //guia.position=-10;
-       //__delay_ms(500);
-       //G[0](&guia,1);
-       
-       MCC_USB_READ();
-       //Fila_Agregar(&CommandList,"a casa",strlen("a casa"));
-       //send=FilaPop(&CommandList);
-       //if(send!=0) MCC_USB_WRITE(send,strlen(send));
-       //free(send);
-       
-       if(numBytesRead>0){
-         numTokens=getTokens(TokensCom,readBuffer);
-         //MCC_USB_WRITE(TokensCom[0],strlen(TokensCom[0]));
-         numBytesRead=0;
-         getComands(comando,TokensCom,numTokens);
-         //MCC_USB_WRITE(comando[0].code,1);
-         if(comando[0].code=='G'){
-            G[(int)comando[0].number](&comando[1],numTokens-1);
-         }
+       if(CommandList.size<5){
+         MCC_USB_READ();
+         //Command fetch
+         if(numBytesRead>0){
+            sprintf(str,"XX");
+            readTokens[0]=strtok(readBuffer,s);
+            i=0;
+            while(readTokens[i]!=NULL){
+               Fila_Agregar(&CommandList,readTokens[i],strlen(readBuffer));
+               sprintf(str,"%s %s",str,readTokens[i]);
+               readTokens[i]=NULL;
+               i++;
+            }
+            __delay_ms(10);
+            //sprintf(str,"%s",readBuffer);
+             //__delay_ms(100);
+            numBytesRead=0;
+
+            for(int i=0; i<sizeof(readBuffer);i++){
+               readBuffer[i]=0;
+            }
+            MCC_USB_WRITE(str,50);
+          }
+         
        }
-       numTokens=0;
-       TokensCom[0]=NULL;
-        
-       __delay_ms(500);
-       //Fetch next command
-       //execute 
+      __delay_ms(10);
+      //Command processing
+      if(!busy){
+         if(CommandList.size>0){
+            //sprintf(str,"XX");
+
+            FilaPop(comandoLista,&CommandList);
+            //sprintf(str,"%s %d",str,CommandList.size);
+            numTokens=getTokens(TokensCom,comandoLista);
+            getComands(comando,TokensCom,numTokens);
+            comando[0].code=TokensCom[0][0];
+            if(comando[0].code=='G'){
+               G[(int)comando[0].number](&comando[1],1);
+            }
+            numTokens=0;
+            TokensCom[0]=NULL;
+            
+         }
+      }
+       //USB service function
+       CDCTxService();
+       __delay_ms(100);
     }
 }
 
 
 void MCC_USB_WRITE(char* str, int nBytes){
-   putUSBUSART(str,nBytes);
-   CDCTxService();
+   if( USBUSARTIsTxTrfReady() == true)
+    {
+      putUSBUSART(str,nBytes);
+   }
+   //CDCTxService();
 }
 void MCC_USB_READ(void)
 {
@@ -129,25 +155,8 @@ void MCC_USB_READ(void)
     {
         return;
     }
-
-    if( USBUSARTIsTxTrfReady() == true)
-    {
-        uint8_t i;
-        //uint8_t numBytesRead;
-
-        numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
-
-        for(i=0; i<numBytesRead; i++)
-        {
-            writeBuffer[i] = readBuffer[i];
-        }
-
-        if(numBytesRead > 0)
-        {
-            //putUSBUSART(writeBuffer,numBytesRead);
-        }
-    }
-    CDCTxService();
+      numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
+      //if(readBuffer[0]==0)numBytesRead=0;
 }
 
 //USB interruption

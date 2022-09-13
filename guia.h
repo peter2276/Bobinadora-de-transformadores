@@ -22,9 +22,11 @@ extern "C" {
 #define uSTEP 1
 #define DIRECCION_POSITIVA 1
 #define DIRECCION_NEGATIVA 0
-    void MY_TMR3_ISR(void);
-    void mover(int distancia, int direccion);
-    void mover_2(int distancia);
+#define DISABLE 1
+#define ENABLE 0
+    void MY_TMR2_ISR(void);
+    void mover(float distancia, int direccion);
+    void mover_2(float distancia);
     
 
     

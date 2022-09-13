@@ -7,52 +7,54 @@
 #include "guia.h"
 
 int flag;
-int end_flag=0;
-int pasos;
+uint8_t busy=0;
+volatile int pasos;
 
 
-void MY_TMR3_ISR(void){
+void MY_TMR2_ISR(void){
    STEP_PIN = ~STEP_PIN;
-    TMR3_WriteTimer(127);
+    TMR2_WriteTimer(127);
    if(flag == 0) flag = 1;
    else{
       pasos = pasos - 1; 
       flag=0;
       if(pasos==0){ 
-         TMR3_StopTimer(); 
-         end_flag=0;
+         busy=0;
+         EN_PIN=DISABLE;
+         TMR2_StopTimer(); 
       }
    }
 }
 
-void mover(int distancia, int direccion){
+void mover(float distancia, int direccion){
    
-   while(end_flag==1);
+   while(busy==1);
+   busy=1;
+   EN_PIN=ENABLE;
    pasos = (distancia * STEPS_PER_MM) * uSTEP;
    DIRECTION_PIN = direccion;
    //PREPARACION Y HABILITACION EL TMR3
-   end_flag=1;
    flag=0;
-   TMR3_WriteTimer(0);
-   TMR3_StartTimer();
+   TMR2_WriteTimer(0);
+   TMR2_StartTimer();
    
    return;
 }
 
-void mover_2(int distancia){
-   while(end_flag==1);
-   end_flag=1;
+void mover_2(float distancia){
+   while(busy==1){}; //Espera a que termine ultima operacion
+   busy=1;
+   EN_PIN=ENABLE;
    if(distancia<0){
       DIRECTION_PIN=DIRECCION_NEGATIVA;
-      distancia = distancia*(-1);
+      distancia = -distancia;
    }
-   else DIRECTION_PIN=DIRECCION_POSITIVA;
-   pasos = (distancia * STEPS_PER_MM) * uSTEP;
-   
+   else {DIRECTION_PIN=DIRECCION_POSITIVA;}
+   pasos =(int) (distancia * STEPS_PER_MM * uSTEP);
    //PREPARACION Y HABILITACION EL TMR3
    flag=0;
-   TMR3_WriteTimer(0);
-   TMR3_StartTimer();
+   TMR2_WriteTimer(0);
+   TMR2_StartTimer();
    
    return;
 }
