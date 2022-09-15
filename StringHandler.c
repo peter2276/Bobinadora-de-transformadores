@@ -6,17 +6,16 @@
 
 int getTokens(char** token,char* str){
    char s[2]=" ";
-   char buffer[20];
    //strcpy(str,buffer);
    token[0] = strtok(str, s);
-   if(token[0]==NULL) return 0;
    int i=0;
    /* walk through other tokens */
    while( token[i] != NULL) {
+      //if(token[i][strlen(token[i])]=='\n') token[i][strlen(token[i])]=0;
       i++;
       token[i] = strtok(NULL, s);
    }
-   return i+1;
+   return i;
 }
 
 void getComands(Comando_T* comandos, char** tokens, int size){

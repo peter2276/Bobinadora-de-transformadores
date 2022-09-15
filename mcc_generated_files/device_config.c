@@ -73,11 +73,11 @@
 #pragma config PBADEN = ON    // PORTB A/D Enable bit->PORTB<5:0> pins are configured as analog input channels on Reset
 #pragma config T3CMX = RC0    // Timer3 Clock Input MUX bit->T3CKI function is on RC0
 #pragma config SDOMX = RB3    // SDO Output MUX bit->SDO function is on RB3
-#pragma config MCLRE = ON    // Master Clear Reset Pin Enable->MCLR pin enabled; RE3 input disabled
+#pragma config MCLRE = OFF    // Master Clear Reset Pin Enable->RE3 input pin enabled; external MCLR disabled
 
 // CONFIG4L
 #pragma config STVREN = ON    // Stack Full/Underflow Reset->Stack full/underflow will cause Reset
-#pragma config LVP = ON    // Single-Supply ICSP Enable bit->Single-Supply ICSP enabled if MCLRE is also 1
+#pragma config LVP = OFF    // Single-Supply ICSP Enable bit->Single-Supply ICSP disabled
 #pragma config ICPRT = OFF    // Dedicated In-Circuit Debug/Programming Port Enable->ICPORT disabled
 #pragma config XINST = OFF    // Extended Instruction Set Enable bit->Instruction set extension and Indexed Addressing mode disabled
 #pragma config DEBUG = OFF    // Background Debugger Enable bit->Background debugger disabled, RB6 and RB7 configured as general purpose I/O pins

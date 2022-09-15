@@ -5,16 +5,19 @@
         <group>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/GCODE.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/StringHandler.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/fixed_address_memory.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/GCODE.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/StringHandler.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_common.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_ch9.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/example_mcc_usb_cdc.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c</file>
