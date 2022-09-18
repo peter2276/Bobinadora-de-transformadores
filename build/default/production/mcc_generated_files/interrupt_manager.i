@@ -7904,8 +7904,14 @@ uint8_t TMR2_ReadTimer(void);
 void TMR2_WriteTimer(uint8_t timerVal);
 # 290 "mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 325 "mcc_generated_files/tmr2.h"
-_Bool TMR2_HasOverflowOccured(void);
+# 308 "mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 326 "mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 344 "mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 362 "mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
 # 58 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/tmr0.h" 1
@@ -7915,11 +7921,11 @@ void TMR0_Initialize(void);
 void TMR0_StartTimer(void);
 # 161 "mcc_generated_files/tmr0.h"
 void TMR0_StopTimer(void);
-# 196 "mcc_generated_files/tmr0.h"
-uint8_t TMR0_ReadTimer(void);
-# 235 "mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint8_t timerVal);
-# 271 "mcc_generated_files/tmr0.h"
+# 197 "mcc_generated_files/tmr0.h"
+uint16_t TMR0_ReadTimer(void);
+# 236 "mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint16_t timerVal);
+# 272 "mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
 # 290 "mcc_generated_files/tmr0.h"
 void TMR0_ISR(void);
@@ -9042,6 +9048,10 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
         else if(PIE2bits.TMR3IE == 1 && PIR2bits.TMR3IF == 1)
         {
             TMR3_ISR();
+        }
+        else if(PIE1bits.TMR2IE == 1 && PIR1bits.TMR2IF == 1)
+        {
+            TMR2_ISR();
         }
         else
         {

@@ -33,13 +33,13 @@
 
 
 
-uint8_t readBuffer[100];
-uint8_t writeBuffer[100];
+uint8_t readBuffer[256];
+uint8_t writeBuffer[64];
 uint8_t numBytesRead=0;
 extern uint8_t busy;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
- void (*G[100])(Comando_T* axis, int n);
+ void (*G[10])(Comando_T* axis, int n);
  void executeCommand(Fila_T* CommandList);
 void USBCommandFetch(Fila_T* CommandList);
 void main(void)
@@ -47,7 +47,7 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
     G[0]=G_00;
-    G[53]=G_53;
+    //G[53]=G_53;
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
@@ -80,7 +80,6 @@ void main(void)
   
     EN_PIN=DISABLE;
     int a=0;
-    char buf[20];
     while (1)
     {
       // __delay_ms(2000);
@@ -109,17 +108,18 @@ void main(void)
        CDCTxService();
        __delay_ms(10);
     }
-}char lastToken[10]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+}char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 void USBCommandFetch(Fila_T* CommandList){
-   char* readTokens[10];
+   char* readTokens[30];
    char s[2]="\n";
    int i=0;
-   char str[100];
    int lastTokenFlag=0;
    if(CommandList->size<5){
          MCC_USB_READ();
          //Command fetch
+         
          if(numBytesRead>0){
+            memset(readTokens,0,sizeof(readTokens));
             for(int i=0; i<sizeof(writeBuffer);i++){
                writeBuffer[i]=0;
             } 
@@ -152,13 +152,11 @@ void USBCommandFetch(Fila_T* CommandList){
                i++;
             }                    
             if(lastTokenFlag==0){
-               lastToken[0]=0x00;
+               memset(lastToken,0,sizeof(lastToken));
             }
             //sprintf(writeBuffer,"%sXX%d",writeBuffer,i);
             numBytesRead=0;
-            for(int i=0; i<sizeof(readBuffer);i++){
-               readBuffer[i]=0;
-            } 
+            memset(readBuffer,0,sizeof(readBuffer));
             //MCC_USB_WRITE(writeBuffer,sizeof(writeBuffer));
           }
        }
@@ -167,18 +165,19 @@ void USBCommandFetch(Fila_T* CommandList){
 void executeCommand(Fila_T* CommandList){
    char strCommand[30];
    int numTokens=0;
-   Comando_T comando[10];
-   char* TokensCom[10];
+   Comando_T comando[20];
+   char* TokensCom[20];
    if(busy==0){
          if(CommandList->size>0){
             sprintf(writeBuffer,"");
+            memset(comando,0,sizeof(comando));
+            memset(strCommand,0,sizeof(strCommand));
             FilaPop(strCommand,CommandList);
-            
-            for(int i=0;i<10;i++){
-               //TokensCom[i]=NULL;
+            for(int i=0;i<20;i++){
+               TokensCom[i]=NULL;
             }
             
-            //numTokens=getTokens(TokensCom,strCommand);
+            numTokens=getTokens(TokensCom,strCommand);
             sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
             //getComands(comando,TokensCom,numTokens);
             /*

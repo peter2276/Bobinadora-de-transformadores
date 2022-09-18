@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 "15 ./fila.h
 [; ;./fila.h: 15: typedef struct NodoComando_T{
-[s S1 `*uc 1 `*S1 1 ]
+[s S1 `uc -> 30 `i `*S1 1 ]
 [n S1 NodoComando_T comando next ]
 "20
 [; ;./fila.h: 20: typedef struct Fila_T{
@@ -52,40 +52,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $UE 10  ]
 [e :U 11 ]
 "16
-[; ;fila.c: 16:    NodoComando_T* nuevo;
+[; ;fila.c: 16:    NodoComando_T* nuevo=((void*)0);
 [v _nuevo `*S1 ~T0 @X0 1 a ]
+[e = _nuevo -> -> -> 0 `i `*v `*S1 ]
 "17
-[; ;fila.c: 17:    nuevo = (NodoComando_T*)malloc(sizeof(NodoComando_T));
-[e = _nuevo -> ( _malloc (1 -> # `S1 `ui `*S1 ]
-"18
-[; ;fila.c: 18:    nuevo->comando=(char*)malloc(sizeof(char)*nBytes);
-[e = . *U _nuevo 0 -> ( _malloc (1 * -> # `uc `ui -> _nBytes `ui `*uc ]
-"21
-[; ;fila.c: 21:    if(nuevo==((void*)0)||nuevo->comando==((void*)0)) return 1;
-[e $ ! || == _nuevo -> -> -> 0 `i `*v `*S1 == . *U _nuevo 0 -> -> -> 0 `i `*v `*uc 12  ]
-[e ) -> 1 `i ]
-[e $UE 10  ]
-[e :U 12 ]
-"23
-[; ;fila.c: 23:    strcpy(nuevo->comando,comando);
-[e ( _strcpy (2 , . *U _nuevo 0 -> _comando `*Cuc ]
-"25
-[; ;fila.c: 25:    if(fila->size>0){
-[e $ ! > . *U _fila 2 -> 0 `i 13  ]
+[; ;fila.c: 17:    while(nuevo==((void*)0)){
+[e $U 12  ]
+[e :U 13 ]
 {
-"26
-[; ;fila.c: 26:       fila->cola->next = nuevo;
+"18
+[; ;fila.c: 18:       nuevo = (NodoComando_T*)malloc(sizeof(NodoComando_T));
+[e = _nuevo -> ( _malloc (1 -> # `S1 `ui `*S1 ]
+"19
+[; ;fila.c: 19:    }
+}
+[e :U 12 ]
+"17
+[; ;fila.c: 17:    while(nuevo==((void*)0)){
+[e $ == _nuevo -> -> -> 0 `i `*v `*S1 13  ]
+[e :U 14 ]
+"22
+[; ;fila.c: 22:    strcpy(nuevo->comando,comando);
+[e ( _strcpy (2 , &U . *U _nuevo 0 -> _comando `*Cuc ]
+"24
+[; ;fila.c: 24:    if(fila->size>0){
+[e $ ! > . *U _fila 2 -> 0 `i 15  ]
+{
+"25
+[; ;fila.c: 25:       fila->cola->next = nuevo;
 [e = . *U . *U _fila 1 1 _nuevo ]
-"27
-[; ;fila.c: 27:       fila->cola= nuevo;
+"26
+[; ;fila.c: 26:       fila->cola= nuevo;
 [e = . *U _fila 1 _nuevo ]
+"27
+[; ;fila.c: 27:       nuevo->next=((void*)0);
+[e = . *U _nuevo 1 -> -> -> 0 `i `*v `*S1 ]
 "28
 [; ;fila.c: 28:    }
 }
-[e $U 14  ]
+[e $U 16  ]
 "29
 [; ;fila.c: 29:    else{
-[e :U 13 ]
+[e :U 15 ]
 {
 "30
 [; ;fila.c: 30:       fila->cola= nuevo;
@@ -94,52 +102,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;fila.c: 31:       fila->cabeza=nuevo;
 [e = . *U _fila 0 _nuevo ]
 "32
-[; ;fila.c: 32:    }
-}
-[e :U 14 ]
+[; ;fila.c: 32:       nuevo->next=((void*)0);
+[e = . *U _nuevo 1 -> -> -> 0 `i `*v `*S1 ]
 "33
-[; ;fila.c: 33:    fila->size+=1;
-[e =+ . *U _fila 2 -> 1 `i ]
+[; ;fila.c: 33:    }
+}
+[e :U 16 ]
 "34
-[; ;fila.c: 34:    return 0;
+[; ;fila.c: 34:    fila->size=fila->size+1;
+[e = . *U _fila 2 + . *U _fila 2 -> 1 `i ]
+"35
+[; ;fila.c: 35:    return 0;
 [e ) -> 0 `i ]
 [e $UE 10  ]
-"35
-[; ;fila.c: 35: }
+"36
+[; ;fila.c: 36: }
 [e :UE 10 ]
 }
-"37
-[; ;fila.c: 37: char* FilaPop(Fila_T* fila){
-[v _FilaPop `(*uc ~T0 @X0 1 ef1`*S2 ]
+"38
+[; ;fila.c: 38: int FilaPop(char* str,Fila_T* fila){
+[v _FilaPop `(i ~T0 @X0 1 ef2`*uc`*S2 ]
 {
 [e :U _FilaPop ]
-[v _fila `*S2 ~T0 @X0 1 r1 ]
+[v _str `*uc ~T0 @X0 1 r1 ]
+[v _fila `*S2 ~T0 @X0 1 r2 ]
 [f ]
-"38
-[; ;fila.c: 38:    char* r;
-[v _r `*uc ~T0 @X0 1 a ]
-"39
-[; ;fila.c: 39:    NodoComando_T* viejo;
-[v _viejo `*S1 ~T0 @X0 1 a ]
 "40
-[; ;fila.c: 40:    if(fila->size>0){
-[e $ ! > . *U _fila 2 -> 0 `i 16  ]
-{
+[; ;fila.c: 40:    NodoComando_T* viejo;
+[v _viejo `*S1 ~T0 @X0 1 a ]
 "41
-[; ;fila.c: 41:       fila->size=fila->size-1;
-[e = . *U _fila 2 - . *U _fila 2 -> 1 `i ]
+[; ;fila.c: 41:    if(fila->size>0){
+[e $ ! > . *U _fila 2 -> 0 `i 18  ]
+{
 "42
-[; ;fila.c: 42:       r=fila->cabeza->comando;
-[e = _r . *U . *U _fila 0 0 ]
+[; ;fila.c: 42:       fila->size=fila->size-1;
+[e = . *U _fila 2 - . *U _fila 2 -> 1 `i ]
 "43
-[; ;fila.c: 43:       viejo=fila->cabeza;
-[e = _viejo . *U _fila 0 ]
+[; ;fila.c: 43:       strcpy(str,fila->cabeza->comando);
+[e ( _strcpy (2 , _str -> &U . *U . *U _fila 0 0 `*Cuc ]
 "44
-[; ;fila.c: 44:       fila->cabeza=fila->cabeza->next;
-[e = . *U _fila 0 . *U . *U _fila 0 1 ]
+[; ;fila.c: 44:       viejo=fila->cabeza;
+[e = _viejo . *U _fila 0 ]
 "45
 [; ;fila.c: 45:       if(fila->size==0){
-[e $ ! == . *U _fila 2 -> 0 `i 17  ]
+[e $ ! == . *U _fila 2 -> 0 `i 19  ]
 {
 "46
 [; ;fila.c: 46:          fila->cola=((void*)0);
@@ -150,10 +156,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "48
 [; ;fila.c: 48:       }
 }
-[e $U 18  ]
+[e $U 20  ]
 "49
 [; ;fila.c: 49:       else{
-[e :U 17 ]
+[e :U 19 ]
 {
 "50
 [; ;fila.c: 50:          fila->cabeza=fila->cabeza->next;
@@ -161,23 +167,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "51
 [; ;fila.c: 51:       }
 }
-[e :U 18 ]
+[e :U 20 ]
 "52
 [; ;fila.c: 52:       free(viejo);
 [e ( _free (1 -> _viejo `*v ]
 "53
-[; ;fila.c: 53:       return r;
-[e ) _r ]
-[e $UE 15  ]
+[; ;fila.c: 53:       return 1;
+[e ) -> 1 `i ]
+[e $UE 17  ]
 "54
 [; ;fila.c: 54:    }
 }
-[e :U 16 ]
+[e $U 21  ]
 "55
-[; ;fila.c: 55:    return 0;
-[e ) -> -> 0 `i `*uc ]
-[e $UE 15  ]
+[; ;fila.c: 55:    else str[0]=0;
+[e :U 18 ]
+[e = *U + _str * -> -> 0 `i `x -> -> # *U _str `i `x -> -> 0 `i `uc ]
+[e :U 21 ]
 "56
-[; ;fila.c: 56: }
-[e :UE 15 ]
+[; ;fila.c: 56:    return 0;
+[e ) -> 0 `i ]
+[e $UE 17  ]
+"57
+[; ;fila.c: 57: }
+[e :UE 17 ]
 }

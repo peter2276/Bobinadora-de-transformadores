@@ -136,6 +136,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "345 mcc_generated_files/tmr3.h
 [; ;mcc_generated_files/tmr3.h: 345: void TMR3_ISR(void);
 [v _TMR3_ISR `(v ~T0 @X0 0 ef ]
+"5388 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5388:     struct {
+[s S223 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S223 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ACTIE ]
+"5398
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5398:     struct {
+[s S224 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S224 . . SSP1IE TX1IE RC1IE . STIE ]
+"5406
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5406:     struct {
+[s S225 :7 `uc 1 :1 `uc 1 ]
+[n S225 . . PSPIE ]
+"5387
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5387: typedef union {
+[u S222 `S223 1 `S224 1 `S225 1 ]
+[n S222 . . . . ]
+"5411
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5411: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS222 ~T0 @X0 0 e@3997 ]
+"5487
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5487:     struct {
+[s S227 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S227 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ACTIF ]
+"5497
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5497:     struct {
+[s S228 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S228 . . SSP1IF TX1IF RC1IF . STIF ]
+"5505
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5505:     struct {
+[s S229 :7 `uc 1 :1 `uc 1 ]
+[n S229 . . PSPIF ]
+"5486
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5486: typedef union {
+[u S226 `S227 1 `S228 1 `S229 1 ]
+[n S226 . . . . ]
+"5510
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 5510: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS226 ~T0 @X0 0 e@3998 ]
+"308 mcc_generated_files/tmr2.h
+[; ;mcc_generated_files/tmr2.h: 308: void TMR2_ISR(void);
+[v _TMR2_ISR `(v ~T0 @X0 0 ef ]
 "55 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 55: __asm("SRCON1 equ 0F57h");
 [; <" SRCON1 equ 0F57h ;# ">
@@ -805,32 +846,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 689  ]
 "75
-[; ;mcc_generated_files/interrupt_manager.c: 75:         else
+[; ;mcc_generated_files/interrupt_manager.c: 75:         else if(PIE1bits.TMR2IE == 1 && PIR1bits.TMR2IF == 1)
 [e :U 688 ]
+[e $ ! && == -> . . _PIE1bits 0 1 `i -> 1 `i == -> . . _PIR1bits 0 1 `i -> 1 `i 690  ]
 "76
 [; ;mcc_generated_files/interrupt_manager.c: 76:         {
 {
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:             TMR2_ISR();
+[e ( _TMR2_ISR ..  ]
 "78
 [; ;mcc_generated_files/interrupt_manager.c: 78:         }
 }
+[e $U 691  ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:         else
+[e :U 690 ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:         {
+{
+"82
+[; ;mcc_generated_files/interrupt_manager.c: 82:         }
+}
+[e :U 691 ]
 [e :U 689 ]
 [e :U 687 ]
-"79
-[; ;mcc_generated_files/interrupt_manager.c: 79:     }
-}
-[e $U 690  ]
-"80
-[; ;mcc_generated_files/interrupt_manager.c: 80:     else
-[e :U 685 ]
-"81
-[; ;mcc_generated_files/interrupt_manager.c: 81:     {
-{
 "83
 [; ;mcc_generated_files/interrupt_manager.c: 83:     }
 }
-[e :U 690 ]
-[e :U 684 ]
+[e $U 692  ]
 "84
-[; ;mcc_generated_files/interrupt_manager.c: 84: }
+[; ;mcc_generated_files/interrupt_manager.c: 84:     else
+[e :U 685 ]
+"85
+[; ;mcc_generated_files/interrupt_manager.c: 85:     {
+{
+"87
+[; ;mcc_generated_files/interrupt_manager.c: 87:     }
+}
+[e :U 692 ]
+[e :U 684 ]
+"88
+[; ;mcc_generated_files/interrupt_manager.c: 88: }
 [e :UE 682 ]
 }

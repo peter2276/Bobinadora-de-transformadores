@@ -7903,8 +7903,14 @@ uint8_t TMR2_ReadTimer(void);
 void TMR2_WriteTimer(uint8_t timerVal);
 # 290 "./mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 325 "./mcc_generated_files/tmr2.h"
-_Bool TMR2_HasOverflowOccured(void);
+# 308 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 326 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 344 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 362 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
 # 58 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr0.h" 1
@@ -7914,11 +7920,11 @@ void TMR0_Initialize(void);
 void TMR0_StartTimer(void);
 # 161 "./mcc_generated_files/tmr0.h"
 void TMR0_StopTimer(void);
-# 196 "./mcc_generated_files/tmr0.h"
-uint8_t TMR0_ReadTimer(void);
-# 235 "./mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint8_t timerVal);
-# 271 "./mcc_generated_files/tmr0.h"
+# 197 "./mcc_generated_files/tmr0.h"
+uint16_t TMR0_ReadTimer(void);
+# 236 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint16_t timerVal);
+# 272 "./mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
 # 290 "./mcc_generated_files/tmr0.h"
 void TMR0_ISR(void);
@@ -9021,7 +9027,7 @@ void OSCILLATOR_Initialize(void);
 # 1 "./fila.h" 1
 # 15 "./fila.h"
 typedef struct NodoComando_T{
-   char* comando;
+   char comando[30];
    struct NodoComando_T* next;
 }NodoComando_T;
 
@@ -9032,7 +9038,7 @@ typedef struct Fila_T{
 }Fila_T;
 void Fila_Init(Fila_T* fila);
 int Fila_Agregar(Fila_T* fila, char* comando,int);
-char* FilaPop(Fila_T* CommandList);
+int FilaPop(char* str,Fila_T* CommandList);
 # 28 "main.c" 2
 
 
@@ -9052,9 +9058,9 @@ void getComands(Comando_T* comandos, char** tokens, int size);
 # 30 "main.c" 2
 
 # 1 "./guia.h" 1
-# 25 "./guia.h"
-    void MY_TMR3_ISR(void);
-    void mover(int distancia, int direccion);
+# 27 "./guia.h"
+    void MY_TMR2_ISR(void);
+    void mover(float distancia, int direccion);
     void mover_2(float distancia);
 # 31 "main.c" 2
 
@@ -9062,17 +9068,15 @@ void getComands(Comando_T* comandos, char** tokens, int size);
 
 
 
-void MCC_USB_CDC_DemoTasks(void);
-
-
-
-
-static uint8_t readBuffer[64];
-static uint8_t writeBuffer[64];
+uint8_t readBuffer[200];
+uint8_t writeBuffer[200];
 uint8_t numBytesRead=0;
+extern uint8_t busy;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
  void (*G[100])(Comando_T* axis, int n);
+ void executeCommand(Fila_T* CommandList);
+void USBCommandFetch(Fila_T* CommandList);
 void main(void)
 {
 
@@ -9095,10 +9099,8 @@ void main(void)
 
 
     TMR3_StopTimer();
-    TMR3_SetInterruptHandler(MY_TMR3_ISR);
-    char* send;
-    char* TokensCom[10];
-    int numTokens=0;
+    TMR2_StopTimer();
+    TMR2_SetInterruptHandler(MY_TMR2_ISR);
     Fila_T CommandList;
     Fila_Init(&CommandList);
     PORTBbits.RB0=0;
@@ -9110,65 +9112,117 @@ void main(void)
 
 
     numBytesRead=0;
-    Comando_T comando[10];
-    char buffer[10];
-    char str[100];
+
+    LATBbits.LATB0=1;
+    int a=0;
+    char buf[20];
     while (1)
     {
 
+      USBCommandFetch(&CommandList);
+# 102 "main.c"
+      if(a==4){
+         executeCommand(&CommandList);
+         a=0;
+      }
+      else a++;
 
 
-
-
-
-       MCC_USB_READ();
-
-
-
-
-
-       if(numBytesRead>0){
-          PORTBbits.RB0=0;
-
-          sprintf(str,"%s",readBuffer);
-          _delay((unsigned long)((100)*(48000000/4000.0)));
-         numTokens=getTokens(TokensCom,readBuffer);
-
-
-         getComands(comando,TokensCom,numTokens);
-         comando[0].code=TokensCom[0][0];
-
-
-
-         if(comando[0].code=='G'){
-
-
-
-
-
-         }
-
-         numBytesRead=0;
-         sprintf(str,"%s %c %c %f %f %d",str,comando[0].code,comando[1].code, comando[0].number, comando[1].number,numTokens);
-         sprintf(str,"%s %s",str,TokensCom[0]);
-
-         for(int i=0; i<sizeof(readBuffer);i++){
-            readBuffer[i]=0;
-         }
-       }
        CDCTxService();
-       PORTBbits.RB0=1;
-       numTokens=0;
-       TokensCom[0]=((void*)0);
-
-
-
-
+       _delay((unsigned long)((10)*(48000000/4000.0)));
     }
+}char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+void USBCommandFetch(Fila_T* CommandList){
+   char* readTokens[30];
+   char s[2]="\n";
+   int i=0;
+   char str[200];
+   int lastTokenFlag=0;
+   if(CommandList->size<5){
+         MCC_USB_READ();
+
+
+         if(numBytesRead>0){
+            memset(str,0,sizeof(str));
+            memset(readTokens,0,sizeof(readTokens));
+            for(int i=0; i<sizeof(writeBuffer);i++){
+               writeBuffer[i]=0;
+            }
+
+
+
+
+
+
+            if(readBuffer[numBytesRead-1]!=0x0A){
+               lastTokenFlag=1;
+            }
+            else{
+               lastTokenFlag=0;
+            }
+
+            readTokens[0]=strtok(readBuffer,s);
+            sprintf(lastToken,"%s%s",lastToken,readTokens[0]);
+            Fila_Agregar(CommandList,lastToken,strlen(lastToken));
+
+            readTokens[1]=strtok(((void*)0),s);
+            i=1;
+            while(readTokens[i]!=((void*)0)){
+               readTokens[i+1]=strtok(((void*)0),s);
+               if(readTokens[i+1]!=((void*)0)||lastTokenFlag==0){
+
+                  Fila_Agregar(CommandList,readTokens[i],strlen(readTokens[i]));
+               }
+               else strcpy(lastToken,readTokens[i]);
+               i++;
+            }
+            if(lastTokenFlag==0){
+               lastToken[0]=0x00;
+            }
+
+            numBytesRead=0;
+            for(int i=0; i<sizeof(readBuffer);i++){
+               readBuffer[i]=0;
+            }
+
+          }
+       }
 }
 
+void executeCommand(Fila_T* CommandList){
+   char strCommand[30];
+   int numTokens=0;
+   Comando_T comando[20];
+   char* TokensCom[20];
+   if(busy==0){
+         if(CommandList->size>0){
+            sprintf(writeBuffer,"");
+            memset(comando,0,sizeof(comando));
+            memset(strCommand,0,sizeof(strCommand));
+            FilaPop(strCommand,CommandList);
+            for(int i=0;i<20;i++){
+               TokensCom[i]=((void*)0);
+            }
+
+            numTokens=getTokens(TokensCom,strCommand);
+            sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
+# 197 "main.c"
+            numTokens=0;
+            MCC_USB_WRITE(writeBuffer,strlen(writeBuffer));
+         }
+      }
+   return;
+}
 
 void MCC_USB_WRITE(char* str, int nBytes){
+   if( USBDeviceState < CONFIGURED_STATE )
+    {
+        return;
+    }
+    if( UCONbits.SUSPND== 1 )
+    {
+        return;
+    }
    if( (cdc_trf_state == 0) == 1)
     {
       putUSBUSART(str,nBytes);
@@ -9185,23 +9239,6 @@ void MCC_USB_READ(void)
     {
         return;
     }
+      numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
 
-    if( (cdc_trf_state == 0) == 1)
-    {
-        uint8_t i;
-
-
-        numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
-
-        for(i=0; i<numBytesRead; i++)
-        {
-            writeBuffer[i] = readBuffer[i];
-        }
-
-        if(numBytesRead > 0)
-        {
-
-        }
-    }
-    CDCTxService();
 }

@@ -11,7 +11,7 @@
 # 1 "./fila.h" 1
 # 15 "./fila.h"
 typedef struct NodoComando_T{
-   char* comando;
+   char comando[30];
    struct NodoComando_T* next;
 }NodoComando_T;
 
@@ -22,7 +22,7 @@ typedef struct Fila_T{
 }Fila_T;
 void Fila_Init(Fila_T* fila);
 int Fila_Agregar(Fila_T* fila, char* comando,int);
-char* FilaPop(Fila_T* CommandList);
+int FilaPop(char* str,Fila_T* CommandList);
 # 3 "fila.c" 2
 # 1 "/Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h" 1 3
 
@@ -171,35 +171,35 @@ int Fila_Agregar(Fila_T* fila, char* comando, int nBytes){
 
    if(comando==((void*)0))return 1;
 
-   NodoComando_T* nuevo;
-   nuevo = (NodoComando_T*)malloc(sizeof(NodoComando_T));
-   nuevo->comando=(char*)malloc(sizeof(char)*nBytes);
+   NodoComando_T* nuevo=((void*)0);
+   while(nuevo==((void*)0)){
+      nuevo = (NodoComando_T*)malloc(sizeof(NodoComando_T));
+   }
 
-
-   if(nuevo==((void*)0)||nuevo->comando==((void*)0)) return 1;
 
    strcpy(nuevo->comando,comando);
 
    if(fila->size>0){
       fila->cola->next = nuevo;
       fila->cola= nuevo;
+      nuevo->next=((void*)0);
    }
    else{
       fila->cola= nuevo;
       fila->cabeza=nuevo;
+      nuevo->next=((void*)0);
    }
-   fila->size+=1;
+   fila->size=fila->size+1;
    return 0;
 }
 
-char* FilaPop(Fila_T* fila){
-   char* r;
+int FilaPop(char* str,Fila_T* fila){
+
    NodoComando_T* viejo;
    if(fila->size>0){
       fila->size=fila->size-1;
-      r=fila->cabeza->comando;
+      strcpy(str,fila->cabeza->comando);
       viejo=fila->cabeza;
-      fila->cabeza=fila->cabeza->next;
       if(fila->size==0){
          fila->cola=((void*)0);
          fila->cabeza=((void*)0);
@@ -208,7 +208,8 @@ char* FilaPop(Fila_T* fila){
          fila->cabeza=fila->cabeza->next;
       }
       free(viejo);
-      return r;
+      return 1;
    }
+   else str[0]=0;
    return 0;
 }

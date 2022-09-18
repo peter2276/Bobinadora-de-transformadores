@@ -34,11 +34,11 @@
 #pragma config PBADEN = ON
 #pragma config T3CMX = RC0
 #pragma config SDOMX = RB3
-#pragma config MCLRE = ON
+#pragma config MCLRE = OFF
 
 
 #pragma config STVREN = ON
-#pragma config LVP = ON
+#pragma config LVP = OFF
 #pragma config ICPRT = OFF
 #pragma config XINST = OFF
 #pragma config DEBUG = OFF

@@ -3,7 +3,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./GCODE.h: 14:     typedef struct Comando_T{
 [s S683 `uc 1 `f 1 ]
 [n S683 Comando_T code number ]
-[v F5833 `(v ~T0 @X0 0 tf2`*S683`i ]
+[v F5841 `(v ~T0 @X0 0 tf2`*S683`i ]
 [p mainexit ]
 "78 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 78: void SYSTEM_Initialize(void);
@@ -36,16 +36,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 "155 ./mcc_generated_files/tmr3.h
 [; ;./mcc_generated_files/tmr3.h: 155: void TMR3_StopTimer(void);
 [v _TMR3_StopTimer `(v ~T0 @X0 0 ef ]
-[v F4934 `(v ~T0 @X0 0 tf ]
-"364
-[; ;./mcc_generated_files/tmr3.h: 364:  void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR3_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F4934 ]
-"25 ./guia.h
-[; ;./guia.h: 25:     void MY_TMR3_ISR(void);
-[v _MY_TMR3_ISR `(v ~T0 @X0 0 ef ]
+"164 ./mcc_generated_files/tmr2.h
+[; ;./mcc_generated_files/tmr2.h: 164: void TMR2_StopTimer(void);
+[v _TMR2_StopTimer `(v ~T0 @X0 0 ef ]
+[v F4960 `(v ~T0 @X0 0 tf ]
+"326
+[; ;./mcc_generated_files/tmr2.h: 326:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F4960 ]
+"27 ./guia.h
+[; ;./guia.h: 27:     void MY_TMR2_ISR(void);
+[v _MY_TMR2_ISR `(v ~T0 @X0 0 ef ]
 "15 ./fila.h
 [; ;./fila.h: 15: typedef struct NodoComando_T{
-[s S681 `*uc 1 `*S681 1 ]
+[s S681 `uc -> 30 `i `*S681 1 ]
 [n S681 NodoComando_T comando next ]
 "20
 [; ;./fila.h: 20: typedef struct Fila_T{
@@ -73,38 +76,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2978
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 2978: extern volatile PORTBbits_t PORTBbits __attribute__((address(0xF81)));
 [v _PORTBbits `VS130 ~T0 @X0 0 e@3969 ]
-"45 main.c
-[; ;main.c: 45: void MCC_USB_READ(void);
-[v _MCC_USB_READ `(v ~T0 @X0 0 ef ]
-"109 /Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h
-[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h: 109: int sprintf(char *restrict, const char *restrict, ...);
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"3591
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 3591:     struct {
+[s S157 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S157 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"3601
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 3601:     struct {
+[s S158 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S158 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"3590
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 3590: typedef union {
+[u S156 `S157 1 `S158 1 ]
+[n S156 . . . ]
+"3612
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 3612: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
+[v _LATBbits `VS156 ~T0 @X0 0 e@3978 ]
+"44 main.c
+[; ;main.c: 44: void USBCommandFetch(Fila_T* CommandList);
+[v _USBCommandFetch `(v ~T0 @X0 0 ef1`*S682 ]
+"43
+[; ;main.c: 43:  void executeCommand(Fila_T* CommandList);
+[v _executeCommand `(v ~T0 @X0 0 ef1`*S682 ]
+"844 ./mcc_generated_files/usb/usb_device_cdc.h
+[; ;./mcc_generated_files/usb/usb_device_cdc.h: 844: void CDCTxService(void);
+[v _CDCTxService `(v ~T0 @X0 0 ef ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
+"41 main.c
+[; ;main.c: 41: void MCC_USB_READ(void);
+[v _MCC_USB_READ `(v ~T0 @X0 0 ef ]
+"29 /Applications/microchip/xc8/v2.36/pic/include/c99/string.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"52
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 52: char *strtok (char *restrict, const char *restrict);
+[v _strtok `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"109 /Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h: 109: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"26 ./fila.h
+[; ;./fila.h: 26: int Fila_Agregar(Fila_T* fila, char* comando,int);
+[v _Fila_Agregar `(i ~T0 @X0 0 ef3`*S682`*uc`i ]
+"54 /Applications/microchip/xc8/v2.36/pic/include/c99/string.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"33
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 33: char *strcpy (char *restrict, const char *restrict);
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"39 main.c
+[; ;main.c: 39: extern uint8_t busy;
+[v _busy `uc ~T0 @X0 0 e ]
+"27 ./fila.h
+[; ;./fila.h: 27: int FilaPop(char* str,Fila_T* CommandList);
+[v _FilaPop `(i ~T0 @X0 0 ef2`*uc`*S682 ]
 "15 ./StringHandler.h
 [; ;./StringHandler.h: 15: int getTokens(char** token,char* str);
 [v _getTokens `(i ~T0 @X0 0 ef2`**uc`*uc ]
-"16
-[; ;./StringHandler.h: 16: void getComands(Comando_T* comandos, char** tokens, int size);
-[v _getComands `(v ~T0 @X0 0 ef3`*S683`**uc`i ]
-"844 ./mcc_generated_files/usb/usb_device_cdc.h
-[; ;./mcc_generated_files/usb/usb_device_cdc.h: 844: void CDCTxService(void);
-[v _CDCTxService `(v ~T0 @X0 0 ef ]
-"965
-[; ;./mcc_generated_files/usb/usb_device_cdc.h: 965: extern uint8_t cdc_trf_state;
-[v _cdc_trf_state `uc ~T0 @X0 0 e ]
-"708
-[; ;./mcc_generated_files/usb/usb_device_cdc.h: 708: void putUSBUSART(uint8_t *data, uint8_t Length);
-[v _putUSBUSART `(v ~T0 @X0 0 ef2`*uc`uc ]
-"151 main.c
-[; ;main.c: 151:     if( USBDeviceState < CONFIGURED_STATE )
-[c E5235 0 1 2 4 8 16 32 .. ]
-[n E5235 . DETACHED_STATE ATTACHED_STATE POWERED_STATE DEFAULT_STATE ADR_PENDING_STATE ADDRESS_STATE CONFIGURED_STATE  ]
+"40 main.c
+[; ;main.c: 40: void MCC_USB_WRITE(char* str, int nBytes);
+[v _MCC_USB_WRITE `(v ~T0 @X0 0 ef2`*uc`i ]
+"205
+[; ;main.c: 205:    if( USBDeviceState < CONFIGURED_STATE )
+[c E5242 0 1 2 4 8 16 32 .. ]
+[n E5242 . DETACHED_STATE ATTACHED_STATE POWERED_STATE DEFAULT_STATE ADR_PENDING_STATE ADDRESS_STATE CONFIGURED_STATE  ]
 "2050 ./mcc_generated_files/usb/usb_device.h
 [; ;./mcc_generated_files/usb/usb_device.h: 2050: extern volatile USB_DEVICE_STATE USBDeviceState;
-[v _USBDeviceState `VE5235 ~T0 @X0 0 e ]
+[v _USBDeviceState `VE5242 ~T0 @X0 0 e ]
 "368 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 368:     struct {
 [s S22 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -116,7 +155,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "378
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 378: extern volatile UCONbits_t UCONbits __attribute__((address(0xF60)));
 [v _UCONbits `VS21 ~T0 @X0 0 e@3936 ]
-"666 ./mcc_generated_files/usb/usb_device_cdc.h
+"965 ./mcc_generated_files/usb/usb_device_cdc.h
+[; ;./mcc_generated_files/usb/usb_device_cdc.h: 965: extern uint8_t cdc_trf_state;
+[v _cdc_trf_state `uc ~T0 @X0 0 e ]
+"708
+[; ;./mcc_generated_files/usb/usb_device_cdc.h: 708: void putUSBUSART(uint8_t *data, uint8_t Length);
+[v _putUSBUSART `(v ~T0 @X0 0 ef2`*uc`uc ]
+"666
 [; ;./mcc_generated_files/usb/usb_device_cdc.h: 666: uint8_t getsUSBUSART(uint8_t *buffer, uint8_t len);
 [v _getsUSBUSART `(uc ~T0 @X0 0 ef2`*uc`uc ]
 "55 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h
@@ -716,303 +761,514 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12843
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f25k50.h: 12843: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"41 main.c
-[; ;main.c: 41: static uint8_t readBuffer[64];
-[v _readBuffer `uc ~T0 @X0 -> 64 `i s ]
-"42
-[; ;main.c: 42: static uint8_t writeBuffer[64];
-[v _writeBuffer `uc ~T0 @X0 -> 64 `i s ]
-"43
-[; ;main.c: 43: uint8_t numBytesRead=0;
+"36 main.c
+[; ;main.c: 36: uint8_t readBuffer[200];
+[v _readBuffer `uc ~T0 @X0 -> 200 `i e ]
+"37
+[; ;main.c: 37: uint8_t writeBuffer[200];
+[v _writeBuffer `uc ~T0 @X0 -> 200 `i e ]
+"38
+[; ;main.c: 38: uint8_t numBytesRead=0;
 [v _numBytesRead `uc ~T0 @X0 1 e ]
 [i _numBytesRead
 -> -> 0 `i `uc
 ]
-"46
-[; ;main.c: 46:  void (*G[100])(Comando_T* axis, int n);
-[v _G `*F5833 ~T0 @X0 -> 100 `i e ]
+"42
+[; ;main.c: 42:  void (*G[100])(Comando_T* axis, int n);
+[v _G `*F5841 ~T0 @X0 -> 100 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"47
-[; ;main.c: 47: void main(void)
+"45
+[; ;main.c: 45: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"48
-[; ;main.c: 48: {
+"46
+[; ;main.c: 46: {
 {
 [e :U _main ]
 [f ]
-"50
-[; ;main.c: 50:     SYSTEM_Initialize();
+"48
+[; ;main.c: 48:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"51
-[; ;main.c: 51:     G[0]=G_00;
+"49
+[; ;main.c: 49:     G[0]=G_00;
 [e = *U + &U _G * -> -> -> 0 `i `ui `ux -> -> # *U &U _G `ui `ux &U _G_00 ]
-"52
-[; ;main.c: 52:     G[53]=G_53;
+"50
+[; ;main.c: 50:     G[53]=G_53;
 [e = *U + &U _G * -> -> -> 53 `i `ui `ux -> -> # *U &U _G `ui `ux &U _G_53 ]
-"58
-[; ;main.c: 58:     (INTCONbits.GIE = 1);
+"56
+[; ;main.c: 56:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:     (INTCONbits.PEIE = 1);
+"62
+[; ;main.c: 62:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"68
-[; ;main.c: 68:     TMR3_StopTimer();
+"66
+[; ;main.c: 66:     TMR3_StopTimer();
 [e ( _TMR3_StopTimer ..  ]
+"67
+[; ;main.c: 67:     TMR2_StopTimer();
+[e ( _TMR2_StopTimer ..  ]
+"68
+[; ;main.c: 68:     TMR2_SetInterruptHandler(MY_TMR2_ISR);
+[e ( _TMR2_SetInterruptHandler (1 &U _MY_TMR2_ISR ]
 "69
-[; ;main.c: 69:     TMR3_SetInterruptHandler(MY_TMR3_ISR);
-[e ( _TMR3_SetInterruptHandler (1 &U _MY_TMR3_ISR ]
-"70
-[; ;main.c: 70:     char* send;
-[v _send `*uc ~T0 @X0 1 a ]
-"71
-[; ;main.c: 71:     char* TokensCom[10];
-[v _TokensCom `*uc ~T0 @X0 -> 10 `i a ]
-"72
-[; ;main.c: 72:     int numTokens=0;
-[v _numTokens `i ~T0 @X0 1 a ]
-[e = _numTokens -> 0 `i ]
-"73
-[; ;main.c: 73:     Fila_T CommandList;
+[; ;main.c: 69:     Fila_T CommandList;
 [v _CommandList `S682 ~T0 @X0 1 a ]
-"74
-[; ;main.c: 74:     Fila_Init(&CommandList);
+"70
+[; ;main.c: 70:     Fila_Init(&CommandList);
 [e ( _Fila_Init (1 &U _CommandList ]
-"75
-[; ;main.c: 75:     PORTBbits.RB0=0;
+"71
+[; ;main.c: 71:     PORTBbits.RB0=0;
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"76
-[; ;main.c: 76:     PORTBbits.RB4=1;
+"72
+[; ;main.c: 72:     PORTBbits.RB4=1;
 [e = . . _PORTBbits 0 4 -> -> 1 `i `uc ]
-"77
-[; ;main.c: 77:     PORTBbits.RB5=1;
+"73
+[; ;main.c: 73:     PORTBbits.RB5=1;
 [e = . . _PORTBbits 0 5 -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:     PORTBbits.RB1=0;
+"74
+[; ;main.c: 74:     PORTBbits.RB1=0;
 [e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
-"79
-[; ;main.c: 79:     PORTBbits.RB2=0;
+"75
+[; ;main.c: 75:     PORTBbits.RB2=0;
 [e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
-"80
-[; ;main.c: 80:     PORTBbits.RB3=0;
+"76
+[; ;main.c: 76:     PORTBbits.RB3=0;
 [e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
+"79
+[; ;main.c: 79:     numBytesRead=0;
+[e = _numBytesRead -> -> 0 `i `uc ]
+"81
+[; ;main.c: 81:     LATBbits.LATB0=1;
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+"82
+[; ;main.c: 82:     int a=0;
+[v _a `i ~T0 @X0 1 a ]
+[e = _a -> 0 `i ]
 "83
-[; ;main.c: 83:     numBytesRead=0;
-[e = _numBytesRead -> -> 0 `i `uc ]
+[; ;main.c: 83:     char buf[20];
+[v _buf `uc ~T0 @X0 -> 20 `i a ]
 "84
-[; ;main.c: 84:     Comando_T comando[10];
-[v _comando `S683 ~T0 @X0 -> 10 `i a ]
-"85
-[; ;main.c: 85:     char buffer[10];
-[v _buffer `uc ~T0 @X0 -> 10 `i a ]
-"86
-[; ;main.c: 86:     char str[100];
-[v _str `uc ~T0 @X0 -> 100 `i a ]
-"87
-[; ;main.c: 87:     while (1)
+[; ;main.c: 84:     while (1)
 [e :U 686 ]
-"88
-[; ;main.c: 88:     {
+"85
+[; ;main.c: 85:     {
 {
-"95
-[; ;main.c: 95:        MCC_USB_READ();
-[e ( _MCC_USB_READ ..  ]
-"101
-[; ;main.c: 101:        if(numBytesRead>0){
-[e $ ! > -> _numBytesRead `i -> 0 `i 688  ]
-{
+"87
+[; ;main.c: 87:       USBCommandFetch(&CommandList);
+[e ( _USBCommandFetch (1 &U _CommandList ]
 "102
-[; ;main.c: 102:           PORTBbits.RB0=0;
-[e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 102:       if(a==4){
+[e $ ! == _a -> 4 `i 688  ]
+{
+"103
+[; ;main.c: 103:          executeCommand(&CommandList);
+[e ( _executeCommand (1 &U _CommandList ]
 "104
-[; ;main.c: 104:           sprintf(str,"%s",readBuffer);
-[e ( _sprintf (1 , (. , &U _str :s 1C &U _readBuffer ]
+[; ;main.c: 104:          a=0;
+[e = _a -> 0 `i ]
 "105
-[; ;main.c: 105:           _delay((unsigned long)((100)*(48000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+[; ;main.c: 105:       }
+}
+[e $U 689  ]
 "106
-[; ;main.c: 106:          numTokens=getTokens(TokensCom,readBuffer);
-[e = _numTokens ( _getTokens (2 , &U _TokensCom -> &U _readBuffer `*uc ]
-"109
-[; ;main.c: 109:          getComands(comando,TokensCom,numTokens);
-[e ( _getComands (3 , , &U _comando &U _TokensCom _numTokens ]
-"110
-[; ;main.c: 110:          comando[0].code=TokensCom[0][0];
-[e = . *U + &U _comando * -> -> -> 0 `i `ui `ux -> -> # *U &U _comando `ui `ux 0 *U + *U + &U _TokensCom * -> -> -> 0 `i `ui `ux -> -> # *U &U _TokensCom `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U *U + &U _TokensCom * -> -> -> 0 `i `ui `ux -> -> # *U &U _TokensCom `ui `ux `ui `ux ]
-"114
-[; ;main.c: 114:          if(comando[0].code=='G'){
-[e $ ! == -> . *U + &U _comando * -> -> -> 0 `i `ui `ux -> -> # *U &U _comando `ui `ux 0 `ui -> 71 `ui 689  ]
-{
-"120
-[; ;main.c: 120:          }
-}
-[e :U 689 ]
-"122
-[; ;main.c: 122:          numBytesRead=0;
-[e = _numBytesRead -> -> 0 `i `uc ]
-"123
-[; ;main.c: 123:          sprintf(str,"%s %c %c %f %f %d",str,comando[0].code,comando[1].code, comando[0].number, comando[1].number,numTokens);
-[e ( _sprintf (1 , , , , , , (. , &U _str :s 2C &U _str -> . *U + &U _comando * -> -> -> 0 `i `ui `ux -> -> # *U &U _comando `ui `ux 0 `i -> . *U + &U _comando * -> -> -> 1 `i `ui `ux -> -> # *U &U _comando `ui `ux 0 `i -> . *U + &U _comando * -> -> -> 0 `i `ui `ux -> -> # *U &U _comando `ui `ux 1 `d -> . *U + &U _comando * -> -> -> 1 `i `ui `ux -> -> # *U &U _comando `ui `ux 1 `d _numTokens ]
-"124
-[; ;main.c: 124:          sprintf(str,"%s %s",str,TokensCom[0]);
-[e ( _sprintf (1 , , (. , &U _str :s 3C &U _str *U + &U _TokensCom * -> -> -> 0 `i `ui `ux -> -> # *U &U _TokensCom `ui `ux ]
-"126
-[; ;main.c: 126:          for(int i=0; i<sizeof(readBuffer);i++){
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < -> _i `ui -> # _readBuffer `ui 690  ]
-[e $U 691  ]
-[e :U 690 ]
-{
-"127
-[; ;main.c: 127:             readBuffer[i]=0;
-[e = *U + &U _readBuffer * -> -> _i `ui `ux -> -> # *U &U _readBuffer `ui `ux -> -> 0 `i `uc ]
-"128
-[; ;main.c: 128:          }
-}
-[e ++ _i -> 1 `i ]
-[e $ < -> _i `ui -> # _readBuffer `ui 690  ]
-[e :U 691 ]
-}
-"129
-[; ;main.c: 129:        }
-}
+[; ;main.c: 106:       else a++;
 [e :U 688 ]
-"130
-[; ;main.c: 130:        CDCTxService();
+[e ++ _a -> 1 `i ]
+[e :U 689 ]
+"109
+[; ;main.c: 109:        CDCTxService();
 [e ( _CDCTxService ..  ]
-"131
-[; ;main.c: 131:        PORTBbits.RB0=1;
-[e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"132
-[; ;main.c: 132:        numTokens=0;
-[e = _numTokens -> 0 `i ]
-"133
-[; ;main.c: 133:        TokensCom[0]=((void*)0);
-[e = *U + &U _TokensCom * -> -> -> 0 `i `ui `ux -> -> # *U &U _TokensCom `ui `ux -> -> -> 0 `i `*v `*uc ]
-"138
-[; ;main.c: 138:     }
+"110
+[; ;main.c: 110:        _delay((unsigned long)((10)*(48000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 48000000 `l `d .4000.0 `ul ]
+"111
+[; ;main.c: 111:     }
 }
 [e :U 685 ]
 [e $U 686  ]
 [e :U 687 ]
-"139
-[; ;main.c: 139: }
+"112
+[; ;main.c: 112: }char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 [e :UE 684 ]
 }
+[v _lastToken `uc ~T0 @X0 -> 30 `i e ]
+[i _lastToken
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"113
+[; ;main.c: 113: void USBCommandFetch(Fila_T* CommandList){
+[v _USBCommandFetch `(v ~T0 @X0 1 ef1`*S682 ]
+{
+[e :U _USBCommandFetch ]
+[v _CommandList `*S682 ~T0 @X0 1 r1 ]
+[f ]
+"114
+[; ;main.c: 114:    char* readTokens[30];
+[v _readTokens `*uc ~T0 @X0 -> 30 `i a ]
+[v F5887 `uc ~T0 @X0 -> 2 `i s ]
+[i F5887
+:U ..
+"115
+[; ;main.c: 115:    char s[2]="\n";
+-> 10 `c
+-> 0 `c
+..
+]
+[v _s `uc ~T0 @X0 -> 2 `i a ]
+[e = _s F5887 ]
+"116
+[; ;main.c: 116:    int i=0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"117
+[; ;main.c: 117:    char str[200];
+[v _str `uc ~T0 @X0 -> 200 `i a ]
+"118
+[; ;main.c: 118:    int lastTokenFlag=0;
+[v _lastTokenFlag `i ~T0 @X0 1 a ]
+[e = _lastTokenFlag -> 0 `i ]
+"119
+[; ;main.c: 119:    if(CommandList->size<5){
+[e $ ! < . *U _CommandList 2 -> 5 `i 691  ]
+{
+"120
+[; ;main.c: 120:          MCC_USB_READ();
+[e ( _MCC_USB_READ ..  ]
+"123
+[; ;main.c: 123:          if(numBytesRead>0){
+[e $ ! > -> _numBytesRead `i -> 0 `i 692  ]
+{
+"124
+[; ;main.c: 124:             memset(str,0,sizeof(str));
+[e ( _memset (3 , , -> &U _str `*v -> 0 `i -> # _str `ui ]
+"125
+[; ;main.c: 125:             memset(readTokens,0,sizeof(readTokens));
+[e ( _memset (3 , , -> &U _readTokens `*v -> 0 `i -> # _readTokens `ui ]
+"126
+[; ;main.c: 126:             for(int i=0; i<sizeof(writeBuffer);i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < -> _i `ui -> # _writeBuffer `ui 693  ]
+[e $U 694  ]
+[e :U 693 ]
+{
+"127
+[; ;main.c: 127:                writeBuffer[i]=0;
+[e = *U + &U _writeBuffer * -> -> _i `ui `ux -> -> # *U &U _writeBuffer `ui `ux -> -> 0 `i `uc ]
+"128
+[; ;main.c: 128:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < -> _i `ui -> # _writeBuffer `ui 693  ]
+[e :U 694 ]
+}
+"135
+[; ;main.c: 135:             if(readBuffer[numBytesRead-1]!=0x0A){
+[e $ ! != -> *U + &U _readBuffer * -> -> - -> _numBytesRead `i -> 1 `i `ui `ux -> -> # *U &U _readBuffer `ui `ux `i -> 10 `i 696  ]
+{
+"136
+[; ;main.c: 136:                lastTokenFlag=1;
+[e = _lastTokenFlag -> 1 `i ]
+"137
+[; ;main.c: 137:             }
+}
+[e $U 697  ]
+"138
+[; ;main.c: 138:             else{
+[e :U 696 ]
+{
+"139
+[; ;main.c: 139:                lastTokenFlag=0;
+[e = _lastTokenFlag -> 0 `i ]
+"140
+[; ;main.c: 140:             }
+}
+[e :U 697 ]
 "142
-[; ;main.c: 142: void MCC_USB_WRITE(char* str, int nBytes){
+[; ;main.c: 142:             readTokens[0]=strtok(readBuffer,s);
+[e = *U + &U _readTokens * -> -> -> 0 `i `ui `ux -> -> # *U &U _readTokens `ui `ux ( _strtok (2 , -> &U _readBuffer `*uc -> &U _s `*Cuc ]
+"143
+[; ;main.c: 143:             sprintf(lastToken,"%s%s",lastToken,readTokens[0]);
+[e ( _sprintf (1 , , (. , &U _lastToken :s 1C &U _lastToken *U + &U _readTokens * -> -> -> 0 `i `ui `ux -> -> # *U &U _readTokens `ui `ux ]
+"144
+[; ;main.c: 144:             Fila_Agregar(CommandList,lastToken,strlen(lastToken));
+[e ( _Fila_Agregar (3 , , _CommandList &U _lastToken -> ( _strlen (1 -> &U _lastToken `*Cuc `i ]
+"146
+[; ;main.c: 146:             readTokens[1]=strtok(((void*)0),s);
+[e = *U + &U _readTokens * -> -> -> 1 `i `ui `ux -> -> # *U &U _readTokens `ui `ux ( _strtok (2 , -> -> -> 0 `i `*v `*uc -> &U _s `*Cuc ]
+"147
+[; ;main.c: 147:             i=1;
+[e = _i -> 1 `i ]
+"148
+[; ;main.c: 148:             while(readTokens[i]!=((void*)0)){
+[e $U 698  ]
+[e :U 699 ]
+{
+"149
+[; ;main.c: 149:                readTokens[i+1]=strtok(((void*)0),s);
+[e = *U + &U _readTokens * -> -> + _i -> 1 `i `ui `ux -> -> # *U &U _readTokens `ui `ux ( _strtok (2 , -> -> -> 0 `i `*v `*uc -> &U _s `*Cuc ]
+"150
+[; ;main.c: 150:                if(readTokens[i+1]!=((void*)0)||lastTokenFlag==0){
+[e $ ! || != *U + &U _readTokens * -> -> + _i -> 1 `i `ui `ux -> -> # *U &U _readTokens `ui `ux -> -> -> 0 `i `*v `*uc == _lastTokenFlag -> 0 `i 701  ]
+{
+"152
+[; ;main.c: 152:                   Fila_Agregar(CommandList,readTokens[i],strlen(readTokens[i]));
+[e ( _Fila_Agregar (3 , , _CommandList *U + &U _readTokens * -> -> _i `ui `ux -> -> # *U &U _readTokens `ui `ux -> ( _strlen (1 -> *U + &U _readTokens * -> -> _i `ui `ux -> -> # *U &U _readTokens `ui `ux `*Cuc `i ]
+"153
+[; ;main.c: 153:                }
+}
+[e $U 702  ]
+"154
+[; ;main.c: 154:                else strcpy(lastToken,readTokens[i]);
+[e :U 701 ]
+[e ( _strcpy (2 , &U _lastToken -> *U + &U _readTokens * -> -> _i `ui `ux -> -> # *U &U _readTokens `ui `ux `*Cuc ]
+[e :U 702 ]
+"155
+[; ;main.c: 155:                i++;
+[e ++ _i -> 1 `i ]
+"156
+[; ;main.c: 156:             }
+}
+[e :U 698 ]
+"148
+[; ;main.c: 148:             while(readTokens[i]!=((void*)0)){
+[e $ != *U + &U _readTokens * -> -> _i `ui `ux -> -> # *U &U _readTokens `ui `ux -> -> -> 0 `i `*v `*uc 699  ]
+[e :U 700 ]
+"157
+[; ;main.c: 157:             if(lastTokenFlag==0){
+[e $ ! == _lastTokenFlag -> 0 `i 703  ]
+{
+"158
+[; ;main.c: 158:                lastToken[0]=0x00;
+[e = *U + &U _lastToken * -> -> -> 0 `i `ui `ux -> -> # *U &U _lastToken `ui `ux -> -> 0 `i `uc ]
+"159
+[; ;main.c: 159:             }
+}
+[e :U 703 ]
+"161
+[; ;main.c: 161:             numBytesRead=0;
+[e = _numBytesRead -> -> 0 `i `uc ]
+"162
+[; ;main.c: 162:             for(int i=0; i<sizeof(readBuffer);i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < -> _i `ui -> # _readBuffer `ui 704  ]
+[e $U 705  ]
+[e :U 704 ]
+{
+"163
+[; ;main.c: 163:                readBuffer[i]=0;
+[e = *U + &U _readBuffer * -> -> _i `ui `ux -> -> # *U &U _readBuffer `ui `ux -> -> 0 `i `uc ]
+"164
+[; ;main.c: 164:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < -> _i `ui -> # _readBuffer `ui 704  ]
+[e :U 705 ]
+}
+"166
+[; ;main.c: 166:           }
+}
+[e :U 692 ]
+"167
+[; ;main.c: 167:        }
+}
+[e :U 691 ]
+"168
+[; ;main.c: 168: }
+[e :UE 690 ]
+}
+"170
+[; ;main.c: 170: void executeCommand(Fila_T* CommandList){
+[v _executeCommand `(v ~T0 @X0 1 ef1`*S682 ]
+{
+[e :U _executeCommand ]
+[v _CommandList `*S682 ~T0 @X0 1 r1 ]
+[f ]
+"171
+[; ;main.c: 171:    char strCommand[30];
+[v _strCommand `uc ~T0 @X0 -> 30 `i a ]
+"172
+[; ;main.c: 172:    int numTokens=0;
+[v _numTokens `i ~T0 @X0 1 a ]
+[e = _numTokens -> 0 `i ]
+"173
+[; ;main.c: 173:    Comando_T comando[20];
+[v _comando `S683 ~T0 @X0 -> 20 `i a ]
+"174
+[; ;main.c: 174:    char* TokensCom[20];
+[v _TokensCom `*uc ~T0 @X0 -> 20 `i a ]
+"175
+[; ;main.c: 175:    if(busy==0){
+[e $ ! == -> _busy `i -> 0 `i 708  ]
+{
+"176
+[; ;main.c: 176:          if(CommandList->size>0){
+[e $ ! > . *U _CommandList 2 -> 0 `i 709  ]
+{
+"177
+[; ;main.c: 177:             sprintf(writeBuffer,"");
+[e ( _sprintf (1 , -> &U _writeBuffer `*uc :s 2C ]
+"178
+[; ;main.c: 178:             memset(comando,0,sizeof(comando));
+[e ( _memset (3 , , -> &U _comando `*v -> 0 `i -> # _comando `ui ]
+"179
+[; ;main.c: 179:             memset(strCommand,0,sizeof(strCommand));
+[e ( _memset (3 , , -> &U _strCommand `*v -> 0 `i -> # _strCommand `ui ]
+"180
+[; ;main.c: 180:             FilaPop(strCommand,CommandList);
+[e ( _FilaPop (2 , &U _strCommand _CommandList ]
+"181
+[; ;main.c: 181:             for(int i=0;i<20;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 20 `i 710  ]
+[e $U 711  ]
+[e :U 710 ]
+{
+"182
+[; ;main.c: 182:                TokensCom[i]=((void*)0);
+[e = *U + &U _TokensCom * -> -> _i `ui `ux -> -> # *U &U _TokensCom `ui `ux -> -> -> 0 `i `*v `*uc ]
+"183
+[; ;main.c: 183:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 20 `i 710  ]
+[e :U 711 ]
+}
+"185
+[; ;main.c: 185:             numTokens=getTokens(TokensCom,strCommand);
+[e = _numTokens ( _getTokens (2 , &U _TokensCom &U _strCommand ]
+"186
+[; ;main.c: 186:             sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
+[e ( _sprintf (1 , , , (. , -> &U _writeBuffer `*uc :s 3C &U _writeBuffer &U _strCommand _numTokens ]
+"197
+[; ;main.c: 197:             numTokens=0;
+[e = _numTokens -> 0 `i ]
+"198
+[; ;main.c: 198:             MCC_USB_WRITE(writeBuffer,strlen(writeBuffer));
+[e ( _MCC_USB_WRITE (2 , -> &U _writeBuffer `*uc -> ( _strlen (1 -> &U _writeBuffer `*Cuc `i ]
+"199
+[; ;main.c: 199:          }
+}
+[e :U 709 ]
+"200
+[; ;main.c: 200:       }
+}
+[e :U 708 ]
+"201
+[; ;main.c: 201:    return;
+[e $UE 707  ]
+"202
+[; ;main.c: 202: }
+[e :UE 707 ]
+}
+"204
+[; ;main.c: 204: void MCC_USB_WRITE(char* str, int nBytes){
 [v _MCC_USB_WRITE `(v ~T0 @X0 1 ef2`*uc`i ]
 {
 [e :U _MCC_USB_WRITE ]
 [v _str `*uc ~T0 @X0 1 r1 ]
 [v _nBytes `i ~T0 @X0 1 r2 ]
 [f ]
-"143
-[; ;main.c: 143:    if( (cdc_trf_state == 0) == 1)
-[e $ ! == -> == -> _cdc_trf_state `i -> 0 `i `i -> 1 `i 694  ]
-"144
-[; ;main.c: 144:     {
+"205
+[; ;main.c: 205:    if( USBDeviceState < CONFIGURED_STATE )
+[e $ ! < -> _USBDeviceState `ui -> . `E5242 6 `ui 714  ]
+"206
+[; ;main.c: 206:     {
 {
-"145
-[; ;main.c: 145:       putUSBUSART(str,nBytes);
+"207
+[; ;main.c: 207:         return;
+[e $UE 713  ]
+"208
+[; ;main.c: 208:     }
+}
+[e :U 714 ]
+"209
+[; ;main.c: 209:     if( UCONbits.SUSPND== 1 )
+[e $ ! == -> . . _UCONbits 0 1 `i -> 1 `i 715  ]
+"210
+[; ;main.c: 210:     {
+{
+"211
+[; ;main.c: 211:         return;
+[e $UE 713  ]
+"212
+[; ;main.c: 212:     }
+}
+[e :U 715 ]
+"213
+[; ;main.c: 213:    if( (cdc_trf_state == 0) == 1)
+[e $ ! == -> == -> _cdc_trf_state `i -> 0 `i `i -> 1 `i 716  ]
+"214
+[; ;main.c: 214:     {
+{
+"215
+[; ;main.c: 215:       putUSBUSART(str,nBytes);
 [e ( _putUSBUSART (2 , -> _str `*uc -> _nBytes `uc ]
-"146
-[; ;main.c: 146:    }
+"216
+[; ;main.c: 216:    }
 }
-[e :U 694 ]
-"148
-[; ;main.c: 148: }
-[e :UE 693 ]
+[e :U 716 ]
+"218
+[; ;main.c: 218: }
+[e :UE 713 ]
 }
-"149
-[; ;main.c: 149: void MCC_USB_READ(void)
+"219
+[; ;main.c: 219: void MCC_USB_READ(void)
 [v _MCC_USB_READ `(v ~T0 @X0 1 ef ]
-"150
-[; ;main.c: 150: {
+"220
+[; ;main.c: 220: {
 {
 [e :U _MCC_USB_READ ]
 [f ]
-"151
-[; ;main.c: 151:     if( USBDeviceState < CONFIGURED_STATE )
-[e $ ! < -> _USBDeviceState `ui -> . `E5235 6 `ui 696  ]
-"152
-[; ;main.c: 152:     {
+"221
+[; ;main.c: 221:     if( USBDeviceState < CONFIGURED_STATE )
+[e $ ! < -> _USBDeviceState `ui -> . `E5242 6 `ui 718  ]
+"222
+[; ;main.c: 222:     {
 {
-"153
-[; ;main.c: 153:         return;
-[e $UE 695  ]
-"154
-[; ;main.c: 154:     }
+"223
+[; ;main.c: 223:         return;
+[e $UE 717  ]
+"224
+[; ;main.c: 224:     }
 }
-[e :U 696 ]
-"155
-[; ;main.c: 155:     if( UCONbits.SUSPND== 1 )
-[e $ ! == -> . . _UCONbits 0 1 `i -> 1 `i 697  ]
-"156
-[; ;main.c: 156:     {
+[e :U 718 ]
+"225
+[; ;main.c: 225:     if( UCONbits.SUSPND== 1 )
+[e $ ! == -> . . _UCONbits 0 1 `i -> 1 `i 719  ]
+"226
+[; ;main.c: 226:     {
 {
-"157
-[; ;main.c: 157:         return;
-[e $UE 695  ]
-"158
-[; ;main.c: 158:     }
+"227
+[; ;main.c: 227:         return;
+[e $UE 717  ]
+"228
+[; ;main.c: 228:     }
 }
-[e :U 697 ]
-"160
-[; ;main.c: 160:     if( (cdc_trf_state == 0) == 1)
-[e $ ! == -> == -> _cdc_trf_state `i -> 0 `i `i -> 1 `i 698  ]
-"161
-[; ;main.c: 161:     {
-{
-"162
-[; ;main.c: 162:         uint8_t i;
-[v _i `uc ~T0 @X0 1 a ]
-"165
-[; ;main.c: 165:         numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
+[e :U 719 ]
+"229
+[; ;main.c: 229:       numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
 [e = _numBytesRead ( _getsUSBUSART (2 , &U _readBuffer -> -> # _readBuffer `ui `uc ]
-"167
-[; ;main.c: 167:         for(i=0; i<numBytesRead; i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $U 702  ]
-[e :U 699 ]
-"168
-[; ;main.c: 168:         {
-{
-"169
-[; ;main.c: 169:             writeBuffer[i] = readBuffer[i];
-[e = *U + &U _writeBuffer * -> _i `ux -> -> # *U &U _writeBuffer `ui `ux *U + &U _readBuffer * -> _i `ux -> -> # *U &U _readBuffer `ui `ux ]
-"170
-[; ;main.c: 170:         }
+"231
+[; ;main.c: 231: }
+[e :UE 717 ]
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 702 ]
-[e $ < -> _i `i -> _numBytesRead `i 699  ]
-[e :U 700 ]
-}
-"172
-[; ;main.c: 172:         if(numBytesRead > 0)
-[e $ ! > -> _numBytesRead `i -> 0 `i 703  ]
-"173
-[; ;main.c: 173:         {
-{
-"175
-[; ;main.c: 175:         }
-}
-[e :U 703 ]
-"176
-[; ;main.c: 176:     }
-}
-[e :U 698 ]
-"177
-[; ;main.c: 177:     CDCTxService();
-[e ( _CDCTxService ..  ]
-"178
-[; ;main.c: 178: }
-[e :UE 695 ]
-}
-[p f _sprintf 9183360 ]
-[a 3C 37 115 32 37 115 0 ]
-[a 1C 37 115 0 ]
-[a 2C 37 115 32 37 99 32 37 99 32 37 102 32 37 102 32 37 100 0 ]
+[p f _sprintf 8650880 ]
+[a 1C 37 115 37 115 0 ]
+[a 3C 37 115 37 115 88 88 37 100 10 0 ]
+[a 2C 0 ]
