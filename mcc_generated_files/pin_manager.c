@@ -51,6 +51,8 @@
 
 
 
+void (*IOCC2_InterruptHandler)(void);
+
 
 void PIN_MANAGER_Initialize(void)
 {
@@ -71,7 +73,7 @@ void PIN_MANAGER_Initialize(void)
     /**
     ANSELx registers
     */
-    ANSELC = 0xC4;
+    ANSELC = 0xC0;
     ANSELB = 0x00;
     ANSELA = 0x2F;
 
@@ -83,17 +85,62 @@ void PIN_MANAGER_Initialize(void)
 
 
 
+    /**
+    IOCx registers 
+    */
+    //interrupt on change for group IOCC - flag
+    IOCCbits.IOCC2 = 1;
 
 
 
+    // register default IOC callback functions at runtime; use these methods to register a custom function
+    IOCC2_SetInterruptHandler(IOCC2_DefaultInterruptHandler);
    
+    // Enable IOCI interrupt 
+    INTCONbits.IOCIE = 1; 
     
 }
   
 void PIN_MANAGER_IOC(void)
 {   
+	// interrupt on change for pin IOCC2
+    if(IOCCbits.IOCC2 == 1)
+    {
+        IOCC2_ISR();  
+    }	
 	// Clear global Interrupt-On-Change flag
-    INTCONbits.IOCIF = 0;
+    
+    INTCONbits.IOCIF=0;
+    
+}
+
+/**
+   IOCC2 Interrupt Service Routine
+*/
+void IOCC2_ISR(void) {
+
+    // Add custom IOCC2 code
+
+    // Call the interrupt handler for the callback registered at runtime
+    if(IOCC2_InterruptHandler)
+    {
+        IOCC2_InterruptHandler();
+    }
+}
+
+/**
+  Allows selecting an interrupt handler for IOCC2 at application runtime
+*/
+void IOCC2_SetInterruptHandler(void (* InterruptHandler)(void)){
+    IOCC2_InterruptHandler = InterruptHandler;
+}
+
+/**
+  Default interrupt handler for IOCC2
+*/
+void IOCC2_DefaultInterruptHandler(void){
+    // add your IOCC2 interrupt custom code
+    // or set custom function using IOCC2_SetInterruptHandler()
 }
 
 /**

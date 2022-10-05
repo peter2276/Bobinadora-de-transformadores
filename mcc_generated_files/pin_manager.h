@@ -79,14 +79,6 @@
 #define channel_AN0_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
 #define channel_AN0_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
 
-// get/set RA4 procedures
-#define RA4_SetHigh()            do { LATAbits.LATA4 = 1; } while(0)
-#define RA4_SetLow()             do { LATAbits.LATA4 = 0; } while(0)
-#define RA4_Toggle()             do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0)
-#define RA4_GetValue()              PORTAbits.RA4
-#define RA4_SetDigitalInput()    do { TRISAbits.TRISA4 = 1; } while(0)
-#define RA4_SetDigitalOutput()   do { TRISAbits.TRISA4 = 0; } while(0)
-
 // get/set IO_RB0 aliases
 #define IO_RB0_TRIS                 TRISBbits.TRISB0
 #define IO_RB0_LAT                  LATBbits.LATB0
@@ -217,13 +209,19 @@
 #define IO_RB7_SetPullup()          do { WPUBbits.WPUB7 = 1; } while(0)
 #define IO_RB7_ResetPullup()        do { WPUBbits.WPUB7 = 0; } while(0)
 
-// get/set RC1 procedures
-#define RC1_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
-#define RC1_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
-#define RC1_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
-#define RC1_GetValue()              PORTCbits.RC1
-#define RC1_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
-#define RC1_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+// get/set IO_RC2 aliases
+#define IO_RC2_TRIS                 TRISCbits.TRISC2
+#define IO_RC2_LAT                  LATCbits.LATC2
+#define IO_RC2_PORT                 PORTCbits.RC2
+#define IO_RC2_ANS                  ANSELCbits.ANSC2
+#define IO_RC2_SetHigh()            do { LATCbits.LATC2 = 1; } while(0)
+#define IO_RC2_SetLow()             do { LATCbits.LATC2 = 0; } while(0)
+#define IO_RC2_Toggle()             do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0)
+#define IO_RC2_GetValue()           PORTCbits.RC2
+#define IO_RC2_SetDigitalInput()    do { TRISCbits.TRISC2 = 1; } while(0)
+#define IO_RC2_SetDigitalOutput()   do { TRISCbits.TRISC2 = 0; } while(0)
+#define IO_RC2_SetAnalogMode()      do { ANSELCbits.ANSC2 = 1; } while(0)
+#define IO_RC2_SetDigitalMode()     do { ANSELCbits.ANSC2 = 0; } while(0)
 
 /**
    @Param
@@ -248,6 +246,90 @@ void PIN_MANAGER_Initialize (void);
     PIN_MANAGER_IOC();
  */
 void PIN_MANAGER_IOC(void);
+
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Interrupt on Change Handler for the IOCC2 pin functionality
+ * @Example
+    IOCC2_ISR();
+ */
+void IOCC2_ISR(void);
+
+/**
+  @Summary
+    Interrupt Handler Setter for IOCC2 pin interrupt-on-change functionality
+
+  @Description
+    Allows selecting an interrupt handler for IOCC2 at application runtime
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    InterruptHandler function pointer.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCC2_SetInterruptHandler(MyInterruptHandler);
+
+*/
+void IOCC2_SetInterruptHandler(void (* InterruptHandler)(void));
+
+/**
+  @Summary
+    Dynamic Interrupt Handler for IOCC2 pin
+
+  @Description
+    This is a dynamic interrupt handler to be used together with the IOCC2_SetInterruptHandler() method.
+    This handler is called every time the IOCC2 ISR is executed and allows any function to be registered at runtime.
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCC2_SetInterruptHandler(IOCC2_InterruptHandler);
+
+*/
+extern void (*IOCC2_InterruptHandler)(void);
+
+/**
+  @Summary
+    Default Interrupt Handler for IOCC2 pin
+
+  @Description
+    This is a predefined interrupt handler to be used together with the IOCC2_SetInterruptHandler() method.
+    This handler is called every time the IOCC2 ISR is executed. 
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCC2_SetInterruptHandler(IOCC2_DefaultInterruptHandler);
+
+*/
+void IOCC2_DefaultInterruptHandler(void);
 
 
 

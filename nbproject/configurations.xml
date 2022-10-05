@@ -29,12 +29,12 @@
         <itemPath>mcc_generated_files/tmr2.h</itemPath>
         <itemPath>mcc_generated_files/tmr1.h</itemPath>
         <itemPath>mcc_generated_files/tmr0.h</itemPath>
-        <itemPath>mcc_generated_files/ccp2.h</itemPath>
       </logicalFolder>
       <itemPath>fila.h</itemPath>
       <itemPath>StringHandler.h</itemPath>
       <itemPath>guia.h</itemPath>
       <itemPath>GCODE.h</itemPath>
+      <itemPath>encoder.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -63,13 +63,13 @@
         <itemPath>mcc_generated_files/adc.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/memory.c</itemPath>
-        <itemPath>mcc_generated_files/ccp2.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>fila.c</itemPath>
       <itemPath>StringHandler.c</itemPath>
       <itemPath>GCODE.c</itemPath>
       <itemPath>guia.c</itemPath>
+      <itemPath>encoder.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -1382,6 +1382,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>

@@ -53,7 +53,6 @@ void SYSTEM_Initialize(void)
     INTERRUPT_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
-    CCP2_Initialize();
     USBDeviceInit();
     ADC_Initialize();
     TMR3_Initialize();
@@ -74,9 +73,9 @@ void OSCILLATOR_Initialize(void)
     // ACTSRC SOSC; ACTUD enabled; ACTEN disabled; 
     ACTCON = 0x00;
     // Wait for PLL to stabilize
-    //while(PLLRDY == 0)
-    //{
-    //}
+    while(PLLRDY == 0)
+    {
+    }
 }
 
 

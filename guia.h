@@ -24,7 +24,8 @@ extern "C" {
 #define DIRECCION_NEGATIVA 0
 #define DISABLE 1
 #define ENABLE 0
-    void MY_TMR2_ISR(void);
+    void G00_TMR2_ISR(void);
+    void G01_TMR2_ISR(void);
     void mover(float distancia, int direccion);
     void mover_2(float distancia);
     

@@ -30,28 +30,31 @@
 #include "StringHandler.h"
 #include "guia.h"
 #include "GCODE.h"
+#include "encoder.h"
 
 
 
-uint8_t readBuffer[256];
+uint8_t readBuffer[64];
 uint8_t writeBuffer[64];
 uint8_t numBytesRead=0;
 extern uint8_t busy;
+extern float S;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
- void (*G[10])(Comando_T* axis, int n);
- void executeCommand(Fila_T* CommandList);
+void executeCommand(Fila_T* CommandList);
 void USBCommandFetch(Fila_T* CommandList);
 void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-    G[0]=G_00;
-    //G[53]=G_53;
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
-
+    
+    //Encoder interrupt handler for IOC interruption
+    IOCC2_SetInterruptHandler(Encoder_ISR);
+    TMR0_SetInterruptHandler(Timing_TMR0_ISR);
+    //INTCONbits.IOCIE = 0;
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
 
@@ -65,7 +68,8 @@ void main(void)
     //INTERRUPT_PeripheralInterruptDisable();
     TMR3_StopTimer();
     TMR2_StopTimer();
-    TMR2_SetInterruptHandler(MY_TMR2_ISR);
+    TMR0_StartTimer();
+    
     Fila_T CommandList;
     Fila_Init(&CommandList);
     PORTBbits.RB0=0;
@@ -80,10 +84,11 @@ void main(void)
   
     EN_PIN=DISABLE;
     int a=0;
+    S=0;
     while (1)
     {
       // __delay_ms(2000);
-      USBCommandFetch(&CommandList);
+      //USBCommandFetch(&CommandList);
       //__delay_ms(10);
       //Command processing
        /*
@@ -99,16 +104,22 @@ void main(void)
        FilaPop(writeBuffer,&CommandList);
       */
       if(a==4){
-         executeCommand(&CommandList);
+         //executeCommand(&CommandList);
          a=0;
       }
       else a++;
        //USB service function
-      
+      sprintf(writeBuffer,"\n %.4f",S);
+      MCC_USB_WRITE(writeBuffer,10);
        CDCTxService();
-       __delay_ms(10);
+       memset(writeBuffer,0,sizeof(writeBuffer));
+       S=10;
+       __delay_ms(100);
     }
-}char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+}
+
+
+char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 void USBCommandFetch(Fila_T* CommandList){
    char* readTokens[30];
    char s[2]="\n";
@@ -169,7 +180,7 @@ void executeCommand(Fila_T* CommandList){
    char* TokensCom[20];
    if(busy==0){
          if(CommandList->size>0){
-            sprintf(writeBuffer,"");
+            //sprintf(writeBuffer,"");
             memset(comando,0,sizeof(comando));
             memset(strCommand,0,sizeof(strCommand));
             FilaPop(strCommand,CommandList);
@@ -178,19 +189,26 @@ void executeCommand(Fila_T* CommandList){
             }
             
             numTokens=getTokens(TokensCom,strCommand);
-            sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
-            //getComands(comando,TokensCom,numTokens);
-            /*
+            //sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
+            getComands(comando,TokensCom,numTokens);
+            
             comando[0].code=TokensCom[0][0];
             
             if(comando[0].code=='G'){
-               if(comando[0].number==0){
-                  //G[(int)comando[0].number](&comando[1],1);
+               switch((int)comando[0].number){
+                  case 0:
+                     G_00(&comando[1],1);
+                     break;
+                  case 53:
+                     G_53(&comando[1],1);
+                     break;
+                  default:
+                     break;         
                }
             }
-             */
+             
             numTokens=0;
-            MCC_USB_WRITE(writeBuffer,strlen(writeBuffer));
+            //MCC_USB_WRITE(writeBuffer,strlen(writeBuffer));
          }
       }
    return;
