@@ -66,14 +66,14 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0xFF;
+    TRISA = 0x7F;
     TRISB = 0x00;
-    TRISC = 0xC7;
+    TRISC = 0x87;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0xC0;
+    ANSELC = 0x80;
     ANSELB = 0x00;
     ANSELA = 0x2F;
 
@@ -109,9 +109,7 @@ void PIN_MANAGER_IOC(void)
         IOCC2_ISR();  
     }	
 	// Clear global Interrupt-On-Change flag
-    
-    INTCONbits.IOCIF=0;
-    
+    INTCONbits.IOCIF = 0;
 }
 
 /**

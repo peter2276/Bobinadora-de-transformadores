@@ -58,6 +58,7 @@
 #include "tmr2.h"
 #include "tmr0.h"
 #include "usb/usb.h"
+#include "ccp2.h"
 #include "memory.h"
 #include "adc.h"
 

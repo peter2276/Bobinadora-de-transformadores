@@ -31,6 +31,7 @@
 #include "guia.h"
 #include "GCODE.h"
 #include "encoder.h"
+#include "motor.h"
 
 
 
@@ -85,6 +86,9 @@ void main(void)
     EN_PIN=DISABLE;
     int a=0;
     S=0;
+    encenderRotor();
+    DireccionRotor(CCW);
+    //PORTCbits.RC6=1;
     while (1)
     {
       // __delay_ms(2000);

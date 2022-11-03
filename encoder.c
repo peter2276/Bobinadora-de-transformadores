@@ -4,8 +4,8 @@
 #define nsPERCLOCK 2667
 #define NBITSTMR0 16
 #define NRANURAS 100
-int prescaler;
-float S;
+int prescaler; //Variable para prescaler del TMR0 por software
+float S; //Velocidad luego del filtro
 
 void Timing_TMR0_ISR(){
    
