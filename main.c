@@ -84,15 +84,18 @@ void main(void)
     numBytesRead=0; 
   
     EN_PIN=DISABLE;
+    RESET_PIN=1;
     int a=0;
     S=0;
     encenderRotor();
-    DireccionRotor(CCW);
+    DireccionRotor(CW);
     //PORTCbits.RC6=1;
     while (1)
     {
       // __delay_ms(2000);
-      //USBCommandFetch(&CommandList);
+      USBCommandFetch(&CommandList);
+      __delay_ms(1);
+      executeCommand(&CommandList);
       //__delay_ms(10);
       //Command processing
        /*
@@ -107,17 +110,12 @@ void main(void)
        }
        FilaPop(writeBuffer,&CommandList);
       */
-      if(a==4){
-         //executeCommand(&CommandList);
-         a=0;
-      }
-      else a++;
        //USB service function
       sprintf(writeBuffer,"\n %.4f",S);
       MCC_USB_WRITE(writeBuffer,10);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
-       S=10;
+       S=0;
        __delay_ms(100);
     }
 }
@@ -135,15 +133,6 @@ void USBCommandFetch(Fila_T* CommandList){
          
          if(numBytesRead>0){
             memset(readTokens,0,sizeof(readTokens));
-            for(int i=0; i<sizeof(writeBuffer);i++){
-               writeBuffer[i]=0;
-            } 
-            //sprintf(str,"%s",readBuffer);
-            //MCC_USB_WRITE(readBuffer,50);
-            //Fila_Agregar(CommandList,readBuffer,strlen(readBuffer));
-            //sprintf(writeBuffer,"XX");
-            //sprintf(writeBuffer,"%s%s",writeBuffer,readBuffer);
-            
             if(readBuffer[numBytesRead-1]!=0x0A){
                lastTokenFlag=1;
             }
@@ -154,13 +143,11 @@ void USBCommandFetch(Fila_T* CommandList){
             readTokens[0]=strtok(readBuffer,s);
             sprintf(lastToken,"%s%s",lastToken,readTokens[0]);
             Fila_Agregar(CommandList,lastToken,strlen(lastToken));
-            //sprintf(writeBuffer,"%s%sX",writeBuffer,lastToken);
             readTokens[1]=strtok(NULL,s);
             i=1;
             while(readTokens[i]!=NULL){
                readTokens[i+1]=strtok(NULL,s);
                if(readTokens[i+1]!=NULL||lastTokenFlag==0){
-                  //sprintf(writeBuffer,"%s%sX",writeBuffer,readTokens[i]);
                   Fila_Agregar(CommandList,readTokens[i],strlen(readTokens[i]));     
                }
                else strcpy(lastToken,readTokens[i]);
@@ -169,10 +156,8 @@ void USBCommandFetch(Fila_T* CommandList){
             if(lastTokenFlag==0){
                memset(lastToken,0,sizeof(lastToken));
             }
-            //sprintf(writeBuffer,"%sXX%d",writeBuffer,i);
             numBytesRead=0;
             memset(readBuffer,0,sizeof(readBuffer));
-            //MCC_USB_WRITE(writeBuffer,sizeof(writeBuffer));
           }
        }
 }
@@ -184,35 +169,52 @@ void executeCommand(Fila_T* CommandList){
    char* TokensCom[20];
    if(busy==0){
          if(CommandList->size>0){
-            //sprintf(writeBuffer,"");
+            //Inicializacion
             memset(comando,0,sizeof(comando));
             memset(strCommand,0,sizeof(strCommand));
-            FilaPop(strCommand,CommandList);
             for(int i=0;i<20;i++){
                TokensCom[i]=NULL;
             }
             
+            //Recupera el string de la fina
+            FilaPop(strCommand,CommandList);
+            //recupera el numero de tokens del strings
             numTokens=getTokens(TokensCom,strCommand);
-            //sprintf(writeBuffer,"%s%sXX%d\n",writeBuffer,strCommand,numTokens);
+            //Recupera cada comando del string
             getComands(comando,TokensCom,numTokens);
-            
-            comando[0].code=TokensCom[0][0];
-            
+            sprintf(writeBuffer,"%c \n",(int)comando[1].code);
             if(comando[0].code=='G'){
                switch((int)comando[0].number){
                   case 0:
-                     G_00(&comando[1],1);
+                     G_00(&comando[1],numTokens);
                      break;
                   case 53:
-                     G_53(&comando[1],1);
+                     G_53(&comando[1],numTokens);
                      break;
+                  case 97:
+                     G_97(&comando[1],numTokens);
+                  break;
                   default:
                      break;         
                }
             }
-             
+            if(comando[0].code='M'){
+               switch((int)comando[0].number){
+                  case 3:
+                     M_3(NULL,0);
+                     break;
+                  case 4:
+                     M_4(NULL,0);
+                     break;
+                  case 5:
+                     M_5(NULL,0);
+                     break;
+                  default:
+                     break;
+               }
+            }
             numTokens=0;
-            //MCC_USB_WRITE(writeBuffer,strlen(writeBuffer));
+            //MCC_USB_WRITE(writeBuffer,10);
          }
       }
    return;

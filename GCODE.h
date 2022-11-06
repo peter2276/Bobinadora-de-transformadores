@@ -16,7 +16,12 @@ extern "C" {
        float number;
     }Comando_T;
     void G_00(Comando_T* axis, int n);
+    void G_01(Comando_T* axis, int n);
     void G_53(Comando_T* axis, int n);
+    void G_97(Comando_T* axis, int n);
+    void M_3(Comando_T* axis, int n);
+    void M_4(Comando_T* axis, int n);
+    void M_5(Comando_T* axis, int n);
     
     
 
