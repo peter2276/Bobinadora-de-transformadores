@@ -32,6 +32,7 @@
 #include "GCODE.h"
 #include "encoder.h"
 #include "motor.h"
+#include "Ventana.h"
 
 
 
@@ -40,6 +41,7 @@ uint8_t writeBuffer[64];
 uint8_t numBytesRead=0;
 extern uint8_t busy;
 extern float S;
+extern uint8_t angulo;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
 void executeCommand(Fila_T* CommandList);
@@ -86,9 +88,7 @@ void main(void)
     EN_PIN=DISABLE;
     RESET_PIN=1;
     int a=0;
-    S=0;
-    encenderRotor();
-    DireccionRotor(CW);
+    Encoder_Init();
     //PORTCbits.RC6=1;
     while (1)
     {
@@ -111,12 +111,12 @@ void main(void)
        FilaPop(writeBuffer,&CommandList);
       */
        //USB service function
-      sprintf(writeBuffer,"\n %.4f",S);
+      //sprintf(writeBuffer,"\n %.4f",S);
+      sprintf(writeBuffer,"\n %d",angulo);
       MCC_USB_WRITE(writeBuffer,10);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
-       S=0;
-       __delay_ms(100);
+       __delay_ms(1);
     }
 }
 
