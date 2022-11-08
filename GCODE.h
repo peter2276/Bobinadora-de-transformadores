@@ -15,6 +15,7 @@ extern "C" {
        char code;
        float number;
     }Comando_T;
+    
     void G_00(Comando_T* axis, int n);
     void G_01(Comando_T* axis, int n);
     void G_53(Comando_T* axis, int n);

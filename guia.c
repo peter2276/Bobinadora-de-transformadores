@@ -5,15 +5,17 @@
 #include "mcc_generated_files/mcc.h"
 #include <xc.h>
 #include "guia.h"
+#include "GCODE.h"
 
 
 uint8_t busy=0; //
 volatile int pasos; //Numero de pasos a realizar
 bool flag; //Toggle flag
-
+extern float feed;
+/*
 void G00_TMR2_ISR(void){
    STEP_PIN = ~STEP_PIN;
-   TMR2_WriteTimer(127);
+   //TMR2_WriteTimer(254);
    if(flag == 0) flag = 1;
    else{
       pasos = pasos - 1; 
@@ -25,10 +27,14 @@ void G00_TMR2_ISR(void){
       }
    }
 }
+ * */
+
+#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
 
 void G01_TMR2_ISR(void){
    STEP_PIN = ~STEP_PIN;
-    TMR2_WriteTimer(127);
+   //TMR2_WriteTimer((uint8_t)(feed*feedtoTMR2));
+   //TMR2_WriteTimer(254);
    if(flag == 0) flag = 1;
    else{
       pasos = pasos - 1; 
@@ -76,6 +82,41 @@ void mover(float distancia, int direccion){
    return;
 }
 
+void setMicroStep(int ustep){
+   switch(ustep){
+      case 1:
+         uSTEP_PIN1=0;
+         uSTEP_PIN2=0;
+         uSTEP_PIN3=0;
+         break;
+      case 2:
+         uSTEP_PIN1=1;
+         uSTEP_PIN2=0;
+         uSTEP_PIN3=0;
+         break;
+      case 4:
+         uSTEP_PIN1=0;
+         uSTEP_PIN2=1;
+         uSTEP_PIN3=0;
+         break;
+      case 8:
+         uSTEP_PIN1=1;
+         uSTEP_PIN2=1;
+         uSTEP_PIN3=0;
+         break;
+      case 16:
+         uSTEP_PIN1=1;
+         uSTEP_PIN2=1;
+         uSTEP_PIN3=1;
+         break;
+      default:
+         uSTEP_PIN1=1;
+         uSTEP_PIN2=1;
+         uSTEP_PIN3=1;
+         break;
+   }
+}
+
 /**
    Function:
       void mover_2(float)
@@ -103,10 +144,23 @@ void mover_2(float distancia){
       distancia = -distancia;
    }
    else {DIRECTION_PIN=DIRECCION_POSITIVA;}
-   pasos =(int) (distancia * STEPS_PER_MM * uSTEP);
+   uint8_t ustep=1;
+   //Seleccion de uSTEP
+   while(((uint16_t)((feedtoTMR2*ustep)/feed))>255){
+      ustep=ustep<<1;
+      if(ustep>16){
+         ustep=16;
+         break;
+      }
+   }
+   pasos =(int) (distancia * STEPS_PER_MM * ustep);
+   //setMicroStep(16);
+   setMicroStep(ustep);
    //PREPARACION Y HABILITACION EL TMR3
    flag=0;
    TMR2_WriteTimer(0);
+   //TMR2_LoadPeriodRegister(255);
+   TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/feed));
    TMR2_StartTimer();
    return;
 }

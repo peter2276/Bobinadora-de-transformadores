@@ -13,6 +13,8 @@ extern "C" {
 #endif
 
 #define STEPS_PER_MM 33
+#define nsPERTMR2 1333
+#define postscalerTMR2 16
 #define DIRECTION_PIN PORTBbits.RB7
 #define STEP_PIN LATBbits.LATB6
 #define EN_PIN LATBbits.LATB0
@@ -26,7 +28,7 @@ extern "C" {
 #define DIRECCION_NEGATIVA 0
 #define DISABLE 1
 #define ENABLE 0
-    void G00_TMR2_ISR(void);
+    //void G00_TMR2_ISR(void);
     void G01_TMR2_ISR(void);
     void mover(float distancia, int direccion);
     void mover_2(float distancia);

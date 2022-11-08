@@ -39,6 +39,7 @@
       <itemPath>motor.h</itemPath>
       <itemPath>Ventana.h</itemPath>
       <itemPath>rtwtypes.h</itemPath>
+      <itemPath>torque.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -78,6 +79,7 @@
       <itemPath>rotor.c</itemPath>
       <itemPath>Ventana.c</itemPath>
       <itemPath>Ventana_data.c</itemPath>
+      <itemPath>torque.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -4,7 +4,8 @@
 
 #define nsPERCLOCK 2667
 #define NBITSTMR0 16
-#define NRANURAS 100
+#define NRANURAS 72
+#define encoder PORTCbits.RC2
 int prescaler; //Variable para prescaler del TMR0 por software
 float S; //Velocidad luego del filtro
 
@@ -38,9 +39,9 @@ void Encoder_ISR(){
    float tics = tmr0 + prescaler*(2^NBITSTMR0);
    float promedio[5];
    if(tics>200){
-      angulo++;
-      angulo = angulo%100;
-      rtU.Input= 1000000000/(nsPERCLOCK*tics*NRANURAS);
+      //angulo++;
+      //angulo = angulo%100;
+      rtU.Input= 1000000000*60/(nsPERCLOCK*tics*NRANURAS);
       if(rtU.Input<UMBRAL){
          //rtU.Input=tics;
          Ventana_step();
@@ -58,4 +59,21 @@ void Encoder_ISR(){
 void Encoder_Init(){
    Ventana_initialize();
    return;
+}
+
+bool flag_angulo=0;
+void Actualizar_angulo(){
+   if(encoder==1){
+      if(flag_angulo==0){
+         flag_angulo=1;
+         angulo++;
+         angulo = angulo%NRANURAS;
+      }
+   }else{
+      if(flag_angulo==1){
+         flag_angulo=0;
+         angulo++;
+         angulo = angulo%NRANURAS;
+      }
+   }
 }

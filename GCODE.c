@@ -34,14 +34,15 @@ extern uint8_t busy;
    Return Values:
       None
  */
-
+float feed;
 
 void G_00(Comando_T* axis, int n){
    if(axis==NULL) return;
    float distancia;
+   feed=400;
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
-         TMR2_SetInterruptHandler(G00_TMR2_ISR);
+         TMR2_SetInterruptHandler(G01_TMR2_ISR);
          distancia = axis[i].number - pos_relativa_Z;
          //distancia = axis[i].number;
          pos_relativa_Z= axis[i].number;
@@ -51,17 +52,19 @@ void G_00(Comando_T* axis, int n){
    }
    return;
 }
-float feed;
+
 
 void G_01(Comando_T* axis, int n){
    if(axis==NULL)return;
+   TMR2_SetInterruptHandler(G01_TMR2_ISR);
    float distancia;
-   if(axis[n].code=='F'){
-      feed=axis[n].number;
+   for(int i=0;i<n;i++){
+      if(axis[i].code=='F'){
+         feed=axis[i].number;
+      }
    }
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
-         TMR2_SetInterruptHandler(G01_TMR2_ISR);
          distancia = axis[i].number - pos_relativa_Z;
          //distancia = axis[i].number;
          pos_relativa_Z= axis[i].number;

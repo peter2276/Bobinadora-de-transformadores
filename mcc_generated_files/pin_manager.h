@@ -223,6 +223,20 @@
 #define IO_RC2_SetAnalogMode()      do { ANSELCbits.ANSC2 = 1; } while(0)
 #define IO_RC2_SetDigitalMode()     do { ANSELCbits.ANSC2 = 0; } while(0)
 
+// get/set channel_AN19 aliases
+#define channel_AN19_TRIS                 TRISCbits.TRISC7
+#define channel_AN19_LAT                  LATCbits.LATC7
+#define channel_AN19_PORT                 PORTCbits.RC7
+#define channel_AN19_ANS                  ANSELCbits.ANSC7
+#define channel_AN19_SetHigh()            do { LATCbits.LATC7 = 1; } while(0)
+#define channel_AN19_SetLow()             do { LATCbits.LATC7 = 0; } while(0)
+#define channel_AN19_Toggle()             do { LATCbits.LATC7 = ~LATCbits.LATC7; } while(0)
+#define channel_AN19_GetValue()           PORTCbits.RC7
+#define channel_AN19_SetDigitalInput()    do { TRISCbits.TRISC7 = 1; } while(0)
+#define channel_AN19_SetDigitalOutput()   do { TRISCbits.TRISC7 = 0; } while(0)
+#define channel_AN19_SetAnalogMode()      do { ANSELCbits.ANSC7 = 1; } while(0)
+#define channel_AN19_SetDigitalMode()     do { ANSELCbits.ANSC7 = 0; } while(0)
+
 /**
    @Param
     none

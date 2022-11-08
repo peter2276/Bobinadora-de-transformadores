@@ -3,17 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/StringHandler.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/device_config.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/GCODE.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/encoder.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.h</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/encoder.c</file>
-            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c</file>
         </group>
     </open-files>
 </project-private>

@@ -66,6 +66,7 @@ void Timing_TMR0_ISR();
  */
 void Encoder_ISR();
 void Encoder_Init();
+void Actualizar_angulo();
 
 #ifdef	__cplusplus
 extern "C" {

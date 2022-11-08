@@ -12,6 +12,12 @@
 extern "C" {
 #endif
 
+    
+int FilaPop(char* str);
+int Fila_Agregar(char* comando, int nBytes);
+void Fila_Init();
+/*
+    
 typedef struct NodoComando_T{
    char comando[30];
    struct NodoComando_T* next;
@@ -26,7 +32,7 @@ void Fila_Init(Fila_T* fila);
 int Fila_Agregar(Fila_T* fila, char* comando,int);
 int FilaPop(char* str,Fila_T* CommandList);
 
-
+*/
 
 #ifdef	__cplusplus
 }

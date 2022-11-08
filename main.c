@@ -33,6 +33,7 @@
 #include "encoder.h"
 #include "motor.h"
 #include "Ventana.h"
+#include "torque.h"
 
 
 
@@ -42,10 +43,11 @@ uint8_t numBytesRead=0;
 extern uint8_t busy;
 extern float S;
 extern uint8_t angulo;
+extern uint16_t current;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
-void executeCommand(Fila_T* CommandList);
-void USBCommandFetch(Fila_T* CommandList);
+void executeCommand();
+void USBCommandFetch();
 void main(void)
 {
     // Initialize the device
@@ -73,14 +75,14 @@ void main(void)
     TMR2_StopTimer();
     TMR0_StartTimer();
     
-    Fila_T CommandList;
-    Fila_Init(&CommandList);
+    //Fila_T CommandList;
+    Fila_Init();
     PORTBbits.RB0=0;
     PORTBbits.RB4=1;
     PORTBbits.RB5=1;
-    PORTBbits.RB1=0;
-    PORTBbits.RB2=0;
-    PORTBbits.RB3=0;
+    LATBbits.LATB1=1;
+    LATBbits.LATB2=1;
+    LATBbits.LATB3=1;
            //mover_2(2);
            //PORTBbits.RB0=1; 
     numBytesRead=0; 
@@ -88,14 +90,16 @@ void main(void)
     EN_PIN=DISABLE;
     RESET_PIN=1;
     int a=0;
+    bool flag_angulo;
     Encoder_Init();
+    ADC_SelectChannel(channel_AN19);
     //PORTCbits.RC6=1;
     while (1)
     {
       // __delay_ms(2000);
-      USBCommandFetch(&CommandList);
+      USBCommandFetch();
       __delay_ms(1);
-      executeCommand(&CommandList);
+      executeCommand();
       //__delay_ms(10);
       //Command processing
        /*
@@ -110,24 +114,28 @@ void main(void)
        }
        FilaPop(writeBuffer,&CommandList);
       */
+      Actualizar_angulo();
        //USB service function
       //sprintf(writeBuffer,"\n %.4f",S);
-      sprintf(writeBuffer,"\n %d",angulo);
-      MCC_USB_WRITE(writeBuffer,10);
+      medir_corriente();
+      sprintf(writeBuffer,"\n %.4f|%d|%d",S,angulo,current);
+      MCC_USB_WRITE(writeBuffer,30);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
        __delay_ms(1);
+
     }
 }
 
 
 char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-void USBCommandFetch(Fila_T* CommandList){
+extern uint8_t largo;
+void USBCommandFetch(){
    char* readTokens[30];
    char s[2]="\n";
    int i=0;
    int lastTokenFlag=0;
-   if(CommandList->size<5){
+   if(largo<5){
          MCC_USB_READ();
          //Command fetch
          
@@ -142,13 +150,13 @@ void USBCommandFetch(Fila_T* CommandList){
             
             readTokens[0]=strtok(readBuffer,s);
             sprintf(lastToken,"%s%s",lastToken,readTokens[0]);
-            Fila_Agregar(CommandList,lastToken,strlen(lastToken));
+            Fila_Agregar(lastToken,strlen(lastToken));
             readTokens[1]=strtok(NULL,s);
             i=1;
             while(readTokens[i]!=NULL){
                readTokens[i+1]=strtok(NULL,s);
                if(readTokens[i+1]!=NULL||lastTokenFlag==0){
-                  Fila_Agregar(CommandList,readTokens[i],strlen(readTokens[i]));     
+                  Fila_Agregar(readTokens[i],strlen(readTokens[i]));     
                }
                else strcpy(lastToken,readTokens[i]);
                i++;
@@ -162,13 +170,13 @@ void USBCommandFetch(Fila_T* CommandList){
        }
 }
 
-void executeCommand(Fila_T* CommandList){
+void executeCommand(){
    char strCommand[30];
    int numTokens=0;
    Comando_T comando[20];
    char* TokensCom[20];
    if(busy==0){
-         if(CommandList->size>0){
+         if(largo>0){
             //Inicializacion
             memset(comando,0,sizeof(comando));
             memset(strCommand,0,sizeof(strCommand));
@@ -177,7 +185,7 @@ void executeCommand(Fila_T* CommandList){
             }
             
             //Recupera el string de la fina
-            FilaPop(strCommand,CommandList);
+            FilaPop(strCommand);
             //recupera el numero de tokens del strings
             numTokens=getTokens(TokensCom,strCommand);
             //Recupera cada comando del string
@@ -187,6 +195,9 @@ void executeCommand(Fila_T* CommandList){
                switch((int)comando[0].number){
                   case 0:
                      G_00(&comando[1],numTokens);
+                     break;
+                  case 1:
+                     G_01(&comando[1],numTokens);
                      break;
                   case 53:
                      G_53(&comando[1],numTokens);
@@ -198,7 +209,7 @@ void executeCommand(Fila_T* CommandList){
                      break;         
                }
             }
-            if(comando[0].code='M'){
+            if(comando[0].code=='M'){
                switch((int)comando[0].number){
                   case 3:
                      M_3(NULL,0);
