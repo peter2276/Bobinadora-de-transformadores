@@ -35,11 +35,14 @@ extern uint8_t busy;
       None
  */
 float feed;
-
+double inverse_time_feed;
+/*
 void G_00(Comando_T* axis, int n){
    if(axis==NULL) return;
+   feed_state=g00;
    float distancia;
    feed=400;
+   inverse_time_feed=1/feed;
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
          TMR2_SetInterruptHandler(G01_TMR2_ISR);
@@ -52,15 +55,42 @@ void G_00(Comando_T* axis, int n){
    }
    return;
 }
+*/
+
 
 
 void G_01(Comando_T* axis, int n){
    if(axis==NULL)return;
+   feed_state=g01;
+   TMR2_SetInterruptHandler(G01_TMR2_ISR);
+   float distancia;
+   feed=400;
+   for(int i=0;i<n;i++){
+      if(axis[i].code=='F'){
+         feed=axis[i].number;
+      }
+   }
+   inverse_time_feed=1/feed;
+   for(int i=0;i<n;i++){
+      if(axis[i].code  =='Z' || axis[i].code == 'z'){
+         distancia = axis[i].number - pos_relativa_Z;
+         //distancia = axis[i].number;
+         pos_relativa_Z= axis[i].number;
+         pos_absoluta_Z= pos_absoluta_Z + distancia;
+         mover_2(distancia);
+      }
+   }  
+}
+
+void G_95(Comando_T* axis, int n){
+   if(axis==NULL)return;
+   feed_state=g95;
    TMR2_SetInterruptHandler(G01_TMR2_ISR);
    float distancia;
    for(int i=0;i<n;i++){
       if(axis[i].code=='F'){
-         feed=axis[i].number;
+         feed=axis[i].number/60; 
+         inverse_time_feed=1/feed;
       }
    }
    for(int i=0;i<n;i++){
@@ -71,9 +101,9 @@ void G_01(Comando_T* axis, int n){
          pos_absoluta_Z= pos_absoluta_Z + distancia;
          mover_2(distancia);
       }
-   }
-   
+   }  
 }
+ 
 
 void G_53(Comando_T* axis, int n){
    for(int i=0;i<n;i++){

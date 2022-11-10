@@ -11,7 +11,8 @@
 #ifdef	__cplusplus
 extern "C" {
 #endif
-
+#include <xc.h>
+    
 #define STEPS_PER_MM 33
 #define nsPERTMR2 1333
 #define postscalerTMR2 16
@@ -30,8 +31,10 @@ extern "C" {
 #define ENABLE 0
     //void G00_TMR2_ISR(void);
     void G01_TMR2_ISR(void);
-    void mover(float distancia, int direccion);
+    //void G95_TMR2_ISR(void);
+    //void mover(float distancia, int direccion);
     void mover_2(float distancia);
+    void setMicroStep(uint8_t ustep);
     
 
     

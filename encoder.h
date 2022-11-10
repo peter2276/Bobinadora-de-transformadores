@@ -64,6 +64,7 @@ void Timing_TMR0_ISR();
 
     <p><b>Remarks:</b></p>
  */
+
 void Encoder_ISR();
 void Encoder_Init();
 void Actualizar_angulo();

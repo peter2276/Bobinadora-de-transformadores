@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MaxNumCommands 10
-#define MaxLength 64
+#define MaxLength 32
 char fila[MaxNumCommands][MaxLength];
 uint8_t largo=0;
 uint8_t cabeza=0;

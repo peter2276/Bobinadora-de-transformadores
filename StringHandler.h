@@ -12,8 +12,8 @@
 extern "C" {
 #endif
 #include "GCODE.h"
-int getTokens(char** token,char* str);
-void getComands(Comando_T* comandos, char** tokens, int size);
+uint8_t getTokens(char** token,char* str);
+void getComands(Comando_T* comandos, char** tokens, uint8_t size);
 
 #ifdef	__cplusplus
 }

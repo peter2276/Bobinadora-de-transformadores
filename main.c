@@ -37,13 +37,14 @@
 
 
 
-uint8_t readBuffer[64];
-uint8_t writeBuffer[64];
+uint8_t readBuffer[32];
+uint8_t writeBuffer[32];
 uint8_t numBytesRead=0;
 extern uint8_t busy;
 extern float S;
 extern uint8_t angulo;
 extern uint16_t current;
+extern float feed;
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
 void executeCommand();
@@ -118,7 +119,7 @@ void main(void)
        //USB service function
       //sprintf(writeBuffer,"\n %.4f",S);
       medir_corriente();
-      sprintf(writeBuffer,"\n %.4f|%d|%d",S,angulo,current);
+      sprintf(writeBuffer,"\n %.5f|%d|%d",S,angulo,current);
       MCC_USB_WRITE(writeBuffer,30);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
@@ -170,6 +171,7 @@ void USBCommandFetch(){
        }
 }
 
+
 void executeCommand(){
    char strCommand[30];
    int numTokens=0;
@@ -194,13 +196,18 @@ void executeCommand(){
             if(comando[0].code=='G'){
                switch((int)comando[0].number){
                   case 0:
-                     G_00(&comando[1],numTokens);
+                     //G_00(&comando[1],numTokens);
+                     //feed=400;
+                     G_01(&comando[1],numTokens);
                      break;
                   case 1:
                      G_01(&comando[1],numTokens);
                      break;
                   case 53:
                      G_53(&comando[1],numTokens);
+                     break;
+                  case 95:
+                     G_95(&comando[1],numTokens);
                      break;
                   case 97:
                      G_97(&comando[1],numTokens);

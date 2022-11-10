@@ -15,10 +15,16 @@ extern "C" {
        char code;
        float number;
     }Comando_T;
-    
+    typedef enum{
+        g00=0,
+        g01=1,
+        g95=95
+    }feed_state_t;
+    feed_state_t feed_state;
     void G_00(Comando_T* axis, int n);
     void G_01(Comando_T* axis, int n);
     void G_53(Comando_T* axis, int n);
+    void G_95(Comando_T* axis, int n);
     void G_97(Comando_T* axis, int n);
     void M_3(Comando_T* axis, int n);
     void M_4(Comando_T* axis, int n);
