@@ -3,7 +3,7 @@
 #include "fila.h"
 #include <stdlib.h>
 #include <string.h>
-#define MaxNumCommands 10
+#define MaxNumCommands 20
 #define MaxLength 32
 char fila[MaxNumCommands][MaxLength];
 uint8_t largo=0;

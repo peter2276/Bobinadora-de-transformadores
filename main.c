@@ -34,21 +34,19 @@
 #include "motor.h"
 #include "Ventana.h"
 #include "torque.h"
+#include "CommandHandler.h"
 
 
 
-uint8_t readBuffer[32];
-uint8_t writeBuffer[32];
-uint8_t numBytesRead=0;
+extern uint8_t writeBuffer[32];
+extern uint8_t numBytesRead=0;
 extern uint8_t busy;
 extern float S;
 extern uint8_t angulo;
+extern uint8_t largo;
 extern uint16_t current;
 extern float feed;
-void MCC_USB_WRITE(char* str, int nBytes);
-void MCC_USB_READ(void);
-void executeCommand();
-void USBCommandFetch();
+
 void main(void)
 {
     // Initialize the device
@@ -119,7 +117,7 @@ void main(void)
        //USB service function
       //sprintf(writeBuffer,"\n %.4f",S);
       medir_corriente();
-      sprintf(writeBuffer,"\n %.5f|%d|%d",S,angulo,current);
+      sprintf(writeBuffer,"%.6f %d %d ",S,angulo,current);
       MCC_USB_WRITE(writeBuffer,30);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
@@ -129,143 +127,11 @@ void main(void)
 }
 
 
-char lastToken[30]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-extern uint8_t largo;
-void USBCommandFetch(){
-   char* readTokens[30];
-   char s[2]="\n";
-   int i=0;
-   int lastTokenFlag=0;
-   if(largo<5){
-         MCC_USB_READ();
-         //Command fetch
-         
-         if(numBytesRead>0){
-            memset(readTokens,0,sizeof(readTokens));
-            if(readBuffer[numBytesRead-1]!=0x0A){
-               lastTokenFlag=1;
-            }
-            else{
-               lastTokenFlag=0;
-            }
-            
-            readTokens[0]=strtok(readBuffer,s);
-            sprintf(lastToken,"%s%s",lastToken,readTokens[0]);
-            Fila_Agregar(lastToken,strlen(lastToken));
-            readTokens[1]=strtok(NULL,s);
-            i=1;
-            while(readTokens[i]!=NULL){
-               readTokens[i+1]=strtok(NULL,s);
-               if(readTokens[i+1]!=NULL||lastTokenFlag==0){
-                  Fila_Agregar(readTokens[i],strlen(readTokens[i]));     
-               }
-               else strcpy(lastToken,readTokens[i]);
-               i++;
-            }                    
-            if(lastTokenFlag==0){
-               memset(lastToken,0,sizeof(lastToken));
-            }
-            numBytesRead=0;
-            memset(readBuffer,0,sizeof(readBuffer));
-          }
-       }
-}
 
 
-void executeCommand(){
-   char strCommand[30];
-   int numTokens=0;
-   Comando_T comando[20];
-   char* TokensCom[20];
-   if(busy==0){
-         if(largo>0){
-            //Inicializacion
-            memset(comando,0,sizeof(comando));
-            memset(strCommand,0,sizeof(strCommand));
-            for(int i=0;i<20;i++){
-               TokensCom[i]=NULL;
-            }
-            
-            //Recupera el string de la fina
-            FilaPop(strCommand);
-            //recupera el numero de tokens del strings
-            numTokens=getTokens(TokensCom,strCommand);
-            //Recupera cada comando del string
-            getComands(comando,TokensCom,numTokens);
-            sprintf(writeBuffer,"%c \n",(int)comando[1].code);
-            if(comando[0].code=='G'){
-               switch((int)comando[0].number){
-                  case 0:
-                     //G_00(&comando[1],numTokens);
-                     //feed=400;
-                     G_01(&comando[1],numTokens);
-                     break;
-                  case 1:
-                     G_01(&comando[1],numTokens);
-                     break;
-                  case 53:
-                     G_53(&comando[1],numTokens);
-                     break;
-                  case 95:
-                     G_95(&comando[1],numTokens);
-                     break;
-                  case 97:
-                     G_97(&comando[1],numTokens);
-                  break;
-                  default:
-                     break;         
-               }
-            }
-            if(comando[0].code=='M'){
-               switch((int)comando[0].number){
-                  case 3:
-                     M_3(NULL,0);
-                     break;
-                  case 4:
-                     M_4(NULL,0);
-                     break;
-                  case 5:
-                     M_5(NULL,0);
-                     break;
-                  default:
-                     break;
-               }
-            }
-            numTokens=0;
-            //MCC_USB_WRITE(writeBuffer,10);
-         }
-      }
-   return;
-}
 
-void MCC_USB_WRITE(char* str, int nBytes){
-   if( USBGetDeviceState() < CONFIGURED_STATE )
-    {
-        return;
-    }
-    if( USBIsDeviceSuspended()== true )
-    {
-        return;
-    }
-   if( USBUSARTIsTxTrfReady() == true)
-    {
-      putUSBUSART(str,nBytes);
-   }
-   //CDCTxService();
-}
-void MCC_USB_READ(void)
-{
-    if( USBGetDeviceState() < CONFIGURED_STATE )
-    {
-        return;
-    }
-    if( USBIsDeviceSuspended()== true )
-    {
-        return;
-    }
-      numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
-      //if(numBytesRead>0) MCC_USB_WRITE("command get \n",sizeof("command get \n"));
-}
+
+
 
 //USB interruption
 //Read command 

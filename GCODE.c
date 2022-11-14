@@ -2,6 +2,7 @@
 #include "GCODE.h"
 #include "mcc_generated_files/mcc.h"
 #include "motor.h"
+#include "fila.h"
 float pos_relativa_Z=0;
 float pos_absoluta_Z=0;
 
@@ -16,7 +17,7 @@ float pos_absoluta_Z=0;
 int (*F)(int feed,int nbits); //Retorna valor para setear el timer de pasos
 extern int pasos;
 extern uint8_t busy;
-
+extern uint8_t largo;
 /**
    Function:
       void MY_TMR2_ISR(void)
@@ -89,7 +90,7 @@ void G_95(Comando_T* axis, int n){
    float distancia;
    for(int i=0;i<n;i++){
       if(axis[i].code=='F'){
-         feed=axis[i].number/60; 
+         feed=axis[i].number; 
          inverse_time_feed=1/feed;
       }
    }
@@ -137,4 +138,13 @@ void M_4(Comando_T* axis, int n){
 void M_5(Comando_T* axis, int n){
    apagarRotor();
    return;
+}
+
+void ParadaEmergencia(){
+   apagarRotor();
+   EN_PIN=DISABLE;
+   TMR2_StopTimer();
+   largo=0;
+   busy=0;
+   pos_relativa_Z=0;
 }

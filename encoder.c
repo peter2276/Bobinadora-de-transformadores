@@ -19,7 +19,7 @@ void Timing_TMR0_ISR(){
       //rtU.Input= 0;
       //Ventana_step();
       S=0;
-      inverse_S=1000000;
+      //inverse_S=1000000;
       prescaler=0;
    }
 }
@@ -92,8 +92,8 @@ void Encoder_ISR(){
       salida = y[0]+2*y[1]+y[2];
       y[2]=y[1];
       y[1]=y[0];
-      inverse_S= (nsPERCLOCK*NRANURAS*salida)/(1000000000);
-      S=(1000000/salida)*((double)1000/((double)nsPERCLOCK*NRANURAS));
+      //inverse_S= (nsPERCLOCK*NRANURAS*salida)/(1000000000);
+      S=(1000000*60/salida)*((double)1000/((double)nsPERCLOCK*NRANURAS));
    }
    //Reseteo de prescaler
    prescaler=0;

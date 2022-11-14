@@ -40,6 +40,7 @@
       <itemPath>Ventana.h</itemPath>
       <itemPath>rtwtypes.h</itemPath>
       <itemPath>torque.h</itemPath>
+      <itemPath>CommandHandler.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -56,7 +57,6 @@
           <itemPath>mcc_generated_files/usb/usb_descriptors.c</itemPath>
           <itemPath>mcc_generated_files/usb/usb_device_events.c</itemPath>
           <itemPath>mcc_generated_files/usb/usb_device_cdc.c</itemPath>
-          <itemPath>mcc_generated_files/usb/example_mcc_usb_cdc.c</itemPath>
         </logicalFolder>
         <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
         <itemPath>mcc_generated_files/mcc.c</itemPath>
@@ -80,6 +80,7 @@
       <itemPath>Ventana.c</itemPath>
       <itemPath>Ventana_data.c</itemPath>
       <itemPath>torque.c</itemPath>
+      <itemPath>CommandHandler.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

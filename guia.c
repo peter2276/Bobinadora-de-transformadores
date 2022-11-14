@@ -47,7 +47,7 @@ void G01_TMR2_ISR(void){
          
          break;
       case g95:
-         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep*S/feed));
+         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/(S*feed)));
          break;
       default:
          break;
@@ -166,7 +166,7 @@ void mover_2(float distancia){
          break;
       case g95:
          ustep=1;
-         while((uint16_t)(feedtoTMR2*ustep*S*inverse_time_feed)>255){
+         while((uint16_t)(feedtoTMR2*ustep/(S*feed))>255){
             ustep=ustep<<1;
             if(ustep>16){
                ustep=16;

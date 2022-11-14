@@ -29,6 +29,7 @@ extern "C" {
     void M_3(Comando_T* axis, int n);
     void M_4(Comando_T* axis, int n);
     void M_5(Comando_T* axis, int n);
+    void ParadaEmergencia();
     
     
 
