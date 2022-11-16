@@ -86,57 +86,17 @@ void Encoder_ISR(){
    double salida;
    
    if(tics>400){
-      //angulo++;
-      //angulo = angulo%100;
-      //rtU.Input= 1000000000*60/(nsPERCLOCK*tics*NRANURAS);
-      //rtU.Input=(60*1000/nsPERCLOCK)*(1000/tics)*(1000/NRANURAS);
-         //rtU.Input=tics;
-      //index++;
-      //index=index%5;
-      //S=(promedio[0]+promedio[1]+promedio[2]+promedio[3]+promedio[4])/5;
-      //S=1000*60/(msPERCLOCK*((promedio[0]+promedio[1]+promedio[2]+promedio[3]+promedio[4])/5)*NRANURAS);
-      //S=(double)TICS_TO_REVSEC/tics;
-      //S=1000000000*60/(nsPERCLOCK*tics*NRANURAS);
-      
       y[0]=(double)0.02008*tics+1.56101*y[1]-(double)0.64135*y[2];
       salida = y[0]+2*y[1]+y[2];
       y[2]=y[1];
       y[1]=y[0];
-      //inverse_S= (nsPERCLOCK*NRANURAS*salida)/(60000000000);
-      //inverse_S=(double)(TICS_TO_SECREV*(double)(salida/65536));
-      //S=1/
       S=(1000000*60/salida)*((double)1000/((double)nsPERCLOCK*NRANURAS));
       inverse_S=1/S;
       S_CHANGE=1;
-      /*
-      uint16_t period;
-      switch(feed_state){
-      case g01:
-         
-         break;
-      case g95:
-         if(S_CHANGE){
-            period = (uint16_t)(feedtoTMR2*ustep/(double)(S*feed));
-            if(period<255){
-               TMR2_LoadPeriodRegister((uint8_t)period);
-            }
-            S_CHANGE=0;
-         }
-         break;
-      default:
-         break;
-      }*/
       Actualizar_angulo();
-      //S=(1000000*60/tics)*((double)1000/((double)nsPERCLOCK*NRANURAS));
    }
    //Reseteo de prescaler
    prescaler=0;
-   //TMR0_StartTimer();
-}
-
-void Encoder_Init(){
-   //Ventana_initialize();
-   return;
 }
 
 bool flag_angulo=0;

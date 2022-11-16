@@ -117,7 +117,6 @@ void executeCommand(){
                }
             }
             numTokens=0;
-            //MCC_USB_WRITE(writeBuffer,10);
          }
       }
    return;
@@ -137,7 +136,6 @@ void MCC_USB_WRITE(char* str, int nBytes){
     {
       putUSBUSART(str,nBytes);
    }
-   //CDCTxService();
 }
 void MCC_USB_READ(void)
 {
@@ -150,5 +148,4 @@ void MCC_USB_READ(void)
         return;
     }
       numBytesRead = getsUSBUSART(readBuffer, sizeof(readBuffer));
-      //if(numBytesRead>0) MCC_USB_WRITE("command get \n",sizeof("command get \n"));
 }

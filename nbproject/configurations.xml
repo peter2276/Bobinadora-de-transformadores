@@ -37,8 +37,6 @@
       <itemPath>GCODE.h</itemPath>
       <itemPath>encoder.h</itemPath>
       <itemPath>motor.h</itemPath>
-      <itemPath>Ventana.h</itemPath>
-      <itemPath>rtwtypes.h</itemPath>
       <itemPath>torque.h</itemPath>
       <itemPath>CommandHandler.h</itemPath>
     </logicalFolder>
@@ -77,8 +75,6 @@
       <itemPath>guia.c</itemPath>
       <itemPath>encoder.c</itemPath>
       <itemPath>rotor.c</itemPath>
-      <itemPath>Ventana.c</itemPath>
-      <itemPath>Ventana_data.c</itemPath>
       <itemPath>torque.c</itemPath>
       <itemPath>CommandHandler.c</itemPath>
     </logicalFolder>

@@ -6,12 +6,10 @@
 
 uint8_t getTokens(char** token,char* str){
    char s[2]=" ";
-   //strcpy(str,buffer);
    token[0] = strtok(str, s);
    uint8_t i=0;
    /* walk through other tokens */
    while( token[i] != NULL) {
-      //if(token[i][strlen(token[i])]=='\n') token[i][strlen(token[i])]=0;
       i++;
       token[i] = strtok(NULL, s);
    }

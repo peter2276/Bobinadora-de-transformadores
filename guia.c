@@ -17,22 +17,7 @@ bool flag; //Toggle flag
 extern float feed;
 extern double inverse_time_feed;
 extern double inverse_S;
-/*
-void G00_TMR2_ISR(void){
-   STEP_PIN = ~STEP_PIN;
-   //TMR2_WriteTimer(254);
-   if(flag == 0) flag = 1;
-   else{
-      pasos = pasos - 1; 
-      flag=0;
-      if(pasos==0){ 
-         busy=0;
-         EN_PIN=DISABLE;
-         TMR2_StopTimer(); 
-      }
-   }
-}
- * */
+
 
 //#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
 //#define feedtoTMR2 15625*60/(2*STEPS_PER_MM)
@@ -46,8 +31,6 @@ double distanciaRestante;
 void G01_TMR2_ISR(void){
    uint16_t period;
    STEP_PIN = ~STEP_PIN;
-   //TMR2_WriteTimer((uint8_t)(feed*feedtoTMR2));
-   //TMR2_WriteTimer(254);
    switch(feed_state){
       case g95:
          if(S_CHANGE){

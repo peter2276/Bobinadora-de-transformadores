@@ -48,6 +48,9 @@ extern uint16_t current;
 extern float feed;
 extern float pos_relativa_Z;
 uint8_t error=0;
+
+void inicializar_Sistema(); 
+   
 void main(void)
 {
     // Initialize the device
@@ -71,83 +74,42 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    TMR3_StopTimer();
-    TMR2_StopTimer();
-    TMR0_StartTimer();
     
-    //Fila_T CommandList;
-    Fila_Init();
-    PORTBbits.RB0=0;
-    PORTBbits.RB4=1;
-    PORTBbits.RB5=1;
-    LATBbits.LATB1=1;
-    LATBbits.LATB2=1;
-    LATBbits.LATB3=1;
-           //mover_2(2);
-           //PORTBbits.RB0=1; 
-    numBytesRead=0; 
-  
-    EN_PIN=DISABLE;
-    RESET_PIN=1;
-    int a=0;
-    bool flag_angulo;
-    Encoder_Init();
-    ADC_SelectChannel(channel_AN19);
-    //PORTCbits.RC6=1;
+    inicializar_Sistema();
     while (1)
     {
-      // __delay_ms(2000);
       USBCommandFetch();
       executeCommand();
-      //__delay_ms(10);
-      //Command processing
-       /*
-       if(a==0){
-          sprintf(buf,"N01");
-          Fila_Agregar(&CommandList,buf,strlen(buf));
-          sprintf(buf,"N02");
-          Fila_Agregar(&CommandList,buf,strlen(buf));
-          sprintf(buf,"N03");
-          Fila_Agregar(&CommandList,buf,strlen(buf));
-          a=1;
-       }
-       FilaPop(writeBuffer,&CommandList);
-      */
-      //Actualizar_angulo();
-       //USB service function
-      //sprintf(writeBuffer,"\n %.4f",S);
+      
       medir_corriente();
       sprintf(writeBuffer,"%.3f %.3f %d %d %d ",S,pos_relativa_Z,angulo,current,error);
-      //__delay_ms(0.5);
+      
       MCC_USB_WRITE(writeBuffer,30);
-       CDCTxService();
-       memset(writeBuffer,0,sizeof(writeBuffer));
-       //__delay_ms(0.5);
-       __delay_ms(1);
-
+      CDCTxService();
+      memset(writeBuffer,0,sizeof(writeBuffer));
+      
+      __delay_ms(1);
     }
+}
+
+void inicializar_Sistema(){
+   TMR3_StopTimer();
+   TMR2_StopTimer();
+   TMR0_StartTimer();
+   Fila_Init();
+   PORTBbits.RB0=0;
+   PORTBbits.RB4=1;
+   PORTBbits.RB5=1;
+   LATBbits.LATB1=1;
+   LATBbits.LATB2=1;
+   LATBbits.LATB3=1;
+   numBytesRead=0; 
+   EN_PIN=DISABLE;
+   RESET_PIN=1;
+   ADC_SelectChannel(channel_AN19);
+   
 }
 
 
 
 
-
-
-
-
-//USB interruption
-//Read command 
-//save in a FIFO queue
-//out
-
-//Next angle interrupt (external interrupt)
-//read timer
-//clear timer
-//recalculate speed
-//out
-
-
-
-/**
- End of File
-*/
