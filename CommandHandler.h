@@ -13,8 +13,8 @@ extern "C" {
 #endif
 
 
-void USBCommandFetch();
-void executeCommand();
+void USBCommandFetch(void);
+void executeCommand(void);
 void MCC_USB_WRITE(char* str, int nBytes);
 void MCC_USB_READ(void);
 

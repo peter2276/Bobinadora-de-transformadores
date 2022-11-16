@@ -49,32 +49,10 @@ extern float feed;
 extern float pos_relativa_Z;
 uint8_t error=0;
 
-void inicializar_Sistema(); 
+void inicializar_Sistema(void); 
    
 void main(void)
 {
-    // Initialize the device
-    SYSTEM_Initialize();
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
-    // Use the following macros to:
-    
-    //Encoder interrupt handler for IOC interruption
-    IOCC2_SetInterruptHandler(Encoder_ISR);
-    TMR0_SetInterruptHandler(Timing_TMR0_ISR);
-    //INTCONbits.IOCIE = 0;
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-    
     inicializar_Sistema();
     while (1)
     {
@@ -93,6 +71,13 @@ void main(void)
 }
 
 void inicializar_Sistema(){
+   // Initialize the device
+    SYSTEM_Initialize();
+    IOCC2_SetInterruptHandler(Encoder_ISR);
+    TMR0_SetInterruptHandler(Timing_TMR0_ISR);
+    INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
+    
    TMR3_StopTimer();
    TMR2_StopTimer();
    TMR0_StartTimer();

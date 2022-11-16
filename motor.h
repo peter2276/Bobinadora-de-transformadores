@@ -19,8 +19,8 @@ extern "C" {
 #define CCW 1
 #define CW 0
     
-void apagarRotor();
-void encenderRotor();
+void apagarRotor(void);
+void encenderRotor(void);
 void DireccionRotor(int dir);
 
 

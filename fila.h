@@ -15,7 +15,7 @@ extern "C" {
     
 int FilaPop(char* str);
 int Fila_Agregar(char* comando, int nBytes);
-void Fila_Init();
+void Fila_Init(void);
 /*
     
 typedef struct NodoComando_T{

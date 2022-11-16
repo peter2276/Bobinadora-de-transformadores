@@ -42,7 +42,7 @@
 // Comment a function and leverage automatic documentation with slash star star
 
 
-void Timing_TMR0_ISR();
+void Timing_TMR0_ISR(void);
 
 /**
     <p><b>Function prototype:</b></p>
@@ -65,8 +65,8 @@ void Timing_TMR0_ISR();
     <p><b>Remarks:</b></p>
  */
 
-void Encoder_ISR();
-void Actualizar_angulo();
+void Encoder_ISR(void);
+void Actualizar_angulo(void);
 
 #ifdef	__cplusplus
 extern "C" {
