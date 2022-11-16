@@ -13,7 +13,8 @@ extern "C" {
 #endif
 #include <xc.h>
     
-#define STEPS_PER_MM 33
+#define STEPS_PER_MM 31
+#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
 #define nsPERTMR2 1333
 #define postscalerTMR2 16
 #define DIRECTION_PIN PORTBbits.RB7

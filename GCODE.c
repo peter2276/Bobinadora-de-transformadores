@@ -5,6 +5,7 @@
 #include "fila.h"
 float pos_relativa_Z=0;
 float pos_absoluta_Z=0;
+float objetivo_Z=0;
 
 /*
  Puntero a Funcion FEED
@@ -17,7 +18,6 @@ float pos_absoluta_Z=0;
 int (*F)(int feed,int nbits); //Retorna valor para setear el timer de pasos
 extern int pasos;
 extern uint8_t busy;
-extern uint8_t largo;
 /**
    Function:
       void MY_TMR2_ISR(void)
@@ -62,10 +62,8 @@ void G_00(Comando_T* axis, int n){
 
 void G_01(Comando_T* axis, int n){
    if(axis==NULL)return;
-   feed_state=g01;
    TMR2_SetInterruptHandler(G01_TMR2_ISR);
    float distancia;
-   feed=400;
    for(int i=0;i<n;i++){
       if(axis[i].code=='F'){
          feed=axis[i].number;
@@ -75,17 +73,17 @@ void G_01(Comando_T* axis, int n){
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
          distancia = axis[i].number - pos_relativa_Z;
+         objetivo_Z=axis[i].number;
          //distancia = axis[i].number;
-         pos_relativa_Z= axis[i].number;
-         pos_absoluta_Z= pos_absoluta_Z + distancia;
+         //pos_relativa_Z= axis[i].number;
+         //pos_absoluta_Z= pos_absoluta_Z + distancia;
          mover_2(distancia);
       }
    }  
 }
-
+/*
 void G_95(Comando_T* axis, int n){
    if(axis==NULL)return;
-   feed_state=g95;
    TMR2_SetInterruptHandler(G01_TMR2_ISR);
    float distancia;
    for(int i=0;i<n;i++){
@@ -97,33 +95,37 @@ void G_95(Comando_T* axis, int n){
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
          distancia = axis[i].number - pos_relativa_Z;
+         objetivo_Z=axis[i].number;
          //distancia = axis[i].number;
-         pos_relativa_Z= axis[i].number;
-         pos_absoluta_Z= pos_absoluta_Z + distancia;
+         //pos_relativa_Z= axis[i].number;
+         //pos_absoluta_Z= pos_absoluta_Z + distancia;
          mover_2(distancia);
       }
    }  
-}
+}*/
  
-
+extern uint8_t angulo;
 void G_53(Comando_T* axis, int n){
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
          pos_relativa_Z=axis[i].number;
       }
    }
+   angulo=0;
    return;
 }
 
 void G_97(Comando_T* axis, int n){
    if(n==0) return;
+   if(n>1){
+      if(axis[1].code == 'M'){
+         if(axis[1].number==3) M_3(NULL,0);
+         if(axis[1].number==4) M_4(NULL,0);
+         __delay_ms(1);
+      }
+   }
    if(axis[0].code == 'S'){
       encenderRotor();
-   }
-   if(n==1) return;
-   if(axis[1].code == 'M'){
-      if(axis[1].number==3) M_3(NULL,0);
-      if(axis[1].number==4) M_4(NULL,0);
    }
    return;
 }
@@ -141,10 +143,10 @@ void M_5(Comando_T* axis, int n){
 }
 
 void ParadaEmergencia(){
-   apagarRotor();
    EN_PIN=DISABLE;
    TMR2_StopTimer();
-   largo=0;
+   Fila_Init();
    busy=0;
    pos_relativa_Z=0;
+   apagarRotor();
 }

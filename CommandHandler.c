@@ -53,7 +53,7 @@ void USBCommandFetch(){
           }
        }
 }
-
+extern float feed;
 void executeCommand(){
    char strCommand[30];
    int numTokens=0;
@@ -79,17 +79,20 @@ void executeCommand(){
                switch((int)comando[0].number){
                   case 0:
                      //G_00(&comando[1],numTokens);
-                     //feed=400;
+                     feed=400;
+                     feed_state=g01;
                      G_01(&comando[1],numTokens);
                      break;
                   case 1:
+                     feed_state=g01;
                      G_01(&comando[1],numTokens);
                      break;
                   case 53:
                      G_53(&comando[1],numTokens);
                      break;
                   case 95:
-                     G_95(&comando[1],numTokens);
+                     feed_state=g95;
+                     G_01(&comando[1],numTokens);
                      break;
                   case 97:
                      G_97(&comando[1],numTokens);

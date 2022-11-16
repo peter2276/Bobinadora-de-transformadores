@@ -1,6 +1,9 @@
 #include <xc.h>
 #include "mcc_generated_files/mcc.h"
 #include "Ventana.h"
+#include "encoder.h"
+#include "guia.h"
+#include "GCODE.h"
 
 #define nsPERCLOCK 2667
 #define msPERCLOCK 0.002667
@@ -62,6 +65,12 @@ void Encoder_ISR(){
 }*/
 
 #define TICS_TO_REVSEC 1000000000*60/(nsPERCLOCK*NRANURAS)
+#define TICS_TO_SECREV (double)(nsPERCLOCK*NRANURAS)/(1000000000*60)*65536
+bool S_CHANGE;
+extern feed_state_t feed_state;
+extern float feed;
+extern double inverse_time_feed;
+extern uint8_t ustep;
 void Encoder_ISR(){
    //TMR0_StopTimer();
    
@@ -88,12 +97,37 @@ void Encoder_ISR(){
       //S=1000*60/(msPERCLOCK*((promedio[0]+promedio[1]+promedio[2]+promedio[3]+promedio[4])/5)*NRANURAS);
       //S=(double)TICS_TO_REVSEC/tics;
       //S=1000000000*60/(nsPERCLOCK*tics*NRANURAS);
-      y[0]=0.02008*tics+1.56101*y[1]-0.64135*y[2];
+      
+      y[0]=(double)0.02008*tics+1.56101*y[1]-(double)0.64135*y[2];
       salida = y[0]+2*y[1]+y[2];
       y[2]=y[1];
       y[1]=y[0];
-      //inverse_S= (nsPERCLOCK*NRANURAS*salida)/(1000000000);
+      //inverse_S= (nsPERCLOCK*NRANURAS*salida)/(60000000000);
+      //inverse_S=(double)(TICS_TO_SECREV*(double)(salida/65536));
+      //S=1/
       S=(1000000*60/salida)*((double)1000/((double)nsPERCLOCK*NRANURAS));
+      inverse_S=1/S;
+      S_CHANGE=1;
+      /*
+      uint16_t period;
+      switch(feed_state){
+      case g01:
+         
+         break;
+      case g95:
+         if(S_CHANGE){
+            period = (uint16_t)(feedtoTMR2*ustep/(double)(S*feed));
+            if(period<255){
+               TMR2_LoadPeriodRegister((uint8_t)period);
+            }
+            S_CHANGE=0;
+         }
+         break;
+      default:
+         break;
+      }*/
+      Actualizar_angulo();
+      //S=(1000000*60/tics)*((double)1000/((double)nsPERCLOCK*NRANURAS));
    }
    //Reseteo de prescaler
    prescaler=0;

@@ -6,12 +6,14 @@
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/GCODE.h</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/rotor.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/StringHandler.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/GCODE.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c</file>
             <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/CommandHandler.c</file>
+            <file>file:/Users/pedro/MPLABXProjects/Bobinadora.X/encoder.c</file>
         </group>
     </open-files>
 </project-private>

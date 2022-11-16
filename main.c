@@ -46,7 +46,8 @@ extern uint8_t angulo;
 extern uint8_t largo;
 extern uint16_t current;
 extern float feed;
-
+extern float pos_relativa_Z;
+uint8_t error=0;
 void main(void)
 {
     // Initialize the device
@@ -97,7 +98,6 @@ void main(void)
     {
       // __delay_ms(2000);
       USBCommandFetch();
-      __delay_ms(1);
       executeCommand();
       //__delay_ms(10);
       //Command processing
@@ -113,14 +113,16 @@ void main(void)
        }
        FilaPop(writeBuffer,&CommandList);
       */
-      Actualizar_angulo();
+      //Actualizar_angulo();
        //USB service function
       //sprintf(writeBuffer,"\n %.4f",S);
       medir_corriente();
-      sprintf(writeBuffer,"%.6f %d %d ",S,angulo,current);
+      sprintf(writeBuffer,"%.3f %.3f %d %d %d ",S,pos_relativa_Z,angulo,current,error);
+      //__delay_ms(0.5);
       MCC_USB_WRITE(writeBuffer,30);
        CDCTxService();
        memset(writeBuffer,0,sizeof(writeBuffer));
+       //__delay_ms(0.5);
        __delay_ms(1);
 
     }

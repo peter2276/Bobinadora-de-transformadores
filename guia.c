@@ -34,32 +34,57 @@ void G00_TMR2_ISR(void){
 }
  * */
 
-#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
+//#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
+//#define feedtoTMR2 15625*60/(2*STEPS_PER_MM)
+#define MM_PER_STEP (float)1/STEPS_PER_MM
 feed_state_t feed_state;
 
-
+extern float pos_relativa_Z;
+extern float objetivo_Z;
+extern bool S_CHANGE;
+double distanciaRestante;
 void G01_TMR2_ISR(void){
+   uint16_t period;
    STEP_PIN = ~STEP_PIN;
    //TMR2_WriteTimer((uint8_t)(feed*feedtoTMR2));
    //TMR2_WriteTimer(254);
    switch(feed_state){
-      case g01:
-         
-         break;
       case g95:
-         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/(S*feed)));
+         if(S_CHANGE){
+            ustep=1;
+            period=feedtoTMR2*inverse_S*inverse_time_feed;
+            while((uint16_t)(ustep*period)>255){
+               ustep=ustep<<1;
+               if(ustep>16){
+                  ustep=16;
+                  break;
+               }
+            }
+            pasos =(int) (distanciaRestante* STEPS_PER_MM* ustep);
+            setMicroStep(ustep);
+            TMR2_LoadPeriodRegister((uint8_t)(ustep*period));
+         }
          break;
       default:
          break;
    }
    if(flag == 0) flag = 1;
    else{
+      if(DIRECTION_PIN==DIRECCION_POSITIVA){
+         pos_relativa_Z=pos_relativa_Z+(float)(MM_PER_STEP/ustep);
+         distanciaRestante=objetivo_Z-pos_relativa_Z;
+      }
+      else{
+         pos_relativa_Z=(float)pos_relativa_Z-(float)(MM_PER_STEP/ustep);
+         distanciaRestante=pos_relativa_Z-objetivo_Z;
+      }
       pasos = pasos - 1; 
       flag=0;
       if(pasos==0){ 
          busy=0;
          EN_PIN=DISABLE;
          TMR2_StopTimer(); 
+         pos_relativa_Z=objetivo_Z;
       }
    }
 }
@@ -163,10 +188,12 @@ void mover_2(float distancia){
          }
          pasos =(int) (distancia * STEPS_PER_MM * ustep);
          setMicroStep(ustep);
+         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/feed));
          break;
       case g95:
+         /*
          ustep=1;
-         while((uint16_t)(feedtoTMR2*ustep/(S*feed))>255){
+         while((uint16_t)(feedtoTMR2*ustep*inverse_S*inverse_time_feed)>255){
             ustep=ustep<<1;
             if(ustep>16){
                ustep=16;
@@ -175,6 +202,9 @@ void mover_2(float distancia){
          }
          pasos =(int) (distancia * STEPS_PER_MM * ustep);
          setMicroStep(ustep);
+         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep*inverse_S*inverse_time_feed));
+          */
+         TMR2_LoadPeriodRegister(255);
       break;
       default:
          break;
@@ -187,7 +217,7 @@ void mover_2(float distancia){
    flag=0;
    TMR2_WriteTimer(0);
    //TMR2_LoadPeriodRegister(255);
-   TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/feed));
+   
    TMR2_StartTimer();
    return;
 }
