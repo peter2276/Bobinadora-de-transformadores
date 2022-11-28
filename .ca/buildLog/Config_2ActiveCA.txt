@@ -1,0 +1,187 @@
+make -f nbproject/Makefile-Config_2ActiveCA.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+rm -f  -r .ca/build/Config_2ActiveCA/production
+rm -f  -r .ca/dist/Config_2ActiveCA/production
+make[1]: Leaving directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+[32mCLEAN SUCCESSFUL (total time: 56ms)[0m
+make -f nbproject/Makefile-Config_2ActiveCA.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+make  -f nbproject/Makefile-Config_2ActiveCA.mk .ca/dist/Config_2ActiveCA/production/Bobinadora.X.production.hex
+make[2]: Entering directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_descriptors.p1 mcc_generated_files/usb/usb_descriptors.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device_events.p1 mcc_generated_files/usb/usb_device_events.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device_cdc.p1 mcc_generated_files/usb/usb_device_cdc.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device.p1 mcc_generated_files/usb/usb_device.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr3.p1 mcc_generated_files/tmr3.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/device_config.p1 mcc_generated_files/device_config.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/mcc.p1 mcc_generated_files/mcc.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/interrupt_manager.p1 mcc_generated_files/interrupt_manager.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr2.p1 mcc_generated_files/tmr2.c 
+mcc_generated_files/usb/usb_device.c:1784:40: warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+        byteToSend = inPipes[0].wCount.Val;
+                   ~ ~~~~~~~~~~~~~~~~~~^~~
+mcc_generated_files/usb/usb_device.c:1871:41: warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+        byteToRead = outPipes[0].wCount.Val;
+                   ~ ~~~~~~~~~~~~~~~~~~~^~~
+mcc_generated_files/usb/usb_device.c:2841:52: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                p = (BDT_ENTRY*)(((uintptr_t)p) & (~USB_NEXT_PING_PONG));
+                                                ~  ^~~~~~~~~~~~~~~~~~~
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr1.p1 mcc_generated_files/tmr1.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr0.p1 mcc_generated_files/tmr0.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/adc.p1 mcc_generated_files/adc.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/pin_manager.p1 mcc_generated_files/pin_manager.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/memory.p1 mcc_generated_files/memory.c 
+3 warnings generated.
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/mcc_generated_files/ccp2.p1 mcc_generated_files/ccp2.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/main.p1 main.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/fila.p1 fila.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/StringHandler.p1 StringHandler.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/GCODE.p1 GCODE.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/guia.p1 guia.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/encoder.p1 encoder.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/rotor.p1 rotor.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/Ventana.p1 Ventana.c 
+fila.c:21:38: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+         memcpy(fila[cabeza],comando,nBytes);
+         ~~~~~~                      ^~~~~~
+main.c:42:16: warning: 'extern' variable has an initializer [-Wextern-initializer]
+extern uint8_t numBytesRead=0;
+               ^
+main.c:118:15: warning: passing 'uint8_t [32]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+      sprintf(writeBuffer,"\n %.5f|%d|%d",S,angulo,current);
+              ^~~~~~~~~~~
+/Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h:109:29: note: passing argument to parameter here
+int sprintf(char *__restrict, const char *__restrict, ...);
+                            ^
+main.c:119:21: warning: passing 'uint8_t [32]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+      MCC_USB_WRITE(writeBuffer,30);
+                    ^~~~~~~~~~~
+./CommandHandler.h:18:26: note: passing argument to parameter 'str' here
+void MCC_USB_WRITE(char* str, int nBytes);
+                         ^
+1 warning generated.
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/Ventana_data.p1 Ventana_data.c 
+3 warnings generated.
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/torque.p1 torque.c 
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -c   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/Config_2ActiveCA/production/CommandHandler.p1 CommandHandler.c 
+guia.c:156:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+         S=(((feedtoTMR2*ustep)*inverse_time_feed));
+          ~  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+guia.c:158:24: warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+            ustep=ustep<<1;
+                 ~~~~~~^~~
+encoder.c:72:15: warning: implicit conversion changes signedness: 'uint16_t' (aka 'unsigned short') to 'int' [-Wsign-conversion]
+   int tmr0 = TMR0_ReadTimer();
+       ~~~~   ^~~~~~~~~~~~~~~~
+guia.c:170:24: warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+            ustep=ustep<<1;
+                 ~~~~~~^~~
+rotor.c:14:22: warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wconversion]
+   Direccion_Rotor = dir;
+                   ~ ^~~
+3 warnings generated.
+1 warning generated.
+1 warning generated.
+CommandHandler.c:32:34: warning: passing 'uint8_t [32]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            readTokens[0]=strtok(readBuffer,s);
+                                 ^~~~~~~~~~
+/Applications/microchip/xc8/v2.36/pic/include/c99/string.h:52:31: note: passing argument to parameter here
+char *strtok (char *__restrict, const char *__restrict);
+                              ^
+CommandHandler.c:34:36: warning: implicit conversion changes signedness: 'size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+            Fila_Agregar(lastToken,strlen(lastToken));
+            ~~~~~~~~~~~~           ^~~~~~~~~~~~~~~~~
+CommandHandler.c:40:46: warning: implicit conversion changes signedness: 'size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+                  Fila_Agregar(readTokens[i],strlen(readTokens[i]));     
+                  ~~~~~~~~~~~~               ^~~~~~~~~~~~~~~~~~~~~
+CommandHandler.c:73:42: warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+            getComands(comando,TokensCom,numTokens);
+            ~~~~~~~~~~                   ^~~~~~~~~
+CommandHandler.c:74:21: warning: passing 'uint8_t [32]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            sprintf(writeBuffer,"%c \n",(int)comando[1].code);
+                    ^~~~~~~~~~~
+/Applications/microchip/xc8/v2.36/pic/include/c99/stdio.h:109:29: note: passing argument to parameter here
+int sprintf(char *__restrict, const char *__restrict, ...);
+                            ^
+CommandHandler.c:132:19: warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+      putUSBUSART(str,nBytes);
+                  ^~~
+./mcc_generated_files/usb/usb_device_cdc.h:708:27: note: passing argument to parameter 'data' here
+void putUSBUSART(uint8_t *data, uint8_t Length);
+                          ^
+CommandHandler.c:132:23: warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wconversion]
+      putUSBUSART(str,nBytes);
+      ~~~~~~~~~~~     ^~~~~~
+7 warnings generated.
+"/Applications/microchip/xc8/v2.36/bin/xc8-cc"  -mcpu=18F25K50 -Wl,-Map=.ca/dist/Config_2ActiveCA/production/Bobinadora.X.production.map  -DXPRJ_Config_2ActiveCA=Config_2ActiveCA  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto      -Wl,--memorysummary,.ca/dist/Config_2ActiveCA/production/memoryfile.xml -o .ca/dist/Config_2ActiveCA/production/Bobinadora.X.production.elf  .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_descriptors.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device_events.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/usb/usb_device_cdc.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/interrupt_manager.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/mcc.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/device_config.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr3.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr2.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr1.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/tmr0.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/adc.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/pin_manager.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/memory.p1 .ca/build/Config_2ActiveCA/production/mcc_generated_files/ccp2.p1 .ca/build/Config_2ActiveCA/production/main.p1 .ca/build/Config_2ActiveCA/production/fila.p1 .ca/build/Config_2ActiveCA/production/StringHandler.p1 .ca/build/Config_2ActiveCA/production/GCODE.p1 .ca/build/Config_2ActiveCA/production/guia.p1 .ca/build/Config_2ActiveCA/production/encoder.p1 .ca/build/Config_2ActiveCA/production/rotor.p1 .ca/build/Config_2ActiveCA/production/Ventana.p1 .ca/build/Config_2ActiveCA/production/Ventana_data.p1 .ca/build/Config_2ActiveCA/production/torque.p1 .ca/build/Config_2ActiveCA/production/CommandHandler.p1     
+mcc_generated_files/usb/usb_device.c:281:: advisory: (1510) non-reentrant function "_USBDeviceInit" appears in multiple call graphs and has been duplicated by the compiler
+mcc_generated_files/usb/usb_device.c:999:: advisory: (1510) non-reentrant function "_USBTransferOnePacket" appears in multiple call graphs and has been duplicated by the compiler
+mcc_generated_files/tmr2.c:93:: advisory: (1510) non-reentrant function "_TMR2_StopTimer" appears in multiple call graphs and has been duplicated by the compiler
+mcc_generated_files/tmr2.c:114:: advisory: (1510) non-reentrant function "_TMR2_LoadPeriodRegister" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul16.c:15:: advisory: (1510) non-reentrant function "___wmul" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul32.c:15:: advisory: (1510) non-reentrant function "___lmul" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/flge.c:4:: advisory: (1510) non-reentrant function "___flge" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/fltol.c:43:: advisory: (1510) non-reentrant function "___fltol" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c:10:: advisory: (1510) non-reentrant function "___fladd" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c:245:: advisory: (1510) non-reentrant function "___flsub" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcdiv.c:11:: advisory: (1510) non-reentrant function "___fldiv" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c:8:: advisory: (1510) non-reentrant function "___flmul" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/xxtofl.c:10:: advisory: (1510) non-reentrant function "___xxtofl" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c:4:: advisory: (1510) non-reentrant function "_memcpy" appears in multiple call graphs and has been duplicated by the compiler
+/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c:4:: advisory: (1510) non-reentrant function "_memset" appears in multiple call graphs and has been duplicated by the compiler
+mcc_generated_files/usb/usb_device.c:1077:: warning: (520) function "_USBStallEndpoint" is never called
+mcc_generated_files/usb/usb_device.c:1133:: warning: (520) function "_USBCancelIO" is never called
+mcc_generated_files/usb/usb_device.c:1251:: warning: (520) function "_USBDeviceDetach" is never called
+mcc_generated_files/usb/usb_device.c:3108:: warning: (520) function "_USBGet1msTickCount" is never called
+mcc_generated_files/usb/usb_device_cdc.c:424:: warning: (520) function "_USBCDCEventHandler" is never called
+mcc_generated_files/usb/usb_device_cdc.c:647:: warning: (520) function "_putsUSBUSART" is never called
+mcc_generated_files/usb/usb_device_cdc.c:744:: warning: (520) function "_putrsUSBUSART" is never called
+mcc_generated_files/tmr3.c:93:: warning: (520) function "_TMR3_StartTimer" is never called
+mcc_generated_files/tmr3.c:105:: warning: (520) function "_TMR3_ReadTimer" is never called
+mcc_generated_files/tmr3.c:143:: warning: (520) function "_TMR3_Reload" is never called
+mcc_generated_files/tmr3.c:148:: warning: (520) function "_TMR3_StartSinglePulseAcquisition" is never called
+mcc_generated_files/tmr3.c:153:: warning: (520) function "_TMR3_CheckGateValueStatus" is never called
+mcc_generated_files/tmr2.c:99:: warning: (520) function "_TMR2_ReadTimer" is never called
+mcc_generated_files/tmr1.c:86:: warning: (520) function "_TMR1_StartTimer" is never called
+mcc_generated_files/tmr1.c:92:: warning: (520) function "_TMR1_StopTimer" is never called
+mcc_generated_files/tmr1.c:98:: warning: (520) function "_TMR1_ReadTimer" is never called
+mcc_generated_files/tmr1.c:114:: warning: (520) function "_TMR1_WriteTimer" is never called
+mcc_generated_files/tmr1.c:136:: warning: (520) function "_TMR1_Reload" is never called
+mcc_generated_files/tmr1.c:141:: warning: (520) function "_TMR1_StartSinglePulseAcquisition" is never called
+mcc_generated_files/tmr1.c:146:: warning: (520) function "_TMR1_CheckGateValueStatus" is never called
+mcc_generated_files/tmr1.c:151:: warning: (520) function "_TMR1_HasOverflowOccured" is never called
+mcc_generated_files/tmr0.c:103:: warning: (520) function "_TMR0_StopTimer" is never called
+mcc_generated_files/tmr0.c:129:: warning: (520) function "_TMR0_Reload" is never called
+mcc_generated_files/adc.c:110:: warning: (520) function "_ADC_GetConversion" is never called
+mcc_generated_files/adc.c:130:: warning: (520) function "_ADC_TemperatureAcquisitionDelay" is never called
+mcc_generated_files/memory.c:59:: warning: (520) function "_FLASH_ReadByte" is never called
+mcc_generated_files/memory.c:70:: warning: (520) function "_FLASH_ReadWord" is never called
+mcc_generated_files/memory.c:75:: warning: (520) function "_FLASH_WriteByte" is never called
+mcc_generated_files/memory.c:94:: warning: (520) function "_FLASH_WriteBlock" is never called
+mcc_generated_files/memory.c:153:: warning: (520) function "_FLASH_EraseBlock" is never called
+mcc_generated_files/memory.c:176:: warning: (520) function "_DATAEE_WriteByte" is never called
+mcc_generated_files/memory.c:198:: warning: (520) function "_DATAEE_ReadByte" is never called
+mcc_generated_files/memory.c:209:: warning: (520) function "_MEMORY_Tasks" is never called
+Ventana.c:30:: warning: (520) function "_Ventana_step" is never called
+Ventana.c:61:: warning: (520) function "_Ventana_initialize" is never called
+mcc_generated_files/usb/usb_device.c:1361:: warning: (759) expression generates no code
+mcc_generated_files/usb/usb_device.c:1925:: warning: (759) expression generates no code
+mcc_generated_files/usb/usb_device.c:2661:: warning: (759) expression generates no code
+main.c:76:: warning: (1518) direct function call made with an incomplete prototype (Fila_Init)
+main.c:91:: warning: (1518) direct function call made with an incomplete prototype (Encoder_Init)
+main.c:97:: warning: (1518) direct function call made with an incomplete prototype (USBCommandFetch)
+main.c:99:: warning: (1518) direct function call made with an incomplete prototype (executeCommand)
+main.c:114:: warning: (1518) direct function call made with an incomplete prototype (Actualizar_angulo)
+GCODE.c:120:: warning: (1518) direct function call made with an incomplete prototype (encenderRotor)
+GCODE.c:138:: warning: (1518) direct function call made with an incomplete prototype (apagarRotor)
+
+Memory Summary:
+    Program space        used  7F3Eh ( 32574) of  8000h bytes   ( 99.4%)
+    Data space           used   59Fh (  1439) of   800h bytes   ( 70.3%)
+    Configuration bits   used     7h (     7) of     7h words   (100.0%)
+    EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
+    ID Location space    used     8h (     8) of     8h bytes   (100.0%)
+
+make[2]: Leaving directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+make[1]: Leaving directory '/Users/pedro/MPLABXProjects/Bobinadora.X'
+[32mBUILD SUCCESSFUL (total time: 18s)[0m

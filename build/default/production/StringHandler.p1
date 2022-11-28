@@ -1,0 +1,111 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"52 /Applications/microchip/xc8/v2.36/pic/include/c99/string.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 52: char *strtok (char *restrict, const char *restrict);
+[v _strtok `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"14 ./GCODE.h
+[; ;./GCODE.h: 14:     typedef struct Comando_T{
+[s S7 `uc 1 `f 1 ]
+[n S7 Comando_T code number ]
+"33 /Applications/microchip/xc8/v2.36/pic/include/c99/string.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/string.h: 33: char *strcpy (char *restrict, const char *restrict);
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"28 /Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h
+[; ;/Applications/microchip/xc8/v2.36/pic/include/c99/stdlib.h: 28: float strtof (const char *restrict, char **restrict);
+[v _strtof `(f ~T0 @X0 0 ef2`*Cuc`**uc ]
+"7 StringHandler.c
+[; ;StringHandler.c: 7: int getTokens(char** token,char* str){
+[v _getTokens `(i ~T0 @X0 1 ef2`**uc`*uc ]
+{
+[e :U _getTokens ]
+[v _token `**uc ~T0 @X0 1 r1 ]
+[v _str `*uc ~T0 @X0 1 r2 ]
+[f ]
+[v F334 `uc ~T0 @X0 -> 2 `i s ]
+[i F334
+:U ..
+"8
+[; ;StringHandler.c: 8:    char s[2]=" ";
+-> 32 `c
+-> 0 `c
+..
+]
+[v _s `uc ~T0 @X0 -> 2 `i a ]
+[e = _s F334 ]
+"10
+[; ;StringHandler.c: 10:    token[0] = strtok(str, s);
+[e = *U + _token * -> -> 0 `i `x -> -> # *U _token `i `x ( _strtok (2 , _str -> &U _s `*Cuc ]
+"11
+[; ;StringHandler.c: 11:    int i=0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"13
+[; ;StringHandler.c: 13:    while( token[i] != ((void*)0)) {
+[e $U 9  ]
+[e :U 10 ]
+{
+"15
+[; ;StringHandler.c: 15:       i++;
+[e ++ _i -> 1 `i ]
+"16
+[; ;StringHandler.c: 16:       token[i] = strtok(((void*)0), s);
+[e = *U + _token * -> _i `x -> -> # *U _token `i `x ( _strtok (2 , -> -> -> 0 `i `*v `*uc -> &U _s `*Cuc ]
+"17
+[; ;StringHandler.c: 17:    }
+}
+[e :U 9 ]
+"13
+[; ;StringHandler.c: 13:    while( token[i] != ((void*)0)) {
+[e $ != *U + _token * -> _i `x -> -> # *U _token `i `x -> -> -> 0 `i `*v `*uc 10  ]
+[e :U 11 ]
+"18
+[; ;StringHandler.c: 18:    return i;
+[e ) _i ]
+[e $UE 8  ]
+"19
+[; ;StringHandler.c: 19: }
+[e :UE 8 ]
+}
+"21
+[; ;StringHandler.c: 21: void getComands(Comando_T* comandos, char** tokens, int size){
+[v _getComands `(v ~T0 @X0 1 ef3`*S7`**uc`i ]
+{
+[e :U _getComands ]
+[v _comandos `*S7 ~T0 @X0 1 r1 ]
+[v _tokens `**uc ~T0 @X0 1 r2 ]
+[v _size `i ~T0 @X0 1 r3 ]
+[f ]
+"22
+[; ;StringHandler.c: 22:    char buff[10];
+[v _buff `uc ~T0 @X0 -> 10 `i a ]
+"23
+[; ;StringHandler.c: 23:    for(int i=0;i<size;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 16  ]
+[e :U 13 ]
+{
+"24
+[; ;StringHandler.c: 24:       comandos[i].code=tokens[i][0];
+[e = . *U + _comandos * -> _i `x -> -> # *U _comandos `i `x 0 *U + *U + _tokens * -> _i `x -> -> # *U _tokens `i `x * -> -> 0 `i `x -> -> # *U *U + _tokens * -> _i `x -> -> # *U _tokens `i `x `i `x ]
+"25
+[; ;StringHandler.c: 25:       strcpy(buff, &tokens[i][1]);
+[e ( _strcpy (2 , &U _buff -> &U *U + *U + _tokens * -> _i `x -> -> # *U _tokens `i `x * -> -> 1 `i `x -> -> # *U *U + _tokens * -> _i `x -> -> # *U _tokens `i `x `i `x `*Cuc ]
+"26
+[; ;StringHandler.c: 26:  comandos[i].number=strtof(buff,((void*)0));
+[e = . *U + _comandos * -> _i `x -> -> # *U _comandos `i `x 1 ( _strtof (2 , -> &U _buff `*Cuc -> -> -> 0 `i `*v `**uc ]
+"27
+[; ;StringHandler.c: 27:    }
+}
+[e ++ _i -> 1 `i ]
+[e :U 16 ]
+[e $ < _i _size 13  ]
+[e :U 14 ]
+}
+"28
+[; ;StringHandler.c: 28:    return;
+[e $UE 12  ]
+"29
+[; ;StringHandler.c: 29: }
+[e :UE 12 ]
+}

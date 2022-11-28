@@ -1,0 +1,21 @@
+#Ignora todos los archivos
+#*.*
+#*
+
+#Pero sin ignorar los .c y .h
+!*.c
+!*.h
+
+#Ignorar la carpeta _history
+/_history/
+/__history/
+
+#Ignorar el Makefile y .DS_Store
+Makefile
+.DS_Store
+
+#Ignora el header de usuario
+usuario.h
+
+#Ignorar el README.md para que la info de cada rama se mantenga propia
+README.md

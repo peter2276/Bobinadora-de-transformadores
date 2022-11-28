@@ -1,0 +1,119 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"30 ./Ventana.h
+[; ;./Ventana.h: 30: typedef struct {
+[s S1 `d -> 10 `i `d 1 ]
+[n S1 . Filter_states Filter_denStates ]
+"44
+[; ;./Ventana.h: 44: typedef struct {
+[s S3 `d 1 ]
+[n S3 . Input ]
+"49
+[; ;./Ventana.h: 49: typedef struct {
+[s S4 `d 1 ]
+[n S4 . Output ]
+"36
+[; ;./Ventana.h: 36: typedef struct {
+[s S2 `d -> 11 `i ]
+[n S2 . Filter_NumCoef ]
+"63
+[; ;./Ventana.h: 63: extern const ConstP rtConstP;
+[v _rtConstP `CS2 ~T0 @X0 0 e ]
+"21 Ventana.c
+[; ;Ventana.c: 21: DW rtDW;
+[v _rtDW `S1 ~T0 @X0 1 e ]
+"24
+[; ;Ventana.c: 24: ExtU rtU;
+[v _rtU `S3 ~T0 @X0 1 e ]
+"27
+[; ;Ventana.c: 27: ExtY rtY;
+[v _rtY `S4 ~T0 @X0 1 e ]
+"30
+[; ;Ventana.c: 30: void Ventana_step(void)
+[v _Ventana_step `(v ~T0 @X0 1 ef ]
+"31
+[; ;Ventana.c: 31: {
+{
+[e :U _Ventana_step ]
+[f ]
+"32
+[; ;Ventana.c: 32:   int16_T j;
+[v _j `i ~T0 @X0 1 a ]
+"33
+[; ;Ventana.c: 33:   int32_T num;
+[v _num `l ~T0 @X0 1 a ]
+"34
+[; ;Ventana.c: 34:   real_T rtb_Filter;
+[v _rtb_Filter `d ~T0 @X0 1 a ]
+"39
+[; ;Ventana.c: 39:   num = 1L;
+[e = _num -> 1 `l ]
+"40
+[; ;Ventana.c: 40:   rtb_Filter = 0.1 * rtU.Input;
+[e = _rtb_Filter * .0.1 . _rtU 0 ]
+"41
+[; ;Ventana.c: 41:   for (j = 0; j < 10; j++) {
+{
+[e = _j -> 0 `i ]
+[e $ < _j -> 10 `i 6  ]
+[e $U 7  ]
+[e :U 6 ]
+{
+"42
+[; ;Ventana.c: 42:     rtb_Filter += rtConstP.Filter_NumCoef[num] * rtDW.Filter_states[(int32_T)j];
+[e =+ _rtb_Filter * *U + &U . _rtConstP 0 * -> _num `ux -> -> # *U &U . _rtConstP 0 `ui `ux *U + &U . _rtDW 0 * -> -> _j `l `ux -> -> # *U &U . _rtDW 0 `ui `ux ]
+"43
+[; ;Ventana.c: 43:     num++;
+[e ++ _num -> -> 1 `i `l ]
+"44
+[; ;Ventana.c: 44:   }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 10 `i 6  ]
+[e :U 7 ]
+}
+"46
+[; ;Ventana.c: 46:   rtb_Filter -= -rtDW.Filter_denStates;
+[e =- _rtb_Filter -U . _rtDW 1 ]
+"47
+[; ;Ventana.c: 47:   for (j = 0; j < 9; j++) {
+{
+[e = _j -> 0 `i ]
+[e $ < _j -> 9 `i 9  ]
+[e $U 10  ]
+[e :U 9 ]
+{
+"48
+[; ;Ventana.c: 48:     rtDW.Filter_states[(int32_T)(9 - j)] = rtDW.Filter_states[(int32_T)(8 - j)];
+[e = *U + &U . _rtDW 0 * -> -> - -> 9 `i _j `l `ux -> -> # *U &U . _rtDW 0 `ui `ux *U + &U . _rtDW 0 * -> -> - -> 8 `i _j `l `ux -> -> # *U &U . _rtDW 0 `ui `ux ]
+"49
+[; ;Ventana.c: 49:   }
+}
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 9 `i 9  ]
+[e :U 10 ]
+}
+"51
+[; ;Ventana.c: 51:   rtDW.Filter_states[0L] = rtU.Input;
+[e = *U + &U . _rtDW 0 * -> -> 0 `l `ux -> -> # *U &U . _rtDW 0 `ui `ux . _rtU 0 ]
+"52
+[; ;Ventana.c: 52:   rtDW.Filter_denStates = rtb_Filter;
+[e = . _rtDW 1 _rtb_Filter ]
+"57
+[; ;Ventana.c: 57:   rtY.Output = rtb_Filter;
+[e = . _rtY 0 _rtb_Filter ]
+"58
+[; ;Ventana.c: 58: }
+[e :UE 5 ]
+}
+"61
+[; ;Ventana.c: 61: void Ventana_initialize(void)
+[v _Ventana_initialize `(v ~T0 @X0 1 ef ]
+"62
+[; ;Ventana.c: 62: {
+{
+[e :U _Ventana_initialize ]
+[f ]
+"64
+[; ;Ventana.c: 64: }
+[e :UE 12 ]
+}

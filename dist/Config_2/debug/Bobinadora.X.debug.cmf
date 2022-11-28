@@ -1,0 +1,2461 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/Config_2/debug/Bobinadora.X.debug.o
+cinit CODE 0 2FD0 2FD0 76 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 13B4 13B4 132 1 2
+text1 CODE 0 3294 3294 40 1 2
+text2 CODE 0 31C2 31C2 4C 1 2
+text3 CODE 0 F58 F58 1DE 1 2
+text4 CODE 0 2B46 2B46 9E 1 2
+text5 CODE 0 1CF8 1CF8 11A 1 2
+text6 CODE 0 8E6 8E6 240 1 2
+text7 CODE 0 2EC0 2EC0 8A 1 2
+text8 CODE 0 355A 355A 2A 1 2
+text9 CODE 0 337C 337C 34 1 2
+text10 CODE 0 2D16 2D16 90 1 2
+text11 CODE 0 36C4 36C4 2 1 2
+text12 CODE 0 3418 3418 32 1 2
+text13 CODE 0 187A 187A 124 1 2
+text14 CODE 0 1136 1136 148 1 2
+text15 CODE 0 36B4 36B4 4 1 2
+text16 CODE 0 36B8 36B8 4 1 2
+text17 CODE 0 347A 347A 2E 1 2
+text18 CODE 0 1ABE 1ABE 11E 1 2
+text19 CODE 0 14E6 14E6 132 1 2
+text20 CODE 0 34D6 34D6 2C 1 2
+text21 CODE 0 3584 3584 2A 1 2
+text22 CODE 0 368E 368E A 1 2
+text23 CODE 0 35F4 35F4 1E 1 2
+text24 CODE 0 3698 3698 A 1 2
+text25 CODE 0 3612 3612 1C 1 2
+text26 CODE 0 33B0 33B0 34 1 2
+text27 CODE 0 36A2 36A2 A 1 2
+text28 CODE 0 3502 3502 2C 1 2
+text29 CODE 0 3660 3660 12 1 2
+text30 CODE 0 36BC 36BC 4 1 2
+text31 CODE 0 3672 3672 10 1 2
+text32 CODE 0 364A 364A 16 1 2
+text33 CODE 0 32D4 32D4 3A 1 2
+text34 CODE 0 2248 2248 F8 1 2
+text35 CODE 0 1E12 1E12 11A 1 2
+text36 CODE 0 D50 D50 208 1 2
+text37 CODE 0 2F4A 2F4A 86 1 2
+text38 CODE 0 214C 214C FC 1 2
+text39 CODE 0 33E4 33E4 34 1 2
+text40 CODE 0 174A 174A 130 1 2
+text41 CODE 0 1BDC 1BDC 11C 1 2
+text42 CODE 0 2340 2340 E8 1 2
+text44 CODE 0 1F2C 1F2C 118 1 2
+text45 CODE 0 199E 199E 120 1 2
+text46 CODE 0 3346 3346 36 1 2
+text47 CODE 0 34A8 34A8 2E 1 2
+text48 CODE 0 3252 3252 42 1 2
+text49 CODE 0 35D2 35D2 22 1 2
+text50 CODE 0 2C80 2C80 96 1 2
+text51 CODE 0 320E 320E 44 1 2
+text52 CODE 0 2DA6 2DA6 8E 1 2
+text53 CODE 0 250E 250E E0 1 2
+text54 CODE 0 2BE4 2BE4 9C 1 2
+text55 CODE 0 25EE 25EE DE 1 2
+text56 CODE 0 2798 2798 C8 1 2
+text57 CODE 0 1618 1618 132 1 2
+text58 CODE 0 2AA0 2AA0 A6 1 2
+text59 CODE 0 127E 127E 136 1 2
+text60 CODE 0 B26 B26 22A 1 2
+text61 CODE 0 310A 310A 5C 1 2
+text62 CODE 0 29E4 29E4 BC 1 2
+text63 CODE 0 3046 3046 64 1 2
+text64 CODE 0 2428 2428 E6 1 2
+text65 CODE 0 330E 330E 38 1 2
+text66 CODE 0 2E34 2E34 8C 1 2
+text67 CODE 0 3166 3166 5C 1 2
+text68 CODE 0 2044 2044 108 1 2
+text69 CODE 0 2860 2860 C4 1 2
+text70 CODE 0 2924 2924 C0 1 2
+text71 CODE 0 26CC 26CC CC 1 2
+text72 CODE 0 344A 344A 30 1 2
+text73 CODE 0 362E 362E 1C 1 2
+text74 CODE 0 36C6 36C6 2 1 2
+text75 CODE 0 35AE 35AE 24 1 2
+text76 CODE 0 30AA 30AA 60 1 2
+text77 CODE 0 36C8 36C8 2 1 2
+text78 CODE 0 36C0 36C0 4 1 2
+text79 CODE 0 36AC 36AC 8 1 2
+text80 CODE 0 352E 352E 2C 1 2
+text81 CODE 0 36CA 36CA 2 1 2
+cstackCOMRAM COMRAM 1 1 1 2B 1 1
+cstackBANK0 BANK0 1 60 60 61 1 1
+cstackBANK1 BANK1 1 1B7 1B7 1C 1 1
+temp COMRAM 1 56 56 1 1 1
+bssBANK0 BANK0 1 C1 C1 25 1 1
+bssBANK1 BANK1 1 100 100 B7 1 1
+bssBANK2 BANK2 1 200 200 A4 1 1
+bssBANK3 BANK3 1 300 300 64 1 1
+bssBANK6 BANK6 1 600 600 C8 1 1
+intcode CODE 0 8 8 98 1 2
+smallconst SMALLCONST 0 800 800 E6 1 2
+idataBANK1 CODE 0 3682 3682 B 1 1
+dataBANK1 BANK1 1 1D3 1D3 B 1 1
+bssCOMRAM COMRAM 1 2C 2C 2A 1 1
+config CONFIG 4 300000 300000 E 1 1
+$/tmp/xcHhVsUsG.o
+idloc IDLOC 5 200000 200000 8 1 1
+heap HEAP 7 6C8 6C8 138 1 1
+init CODE 0 A0 A0 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E6-FF 1
+RAM 1DE-1FF 1
+RAM 2A4-2FF 1
+RAM 364-3FF 1
+RAM 440-4FF 1
+RAM 580-5FF 1
+RAM 6C8-7FF 1
+SFR F53-FFF 1
+BANK0 E6-FF 1
+BANK1 1DE-1FF 1
+BANK2 2A4-2FF 1
+BANK3 364-3FF 1
+BANK4 440-4FF 1
+BANK5 580-5FF 1
+BANK6 6C8-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST A4-7FF 1
+CONST 368D-368D 1
+CONST 36CC-7FFF 1
+SMALLCONST 368D-368D 1
+SMALLCONST 36CC-7FFF 1
+CODE 4-7 1
+CODE A4-7FF 1
+CODE 368D-368D 1
+CODE 36CC-7FFF 1
+BIGRAM 57-5F 1
+BIGRAM E6-FF 1
+BIGRAM 1DE-1FF 1
+BIGRAM 2A4-2FF 1
+BIGRAM 364-3FF 1
+BIGRAM 440-4FF 1
+BIGRAM 580-5FF 1
+BIGRAM 6C8-7FF 1
+BIGSFR F53-FFF 1
+COMRAM 57-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 368D-368D 1
+MEDIUMCONST 36CC-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/Config_2/debug/Bobinadora.X.debug.o
+8 intcode CODE >18077:/tmp/xc5gobzse.s
+8 intcode CODE >58:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+3A intcode CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+40 intcode CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+44 intcode CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+46 intcode CODE >65:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+4A intcode CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+50 intcode CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+54 intcode CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+56 intcode CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+5C intcode CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+60 intcode CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+62 intcode CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+68 intcode CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+6C intcode CODE >82:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+6C intcode CODE >88:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+36CA text81 CODE >160:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+36CA text81 CODE >163:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+352E text80 CODE >136:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+352E text80 CODE >140:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+3530 text80 CODE >144:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+3534 text80 CODE >145:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+3538 text80 CODE >147:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+3542 text80 CODE >149:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+36AC text79 CODE >108:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36AE text79 CODE >111:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36B2 text79 CODE >112:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C0 text78 CODE >93:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C0 text78 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C2 text78 CODE >97:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C8 text77 CODE >136:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C8 text77 CODE >139:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+30AA text76 CODE >14:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30AA text76 CODE >15:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30C8 text76 CODE >16:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30CE text76 CODE >17:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30E2 text76 CODE >19:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30EE text76 CODE >20:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30F6 text76 CODE >21:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+30FE text76 CODE >22:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+3102 text76 CODE >23:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+3104 text76 CODE >24:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+3108 text76 CODE >27:/Users/pedro/MPLABXProjects/Bobinadora.X/guia.c
+35AE text75 CODE >119:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35AE text75 CODE >123:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35B0 text75 CODE >125:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35BA text75 CODE >127:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36C6 text74 CODE >176:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+36C6 text74 CODE >179:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+362E text73 CODE >121:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+362E text73 CODE >123:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3632 text73 CODE >126:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3634 text73 CODE >129:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3638 text73 CODE >130:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+363C text73 CODE >133:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+363E text73 CODE >134:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3640 text73 CODE >135:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3640 text73 CODE >138:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3644 text73 CODE >139:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3648 text73 CODE >141:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+344A text72 CODE >158:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+344A text72 CODE >162:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+344C text72 CODE >163:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3458 text72 CODE >165:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3462 text72 CODE >167:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+26CC text71 CODE >1775:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26CC text71 CODE >1781:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26D0 text71 CODE >1782:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26DE text71 CODE >1784:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26E2 text71 CODE >1791:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26E8 text71 CODE >1793:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26EC text71 CODE >1795:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26F2 text71 CODE >1797:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26F6 text71 CODE >1803:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26FE text71 CODE >1808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+270E text71 CODE >1812:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2716 text71 CODE >1813:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+271C text71 CODE >1817:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2750 text71 CODE >1818:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2752 text71 CODE >1815:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+275A text71 CODE >1825:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+278E text71 CODE >1826:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2790 text71 CODE >1823:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2924 text70 CODE >2596:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2924 text70 CODE >2600:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2934 text70 CODE >2603:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+293E text70 CODE >2608:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2946 text70 CODE >2610:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+294E text70 CODE >2611:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2954 text70 CODE >2613:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2958 text70 CODE >2617:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+295C text70 CODE >2622:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2962 text70 CODE >2624:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2978 text70 CODE >2625:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+297C text70 CODE >2631:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2984 text70 CODE >2635:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2990 text70 CODE >2636:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+299C text70 CODE >2637:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+299E text70 CODE >2640:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29A4 text70 CODE >2642:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29B0 text70 CODE >2643:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29BC text70 CODE >2644:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29BE text70 CODE >2647:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29CA text70 CODE >2648:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29D8 text70 CODE >2652:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29D8 text70 CODE >2657:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29DC text70 CODE >2663:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29DE text70 CODE >2666:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+29E2 text70 CODE >2671:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2860 text69 CODE >1420:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2860 text69 CODE >1427:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2866 text69 CODE >1429:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+286A text69 CODE >1430:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2870 text69 CODE >1432:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2874 text69 CODE >1436:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+287C text69 CODE >1438:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+288E text69 CODE >1439:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+289A text69 CODE >1440:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28A6 text69 CODE >1441:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28A8 text69 CODE >1442:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28AE text69 CODE >1444:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28B2 text69 CODE >1449:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28C2 text69 CODE >1450:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28D6 text69 CODE >1451:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28E2 text69 CODE >1452:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28EE text69 CODE >1453:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+28F2 text69 CODE >1457:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2902 text69 CODE >1458:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2916 text69 CODE >1459:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2044 text68 CODE >1856:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2044 text68 CODE >1863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2054 text68 CODE >1869:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+205E text68 CODE >1871:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2062 text68 CODE >1874:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+206A text68 CODE >1878:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2070 text68 CODE >1880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+208C text68 CODE >1881:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2096 text68 CODE >1885:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+209E text68 CODE >1887:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20AE text68 CODE >1888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20C2 text68 CODE >1889:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20CE text68 CODE >1891:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20DA text68 CODE >1892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20E6 text68 CODE >1893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20E8 text68 CODE >1896:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+20F4 text68 CODE >1897:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2102 text68 CODE >1905:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2112 text68 CODE >1906:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2126 text68 CODE >1910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2132 text68 CODE >1911:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+213E text68 CODE >1931:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2140 text68 CODE >1945:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2146 text68 CODE >1947:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+214A text68 CODE >1951:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3166 text67 CODE >2542:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3166 text67 CODE >2544:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+316E text67 CODE >2546:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3172 text67 CODE >2547:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3174 text67 CODE >2552:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3178 text67 CODE >2559:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+317E text67 CODE >2561:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+318E text67 CODE >2562:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+31A2 text67 CODE >2563:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+31AE text67 CODE >2564:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+31BA text67 CODE >2565:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+31BC text67 CODE >2568:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+31C0 text67 CODE >2571:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E34 text66 CODE >1547:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E36 text66 CODE >1553:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E3E text66 CODE >1554:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E78 text66 CODE >1556:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E82 text66 CODE >1561:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E88 text66 CODE >1563:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E92 text66 CODE >1567:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2EA6 text66 CODE >1571:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2EB0 text66 CODE >1572:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2EBE text66 CODE >1589:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+330E text65 CODE >882:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3310 text65 CODE >888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3314 text65 CODE >890:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+331E text65 CODE >892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3322 text65 CODE >894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+332C text65 CODE >903:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3338 text65 CODE >905:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3344 text65 CODE >906:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2428 text64 CODE >999:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+242A text64 CODE >1004:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2430 text64 CODE >1007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+243A text64 CODE >1012:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+244E text64 CODE >1017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2456 text64 CODE >1019:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2460 text64 CODE >1033:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2474 text64 CODE >1034:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2484 text64 CODE >1035:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2490 text64 CODE >1036:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+249C text64 CODE >1037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24A8 text64 CODE >1040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24AE text64 CODE >1043:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+24D4 text64 CODE >1048:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2504 text64 CODE >1050:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+250C text64 CODE >1051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3046 text63 CODE >294:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3046 text63 CODE >297:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3058 text63 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+305C text63 CODE >299:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3060 text63 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3064 text63 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3068 text63 CODE >315:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+3072 text63 CODE >316:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+307C text63 CODE >318:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+309A text63 CODE >319:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+30A4 text63 CODE >346:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+30A8 text63 CODE >347:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+29E4 text62 CODE >147:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+29E4 text62 CODE >152:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+29F0 text62 CODE >157:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+29FC text62 CODE >163:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A0A text62 CODE >171:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A14 text62 CODE >172:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A1C text62 CODE >173:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A1E text62 CODE >174:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A20 text62 CODE >175:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A22 text62 CODE >178:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A2C text62 CODE >179:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A2E text62 CODE >180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A30 text62 CODE >184:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A30 text62 CODE >185:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A38 text62 CODE >186:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A42 text62 CODE >187:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A4A text62 CODE >188:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A4C text62 CODE >189:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A4E text62 CODE >192:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A64 text62 CODE >196:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A66 text62 CODE >198:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A66 text62 CODE >199:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A6A text62 CODE >231:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A6E text62 CODE >232:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A70 text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A7A text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A82 text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A88 text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A8E text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A94 text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+2A9A text62 CODE >258:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+310A text61 CODE >49:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+310A text61 CODE >51:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+310C text61 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3110 text61 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3112 text61 CODE >85:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3116 text61 CODE >86:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3118 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3124 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+312A text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3134 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+313A text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3140 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3146 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+314C text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3152 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+3158 text61 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_events.c
+B26 text60 CODE >2758:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B26 text60 CODE >2803:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B38 text60 CODE >2806:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B3C text60 CODE >2807:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B46 text60 CODE >2808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B4A text60 CODE >2810:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B4E text60 CODE >2811:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B4E text60 CODE >2814:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B7C text60 CODE >2821:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B80 text60 CODE >2824:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B86 text60 CODE >2826:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+B9C text60 CODE >2827:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BA8 text60 CODE >2831:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BBE text60 CODE >2832:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BD0 text60 CODE >2839:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BD4 text60 CODE >2841:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BE0 text60 CODE >2845:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BEA text60 CODE >2851:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BEE text60 CODE >2853:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+BFA text60 CODE >2857:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C10 text60 CODE >2861:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C18 text60 CODE >2863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C24 text60 CODE >2867:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C28 text60 CODE >2869:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C34 text60 CODE >2873:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C46 text60 CODE >2875:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C46 text60 CODE >2878:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C52 text60 CODE >2879:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C5E text60 CODE >2880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C60 text60 CODE >2886:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C6A text60 CODE >2888:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C76 text60 CODE >2892:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C82 text60 CODE >2893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+C8E text60 CODE >2894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CAA text60 CODE >2895:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CAC text60 CODE >2899:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CB8 text60 CODE >2904:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CC2 text60 CODE >2910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CD2 text60 CODE >2912:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CD8 text60 CODE >2914:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CE4 text60 CODE >2918:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+CF6 text60 CODE >2921:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D02 text60 CODE >2924:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D1E text60 CODE >2925:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D20 text60 CODE >2929:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D2C text60 CODE >2977:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D42 text60 CODE >2981:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+D4E text60 CODE >2984:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+127E text59 CODE >2047:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+127E text59 CODE >2049:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1288 text59 CODE >2051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+128E text59 CODE >2053:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1290 text59 CODE >2059:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+129E text59 CODE >2061:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12A6 text59 CODE >2062:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12A8 text59 CODE >2067:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12AE text59 CODE >2072:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12C8 text59 CODE >2078:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+12F8 text59 CODE >2079:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1328 text59 CODE >2080:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+132A text59 CODE >2083:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1332 text59 CODE >2090:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1338 text59 CODE >2093:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1352 text59 CODE >2095:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+137C text59 CODE >2096:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+137E text59 CODE >2108:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1386 text59 CODE >2112:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+138C text59 CODE >2113:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+138E text59 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+139A text59 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13A2 text59 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13A8 text59 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+13AE text59 CODE >2114:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AA0 text58 CODE >2133:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AA0 text58 CODE >2135:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AA6 text58 CODE >2136:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AAA text58 CODE >2138:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AAC text58 CODE >2140:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AAC text58 CODE >2141:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AB0 text58 CODE >2151:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AB6 text58 CODE >2153:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ABC text58 CODE >2156:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ABC text58 CODE >2157:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AC0 text58 CODE >2158:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AC2 text58 CODE >2159:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AC2 text58 CODE >2160:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AC6 text58 CODE >2167:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2ACC text58 CODE >2169:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AD8 text58 CODE >2173:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2AEE text58 CODE >2176:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B06 text58 CODE >2177:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B0C text58 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B18 text58 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B20 text58 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B26 text58 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B2C text58 CODE >2180:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B30 text58 CODE >2182:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B36 text58 CODE >2184:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B3E text58 CODE >2185:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B40 text58 CODE >2186:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2B44 text58 CODE >2188:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1618 text57 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1618 text57 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1620 text57 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1628 text57 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1634 text57 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1650 text57 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+165C text57 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+166C text57 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+167C text57 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1698 text57 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+16B4 text57 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+16C0 text57 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+16D0 text57 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+16EC text57 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+16F8 text57 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1710 text57 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1718 text57 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1720 text57 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1728 text57 CODE >86:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+2798 text56 CODE >1972:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2798 text56 CODE >1977:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+279C text56 CODE >1980:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27B8 text56 CODE >1983:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27D4 text56 CODE >1986:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27D6 text56 CODE >1991:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27DA text56 CODE >1993:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27E6 text56 CODE >1994:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27F2 text56 CODE >1995:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+27FA text56 CODE >1998:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2814 text56 CODE >2001:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2816 text56 CODE >2003:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2820 text56 CODE >2006:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2828 text56 CODE >2007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2830 text56 CODE >2010:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2834 text56 CODE >2013:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+283A text56 CODE >2016:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+283E text56 CODE >2017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2840 text56 CODE >2021:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+285A text56 CODE >2026:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+285E text56 CODE >2028:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25EE text55 CODE >2690:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25EE text55 CODE >2692:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25FE text55 CODE >2696:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25FE text55 CODE >2697:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2602 text55 CODE >2698:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2606 text55 CODE >2700:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2608 text55 CODE >2702:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+260C text55 CODE >2703:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+260E text55 CODE >2705:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2612 text55 CODE >2706:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2614 text55 CODE >2708:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+261C text55 CODE >2709:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+261E text55 CODE >2710:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2622 text55 CODE >2711:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2624 text55 CODE >2712:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2626 text55 CODE >2714:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+262A text55 CODE >2715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+262C text55 CODE >2718:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2630 text55 CODE >2719:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2632 text55 CODE >2721:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2640 text55 CODE >2722:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2642 text55 CODE >2723:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2646 text55 CODE >2724:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2648 text55 CODE >2725:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+264A text55 CODE >2726:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+264A text55 CODE >2727:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+264E text55 CODE >2728:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+265C text55 CODE >2729:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+265E text55 CODE >2731:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+267A text55 CODE >2732:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+267C text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2686 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+268E text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2694 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+269A text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26A0 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26A6 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26AC text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26B2 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26B8 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26BE text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+26C4 text55 CODE >2736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2BE4 text54 CODE >1492:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2BE4 text54 CODE >1494:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2BE8 text54 CODE >1495:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2BEC text54 CODE >1497:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2BF4 text54 CODE >1500:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C04 text54 CODE >1501:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C18 text54 CODE >1502:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C24 text54 CODE >1503:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C30 text54 CODE >1504:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C32 text54 CODE >1509:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C46 text54 CODE >1511:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C4E text54 CODE >1513:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C52 text54 CODE >1518:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C66 text54 CODE >1519:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C72 text54 CODE >1520:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C7E text54 CODE >1522:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+250E text53 CODE >1620:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+250E text53 CODE >1626:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2510 text53 CODE >1632:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2516 text53 CODE >1634:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+251A text53 CODE >1636:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+251E text53 CODE >1647:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2522 text53 CODE >1649:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2526 text53 CODE >1654:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+252A text53 CODE >1655:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+252E text53 CODE >1656:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2530 text53 CODE >1663:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2540 text53 CODE >1664:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2554 text53 CODE >1665:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2560 text53 CODE >1666:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+256C text53 CODE >1667:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2578 text53 CODE >1668:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2586 text53 CODE >1671:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2586 text53 CODE >1673:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+258C text53 CODE >1675:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2590 text53 CODE >1689:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2594 text53 CODE >1691:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2598 text53 CODE >1714:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+259C text53 CODE >1715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25A0 text53 CODE >1716:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25A6 text53 CODE >1718:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25AC text53 CODE >1733:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25B0 text53 CODE >1736:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25C0 text53 CODE >1737:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25D4 text53 CODE >1738:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+25E0 text53 CODE >1739:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DA6 text52 CODE >2469:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DA6 text52 CODE >2474:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DAA text52 CODE >2475:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DAE text52 CODE >2476:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DB2 text52 CODE >2477:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DB6 text52 CODE >2478:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DBA text52 CODE >2479:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DBE text52 CODE >2488:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DCA text52 CODE >2490:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DD4 text52 CODE >2491:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DE0 text52 CODE >2492:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DEA text52 CODE >2493:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DF6 text52 CODE >2495:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2DFA text52 CODE >2496:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E02 text52 CODE >2497:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E06 text52 CODE >2498:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E0E text52 CODE >2504:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E12 text52 CODE >2505:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E2E text52 CODE >2518:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2E32 text52 CODE >2519:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+320E text51 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+320E text51 CODE >11:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+3216 text51 CODE >12:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+321E text51 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+3220 text51 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+3230 text51 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+3240 text51 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+2C80 text50 CODE >2376:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C80 text50 CODE >2382:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C84 text50 CODE >2386:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2C90 text50 CODE >2390:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CAC text50 CODE >2398:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CB4 text50 CODE >2400:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CBE text50 CODE >2403:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CD2 text50 CODE >2409:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CFA text50 CODE >2412:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2CFE text50 CODE >2413:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2D00 text50 CODE >2417:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2D06 text50 CODE >2420:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2D10 text50 CODE >2424:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2D14 text50 CODE >2427:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35D2 text49 CODE >3029:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35D2 text49 CODE >3037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35E0 text49 CODE >3038:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35E8 text49 CODE >3040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35EA text49 CODE >3042:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35F0 text49 CODE >3044:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+35F2 text49 CODE >3047:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3252 text48 CODE >2206:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3252 text48 CODE >2218:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3256 text48 CODE >2221:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3276 text48 CODE >2224:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3282 text48 CODE >2225:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+328E text48 CODE >2227:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3290 text48 CODE >2228:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3290 text48 CODE >2230:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3292 text48 CODE >2231:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34A8 text47 CODE >2249:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34A8 text47 CODE >2274:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34AA text47 CODE >2275:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34AC text47 CODE >2278:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34AE text47 CODE >2281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34B4 text47 CODE >2282:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34B8 text47 CODE >2289:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34D4 text47 CODE >2290:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3346 text46 CODE >2307:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3346 text46 CODE >2309:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+334C text46 CODE >2315:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3368 text46 CODE >2322:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+336A text46 CODE >2327:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+336C text46 CODE >2345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+336E text46 CODE >2348:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3370 text46 CODE >2345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3374 text46 CODE >2351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+337A text46 CODE >2353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+199E text45 CODE >281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+199E text45 CODE >285:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19A0 text45 CODE >292:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19A4 text45 CODE >295:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19A8 text45 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19AC text45 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19C8 text45 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19D4 text45 CODE >311:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19D8 text45 CODE >313:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19F0 text45 CODE >314:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19F8 text45 CODE >317:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19FA text45 CODE >320:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+19FE text45 CODE >323:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A00 text45 CODE >326:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A02 text45 CODE >331:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A04 text45 CODE >333:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A0A text45 CODE >334:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A0E text45 CODE >335:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A16 text45 CODE >336:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A1A text45 CODE >340:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A1E text45 CODE >341:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A22 text45 CODE >343:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A26 text45 CODE >344:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A2A text45 CODE >345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A2E text45 CODE >349:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A32 text45 CODE >351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A46 text45 CODE >352:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A5A text45 CODE >353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A66 text45 CODE >354:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A72 text45 CODE >355:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A7A text45 CODE >358:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A84 text45 CODE >360:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A88 text45 CODE >362:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A92 text45 CODE >363:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A96 text45 CODE >364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A9A text45 CODE >365:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1A9C text45 CODE >368:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AA0 text45 CODE >370:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AB2 text45 CODE >371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AB8 text45 CODE >374:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1ABC text45 CODE >375:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F2C text44 CODE >481:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F2C text44 CODE >594:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F30 text44 CODE >605:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F34 text44 CODE >612:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F38 text44 CODE >618:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F3A text44 CODE >619:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F3C text44 CODE >620:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F40 text44 CODE >638:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F46 text44 CODE >640:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F48 text44 CODE >644:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F4C text44 CODE >651:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F50 text44 CODE >653:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F52 text44 CODE >654:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F54 text44 CODE >655:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F54 text44 CODE >667:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F5A text44 CODE >669:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F5E text44 CODE >673:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F60 text44 CODE >675:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F64 text44 CODE >685:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F66 text44 CODE >691:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F6C text44 CODE >698:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F70 text44 CODE >712:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F74 text44 CODE >715:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F78 text44 CODE >717:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F94 text44 CODE >719:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F96 text44 CODE >722:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F9A text44 CODE >739:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1F9E text44 CODE >741:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FA0 text44 CODE >748:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FA4 text44 CODE >750:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FA8 text44 CODE >755:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FAE text44 CODE >757:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FB2 text44 CODE >760:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FB8 text44 CODE >762:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FD2 text44 CODE >763:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FD6 text44 CODE >778:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FDC text44 CODE >780:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FDE text44 CODE >781:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FE0 text44 CODE >782:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FE0 text44 CODE >787:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FE4 text44 CODE >789:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FE8 text44 CODE >791:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FEC text44 CODE >794:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FF0 text44 CODE >795:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FFA text44 CODE >797:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1FFC text44 CODE >802:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2000 text44 CODE >804:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2006 text44 CODE >808:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2012 text44 CODE >814:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2018 text44 CODE >816:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+201C text44 CODE >817:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+201E text44 CODE >820:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2038 text44 CODE >827:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2040 text44 CODE >830:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2042 text44 CODE >831:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2340 text42 CODE >999:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2342 text42 CODE >1004:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+234A text42 CODE >1007:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2354 text42 CODE >1012:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2368 text42 CODE >1017:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2370 text42 CODE >1019:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+237A text42 CODE >1033:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+238E text42 CODE >1034:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+239E text42 CODE >1035:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23AA text42 CODE >1036:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23B6 text42 CODE >1037:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23C2 text42 CODE >1040:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23C8 text42 CODE >1043:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+23EE text42 CODE >1048:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+241E text42 CODE >1050:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+2426 text42 CODE >1051:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BDC text41 CODE >854:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BDC text41 CODE >859:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BDE text41 CODE >863:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BF2 text41 CODE >865:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BF4 text41 CODE >866:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BF6 text41 CODE >874:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1BFE text41 CODE >875:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C02 text41 CODE >880:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C08 text41 CODE >882:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C0A text41 CODE >883:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C0C text41 CODE >889:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C14 text41 CODE >891:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C32 text41 CODE >893:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C36 text41 CODE >894:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C38 text41 CODE >895:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C3E text41 CODE >900:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C44 text41 CODE >901:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C4A text41 CODE >902:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C4A text41 CODE >903:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C4E text41 CODE >908:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C54 text41 CODE >910:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C5E text41 CODE >912:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C62 text41 CODE >913:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C6A text41 CODE >917:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C7E text41 CODE >918:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C84 text41 CODE >919:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C88 text41 CODE >920:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C8C text41 CODE >915:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1C96 text41 CODE >927:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CAA text41 CODE >928:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CB0 text41 CODE >929:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CB4 text41 CODE >930:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CB8 text41 CODE >925:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CC0 text41 CODE >938:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CC6 text41 CODE >940:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CCE text41 CODE >941:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CD2 text41 CODE >943:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CD6 text41 CODE >945:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CF4 text41 CODE >949:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+1CF6 text41 CODE >950:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device_cdc.c
+174A text40 CODE >67:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+174A text40 CODE >69:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1752 text40 CODE >71:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+175A text40 CODE >75:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1766 text40 CODE >76:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+176E text40 CODE >77:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+179C text40 CODE >79:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+17BC text40 CODE >80:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+17E4 text40 CODE >81:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+17EE text40 CODE >83:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1824 text40 CODE >85:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+184E text40 CODE >88:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1862 text40 CODE >89:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1864 text40 CODE >91:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+33E4 text39 CODE >3:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
+33E4 text39 CODE >5:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
+33EC text39 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
+33F4 text39 CODE >7:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
+214C text38 CODE >38:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+214C text38 CODE >41:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+216A text38 CODE >42:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+21A2 text38 CODE >43:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+21BE text38 CODE >44:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+21CE text38 CODE >45:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+21E2 text38 CODE >46:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+21F6 text38 CODE >47:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2206 text38 CODE >48:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2208 text38 CODE >50:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+222C text38 CODE >52:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+223A text38 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2246 text38 CODE >57:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2F4A text37 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F4A text37 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F58 text37 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F60 text37 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F68 text37 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F68 text37 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F74 text37 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F7C text37 CODE >25:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2F88 text37 CODE >26:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2FA8 text37 CODE >27:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2FB2 text37 CODE >28:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2FBE text37 CODE >30:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2FC6 text37 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+2FCE text37 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/expand_heap.c
+D50 text36 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D50 text36 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D58 text36 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D60 text36 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D68 text36 CODE >25:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D7A text36 CODE >27:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D84 text36 CODE >28:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+D9A text36 CODE >30:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DA2 text36 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DC2 text36 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DC4 text36 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DD8 text36 CODE >35:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DE6 text36 CODE >37:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+DFA text36 CODE >38:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E1E text36 CODE >39:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E26 text36 CODE >40:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E2E text36 CODE >42:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E52 text36 CODE >44:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E5A text36 CODE >46:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E6E text36 CODE >49:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+E92 text36 CODE >53:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+EB6 text36 CODE >54:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+EC6 text36 CODE >55:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+EF2 text36 CODE >56:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F02 text36 CODE >57:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F16 text36 CODE >58:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F1E text36 CODE >59:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F1E text36 CODE >60:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F36 text36 CODE >61:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F4A text36 CODE >62:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+F56 text36 CODE >65:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_free.c
+1E12 text35 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E12 text35 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E1E text35 CODE >29:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E26 text35 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E32 text35 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E3A text35 CODE >36:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E4E text35 CODE >39:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E56 text35 CODE >40:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E76 text35 CODE >41:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E82 text35 CODE >42:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E92 text35 CODE >43:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1E9A text35 CODE >45:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EA4 text35 CODE >47:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EAC text35 CODE >48:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EC2 text35 CODE >49:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1ECA text35 CODE >50:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1ECA text35 CODE >51:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EDC text35 CODE >52:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EDC text35 CODE >53:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EE4 text35 CODE >55:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1EEC text35 CODE >56:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1F06 text35 CODE >57:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1F0E text35 CODE >59:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1F22 text35 CODE >63:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+1F2A text35 CODE >64:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/lite_malloc.c
+2248 text34 CODE >12:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2248 text34 CODE >14:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2250 text34 CODE >16:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2258 text34 CODE >17:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+225A text34 CODE >18:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+226E text34 CODE >17:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+2276 text34 CODE >22:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+228A text34 CODE >24:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+22A8 text34 CODE >25:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+22C8 text34 CODE >26:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+22D6 text34 CODE >30:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+22EA text34 CODE >31:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+22FA text34 CODE >32:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+230E text34 CODE >34:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+233E text34 CODE >36:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+32D4 text33 CODE >6:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+32D4 text33 CODE >7:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+32E4 text33 CODE >8:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+32F8 text33 CODE >9:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+330C text33 CODE >10:/Users/pedro/MPLABXProjects/Bobinadora.X/fila.c
+364A text32 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+364A text32 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+364E text32 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+3652 text32 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+3656 text32 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+365A text32 CODE >79:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+365E text32 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/adc.c
+3672 text31 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+3672 text31 CODE >65:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+3676 text31 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+367A text31 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+367E text31 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+3680 text31 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/ccp2.c
+36BC text30 CODE >52:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+36BC text30 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+36BE text30 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/interrupt_manager.c
+3660 text29 CODE >66:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3660 text29 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3664 text29 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3668 text29 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+366C text29 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3670 text29 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3502 text28 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3502 text28 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3506 text28 CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+350A text28 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+350E text28 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3510 text28 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3514 text28 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3518 text28 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+351E text28 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3522 text28 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+3526 text28 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+352A text28 CODE >82:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+352C text28 CODE >91:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/pin_manager.c
+36A2 text27 CODE >156:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+36A2 text27 CODE >157:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+36AA text27 CODE >158:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33B0 text26 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33B0 text26 CODE >72:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33B2 text26 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33B6 text26 CODE >78:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33B8 text26 CODE >82:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33CE text26 CODE >85:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33D0 text26 CODE >88:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33D2 text26 CODE >91:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33DE text26 CODE >94:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+33E2 text26 CODE >95:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr0.c
+3612 text25 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+3612 text25 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+3616 text25 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+361A text25 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+361E text25 CODE >77:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+3626 text25 CODE >80:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+3628 text25 CODE >83:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+362C text25 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr1.c
+3698 text24 CODE >132:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+3698 text24 CODE >133:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36A0 text24 CODE >134:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35F4 text23 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35F4 text23 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35F8 text23 CODE >72:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35FC text23 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+35FE text23 CODE >78:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+3600 text23 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+360C text23 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+3610 text23 CODE >85:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+368E text22 CODE >172:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+368E text22 CODE >173:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3696 text22 CODE >174:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3584 text21 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3584 text21 CODE >69:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3588 text21 CODE >72:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+358C text21 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3590 text21 CODE >78:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+3598 text21 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+359A text21 CODE >84:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+359C text21 CODE >87:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+35A8 text21 CODE >90:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+35AC text21 CODE >91:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+34D6 text20 CODE >1356:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34D6 text20 CODE >1359:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34DC text20 CODE >1364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34E0 text20 CODE >1367:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34E4 text20 CODE >1371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34F0 text20 CODE >1373:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34F4 text20 CODE >1376:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+34FC text20 CODE >1379:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+3500 text20 CODE >1386:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+14E6 text19 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+14E6 text19 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+14EE text19 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+14F6 text19 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1502 text19 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+151E text19 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+152A text19 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+153A text19 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+154A text19 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1566 text19 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1582 text19 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+158E text19 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+159E text19 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15BA text19 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15C6 text19 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15DE text19 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15E6 text19 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15EE text19 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+15F6 text19 CODE >86:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/memset.c
+1ABE text18 CODE >281:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1ABE text18 CODE >285:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AC0 text18 CODE >292:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AC4 text18 CODE >295:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AC8 text18 CODE >298:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1ACC text18 CODE >300:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AEA text18 CODE >302:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AF6 text18 CODE >311:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1AFA text18 CODE >313:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B12 text18 CODE >314:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B1A text18 CODE >317:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B1C text18 CODE >320:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B20 text18 CODE >323:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B22 text18 CODE >326:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B24 text18 CODE >331:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B26 text18 CODE >333:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B2A text18 CODE >334:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B2E text18 CODE >335:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B36 text18 CODE >336:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B3A text18 CODE >340:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B3E text18 CODE >341:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B42 text18 CODE >343:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B46 text18 CODE >344:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B4A text18 CODE >345:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B4E text18 CODE >349:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B52 text18 CODE >351:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B66 text18 CODE >352:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B7A text18 CODE >353:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B86 text18 CODE >354:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B92 text18 CODE >355:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1B9A text18 CODE >358:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BA2 text18 CODE >360:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BA6 text18 CODE >362:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BB0 text18 CODE >363:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BB4 text18 CODE >364:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BB8 text18 CODE >365:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BBA text18 CODE >368:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BBE text18 CODE >370:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BD0 text18 CODE >371:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BD6 text18 CODE >374:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+1BDA text18 CODE >375:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/usb/usb_device.c
+347A text17 CODE >50:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+347A text17 CODE >53:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+347E text17 CODE >54:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3482 text17 CODE >55:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3486 text17 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+348A text17 CODE >57:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+348E text17 CODE >58:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3492 text17 CODE >59:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+3496 text17 CODE >60:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+349A text17 CODE >61:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+349E text17 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+34A2 text17 CODE >63:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+34A6 text17 CODE >64:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/mcc.c
+36B8 text16 CODE >93:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36B8 text16 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36BA text16 CODE >97:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr2.c
+36B4 text15 CODE >99:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+36B4 text15 CODE >102:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+36B6 text15 CODE >103:/Users/pedro/MPLABXProjects/Bobinadora.X/mcc_generated_files/tmr3.c
+1136 text14 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1136 text14 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+113A text14 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+113E text14 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+115E text14 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1162 text14 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1166 text14 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1186 text14 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+118A text14 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1196 text14 CODE >25:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11AA text14 CODE >26:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11AE text14 CODE >27:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11B0 text14 CODE >28:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11C2 text14 CODE >29:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11C4 text14 CODE >27:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11C8 text14 CODE >32:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11DA text14 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+11FE text14 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+121E text14 CODE >35:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1220 text14 CODE >37:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1232 text14 CODE >38:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+1236 text14 CODE >40:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+123C text14 CODE >41:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+125C text14 CODE >42:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+127C text14 CODE >43:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aodiv.c
+187A text13 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+187A text13 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+187E text13 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+1882 text13 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18A2 text13 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18A6 text13 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18AA text13 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18CA text13 CODE >21:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18DE text13 CODE >22:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18E2 text13 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18E4 text13 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18F6 text13 CODE >25:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18F8 text13 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+18FC text13 CODE >28:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+1920 text13 CODE >29:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+1940 text13 CODE >30:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+1952 text13 CODE >31:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+1956 text13 CODE >33:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+195C text13 CODE >34:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+197C text13 CODE >35:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+199C text13 CODE >36:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/aomod.c
+3418 text12 CODE >1:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/abs.c
+3418 text12 CODE >3:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/abs.c
+3448 text12 CODE >4:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/abs.c
+36C4 text11 CODE >7:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/putch.c
+36C4 text11 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/putch.c
+2D16 text10 CODE >8:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D16 text10 CODE >12:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D22 text10 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D28 text10 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D2A text10 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D64 text10 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2D94 text10 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+2DA4 text10 CODE >24:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
+337C text9 CODE >8:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+337C text9 CODE >13:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+3384 text9 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+3386 text9 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+3394 text9 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+3398 text9 CODE >14:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
+355A text8 CODE >5:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+355A text8 CODE >7:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+3562 text8 CODE >8:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+3564 text8 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+3568 text8 CODE >8:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+3576 text8 CODE >11:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+3582 text8 CODE >12:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
+2EC0 text7 CODE >72:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2EC0 text7 CODE >77:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2EC4 text7 CODE >78:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2ED4 text7 CODE >82:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2EEA text7 CODE >83:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2EF2 text7 CODE >84:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2EF4 text7 CODE >85:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F04 text7 CODE >86:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F08 text7 CODE >84:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F1C text7 CODE >90:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F20 text7 CODE >91:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F30 text7 CODE >94:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2F48 text7 CODE >95:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+8E6 text6 CODE >287:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+8E6 text6 CODE >293:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+906 text6 CODE >294:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+914 text6 CODE >295:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+91C text6 CODE >296:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+93C text6 CODE >300:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+93E text6 CODE >301:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+940 text6 CODE >303:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+960 text6 CODE >304:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+968 text6 CODE >305:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+974 text6 CODE >306:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+97A text6 CODE >310:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+982 text6 CODE >311:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+988 text6 CODE >312:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+98A text6 CODE >313:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+990 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9BC text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9C0 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9C4 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9C8 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9CC text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9D0 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9D4 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+9D8 text6 CODE >314:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A12 text6 CODE >315:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A18 text6 CODE >316:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A1E text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A3E text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A42 text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A46 text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A4A text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A4E text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A52 text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A56 text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A5A text6 CODE >317:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+A82 text6 CODE >312:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+AC6 text6 CODE >321:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+AD2 text6 CODE >322:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+AD8 text6 CODE >323:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+B00 text6 CODE >327:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+B24 text6 CODE >328:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1CF8 text5 CODE >568:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1CF8 text5 CODE >570:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D0A text5 CODE >574:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D12 text5 CODE >575:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D1A text5 CODE >576:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D20 text5 CODE >580:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D34 text5 CODE >581:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D3C text5 CODE >582:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D5C text5 CODE >583:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D64 text5 CODE >584:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D6C text5 CODE >587:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D72 text5 CODE >589:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D82 text5 CODE >590:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D86 text5 CODE >588:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1D9A text5 CODE >595:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DA2 text5 CODE >596:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DA4 text5 CODE >597:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DBE text5 CODE >598:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DC2 text5 CODE >599:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DC6 text5 CODE >596:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DDA text5 CODE >603:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DE0 text5 CODE >605:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DF0 text5 CODE >606:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1DF4 text5 CODE >604:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1E08 text5 CODE >610:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1E10 text5 CODE >611:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+2B46 text4 CODE >3:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+2B46 text4 CODE >5:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+2B4E text4 CODE >6:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+2B68 text4 CODE >7:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+2BBE text4 CODE >8:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+2BE2 text4 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
+F58 text3 CODE >692:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+F58 text3 CODE >702:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+F70 text3 CODE >703:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+F78 text3 CODE >705:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+F8A text3 CODE >706:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+F90 text3 CODE >847:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+FC0 text3 CODE >849:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+FC8 text3 CODE >850:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+FF2 text3 CODE >852:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1024 text3 CODE >1171:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+105E text3 CODE >1173:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1090 text3 CODE >1174:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10A8 text3 CODE >1176:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10C2 text3 CODE >1372:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10DA text3 CODE >1373:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10E2 text3 CODE >1374:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10F2 text3 CODE >1375:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+10FC text3 CODE >1379:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+1104 text3 CODE >1380:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+110E text3 CODE >1384:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+112C text3 CODE >1385:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31C2 text2 CODE >1390:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31C2 text2 CODE >1395:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31C6 text2 CODE >1396:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31D0 text2 CODE >1397:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31D2 text2 CODE >1398:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+31F2 text2 CODE >1397:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+3204 text2 CODE >1400:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+320C text2 CODE >1404:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+3294 text1 CODE >9:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+3294 text1 CODE >15:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+3298 text1 CODE >16:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+32A0 text1 CODE >17:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+32A8 text1 CODE >18:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+32B0 text1 CODE >19:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+32C0 text1 CODE >20:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+32D2 text1 CODE >23:/Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_sprintf.c
+13B4 text0 CODE >45:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13B4 text0 CODE >48:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13B8 text0 CODE >49:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13C2 text0 CODE >50:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13CA text0 CODE >56:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13CC text0 CODE >62:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13CE text0 CODE >66:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13D2 text0 CODE >67:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13D6 text0 CODE >68:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13E4 text0 CODE >70:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13F0 text0 CODE >71:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13F2 text0 CODE >72:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13F4 text0 CODE >73:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13F6 text0 CODE >74:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13F8 text0 CODE >75:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13FA text0 CODE >76:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+13FC text0 CODE >79:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1400 text0 CODE >81:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1402 text0 CODE >82:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+140C text0 CODE >90:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1416 text0 CODE >91:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1428 text0 CODE >92:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1450 text0 CODE >93:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1460 text0 CODE >94:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1488 text0 CODE >95:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+1498 text0 CODE >96:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+14C0 text0 CODE >97:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+14CA text0 CODE >99:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+14E0 text0 CODE >103:/Users/pedro/MPLABXProjects/Bobinadora.X/main.c
+2FD0 cinit CODE >7989:/tmp/xc5gobzse.s
+2FD0 cinit CODE >7991:/tmp/xc5gobzse.s
+2FD0 cinit CODE >7994:/tmp/xc5gobzse.s
+2FD0 cinit CODE >8239:/tmp/xc5gobzse.s
+2FD2 cinit CODE >8240:/tmp/xc5gobzse.s
+2FD4 cinit CODE >8241:/tmp/xc5gobzse.s
+2FD6 cinit CODE >8242:/tmp/xc5gobzse.s
+2FD8 cinit CODE >8243:/tmp/xc5gobzse.s
+2FDA cinit CODE >8244:/tmp/xc5gobzse.s
+2FDC cinit CODE >8245:/tmp/xc5gobzse.s
+2FE0 cinit CODE >8246:/tmp/xc5gobzse.s
+2FE4 cinit CODE >8247:/tmp/xc5gobzse.s
+2FE4 cinit CODE >8248:/tmp/xc5gobzse.s
+2FE6 cinit CODE >8249:/tmp/xc5gobzse.s
+2FEA cinit CODE >8250:/tmp/xc5gobzse.s
+2FEC cinit CODE >8251:/tmp/xc5gobzse.s
+2FEE cinit CODE >8252:/tmp/xc5gobzse.s
+2FF0 cinit CODE >8256:/tmp/xc5gobzse.s
+2FF4 cinit CODE >8257:/tmp/xc5gobzse.s
+2FF6 cinit CODE >8258:/tmp/xc5gobzse.s
+2FF6 cinit CODE >8259:/tmp/xc5gobzse.s
+2FF8 cinit CODE >8260:/tmp/xc5gobzse.s
+2FFA cinit CODE >8261:/tmp/xc5gobzse.s
+2FFC cinit CODE >8264:/tmp/xc5gobzse.s
+3000 cinit CODE >8265:/tmp/xc5gobzse.s
+3002 cinit CODE >8266:/tmp/xc5gobzse.s
+3002 cinit CODE >8267:/tmp/xc5gobzse.s
+3004 cinit CODE >8268:/tmp/xc5gobzse.s
+3006 cinit CODE >8269:/tmp/xc5gobzse.s
+3008 cinit CODE >8272:/tmp/xc5gobzse.s
+300C cinit CODE >8273:/tmp/xc5gobzse.s
+300E cinit CODE >8274:/tmp/xc5gobzse.s
+300E cinit CODE >8275:/tmp/xc5gobzse.s
+3010 cinit CODE >8276:/tmp/xc5gobzse.s
+3012 cinit CODE >8277:/tmp/xc5gobzse.s
+3014 cinit CODE >8280:/tmp/xc5gobzse.s
+3018 cinit CODE >8281:/tmp/xc5gobzse.s
+301A cinit CODE >8282:/tmp/xc5gobzse.s
+301A cinit CODE >8283:/tmp/xc5gobzse.s
+301C cinit CODE >8284:/tmp/xc5gobzse.s
+301E cinit CODE >8285:/tmp/xc5gobzse.s
+3020 cinit CODE >8288:/tmp/xc5gobzse.s
+3024 cinit CODE >8289:/tmp/xc5gobzse.s
+3026 cinit CODE >8290:/tmp/xc5gobzse.s
+3026 cinit CODE >8291:/tmp/xc5gobzse.s
+3028 cinit CODE >8292:/tmp/xc5gobzse.s
+302A cinit CODE >8293:/tmp/xc5gobzse.s
+302C cinit CODE >8296:/tmp/xc5gobzse.s
+3030 cinit CODE >8297:/tmp/xc5gobzse.s
+3032 cinit CODE >8298:/tmp/xc5gobzse.s
+3032 cinit CODE >8299:/tmp/xc5gobzse.s
+3034 cinit CODE >8300:/tmp/xc5gobzse.s
+3036 cinit CODE >8301:/tmp/xc5gobzse.s
+3038 cinit CODE >8307:/tmp/xc5gobzse.s
+3038 cinit CODE >8309:/tmp/xc5gobzse.s
+303A cinit CODE >8310:/tmp/xc5gobzse.s
+303C cinit CODE >8312:/tmp/xc5gobzse.s
+303E cinit CODE >8313:/tmp/xc5gobzse.s
+3040 cinit CODE >8314:/tmp/xc5gobzse.s
+3042 cinit CODE >8315:/tmp/xc5gobzse.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_TMR2_WriteTimer 36B4 0 CODE 0 text79 dist/Config_2/debug/Bobinadora.X.debug.o
+_G 600 0 BANK6 1 bssBANK6 dist/Config_2/debug/Bobinadora.X.debug.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Config_2/debug/Bobinadora.X.debug.o
+USBStdGetStatusHandler@p 3 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Hspace_0 36CC 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hspace_1 6C8 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hspace_4 60000E 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+Fila_Agregar@nBytes 84 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+TMR3_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USB1msTickCount 11A 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@F1150 1D3 0 BANK1 1 dataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_SetInterruptHandler 3698 0 CODE 0 text22 dist/Config_2/debug/Bobinadora.X.debug.o
+USBTransferOnePacket@dir 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USBTransferOnePacket@len 63 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strncmp@_l 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strncmp@_r 61 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/Config_2/debug/Bobinadora.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcHhVsUsG.o
+_lastToken 19E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBStdSetCfgHandler 2860 0 CODE 0 text56 dist/Config_2/debug/Bobinadora.X.debug.o
+USBEnableEndpoint@options 9 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_TBLPTRH FF7 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TBLPTRL FF6 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TBLPTRU FF8 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_INTERRUPT_Initialize 36C0 0 CODE 0 text30 dist/Config_2/debug/Bobinadora.X.debug.o
+?_abs 72 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?_pad 6E 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_CDCTxService 1BDC 0 CODE 0 text41 dist/Config_2/debug/Bobinadora.X.debug.o
+main@a 1CB 0 BANK1 1 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+?_vfprintf AC 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_G_00 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_G_53 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_LATA F89 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_LATB F8A 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_LATC F8B 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR1 FCE 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2 FBC 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3 FB2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UCFG F62 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UCON F60 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UEIE F66 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UEIR F67 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UEP0 F6A 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UEP1 F6B 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_WPUB F85 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+___sp 0 0 STACK 2 stack /tmp/xcHhVsUsG.o
+_brkp 32 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_busy 40 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_dbuf 17E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_dtoa 8E6 0 CODE 0 text6 dist/Config_2/debug/Bobinadora.X.debug.o
+_flag 12E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_free 174A 0 CODE 0 text40 dist/Config_2/debug/Bobinadora.X.debug.o
+_main 13B4 0 CODE 0 text0 dist/Config_2/debug/Bobinadora.X.debug.o
+_nout 126 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_pDst 3A 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_prec DB 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_stoa 1CF8 0 CODE 0 text5 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@best 72 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@last 6C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@next 6E 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+abs@a 72 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+btemp 56 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+pad@i 74 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+pad@p 71 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+pad@w 76 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+start A0 0 CODE 0 init /tmp/xcHhVsUsG.o
+___aomod@counter 70 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0_InterruptHandler 132 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBTransferOnePacket 2340 0 CODE 0 text42 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR0_SetInterruptHandler 36AC 0 CODE 0 text27 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeviceInit 1ABE 0 CODE 0 text18 dist/Config_2/debug/Bobinadora.X.debug.o
+pad@fp 6E 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_pBDTEntryEP0OutNext 3C 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR2_StopTimer 36BC 0 CODE 0 text16 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_MY_TMR2_ISR 310A 0 CODE 0 text76 dist/Config_2/debug/Bobinadora.X.debug.o
+i2memset@dest 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+USBCtrlTrfInHandler@lastDTS 2 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBConfigureEndpoint 2E34 0 CODE 0 text66 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hpowerup A0 0 CODE 0 powerup dist/Config_2/debug/Bobinadora.X.debug.o
+_UEP0bits F6A 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@i 73 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@l 7B 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@p 79 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@s 69 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@w 75 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_CDCDataOutHandle 13C 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_vfpfcnvrt 1136 0 CODE 0 text3 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_Initialize 35F4 0 CODE 0 text23 dist/Config_2/debug/Bobinadora.X.debug.o
+_CtrlTrfData 438 0 ABS 1 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_WriteTimer 36AC 0 CODE 0 text79 dist/Config_2/debug/Bobinadora.X.debug.o
+_numBytesRead E3 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_T0CONbits FD5 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+ttemp5 57 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+ttemp6 5A 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+ttemp7 5E 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+TMR2_WriteTimer@timerVal 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+TMR0_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__accesstop 60 0 ABS 0 - /tmp/xcHhVsUsG.o
+intlevel0 0 0 CODE 0 text /tmp/xcHhVsUsG.o
+intlevel1 0 0 CODE 0 text /tmp/xcHhVsUsG.o
+intlevel2 0 0 CODE 0 text /tmp/xcHhVsUsG.o
+intlevel3 0 0 CODE 0 text /tmp/xcHhVsUsG.o
+FilaPop@viejo 72 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_writeBuffer 200 0 BANK2 1 bssBANK2 dist/Config_2/debug/Bobinadora.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_pBDTEntryIn CF 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+wtemp8 57 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+_CDCDataInHandle E1 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_Fila_Agregar 2340 0 CODE 0 text34 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/Config_2/debug/Bobinadora.X.debug.o
+_controlTransferState 4F 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlTrfTxService 26CC 0 CODE 0 text71 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/Config_2/debug/Bobinadora.X.debug.o
+_vfpfcnvrt F58 0 CODE 0 text3 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@fp 7A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USBDeviceInit@i 6C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_Initialize 35AE 0 CODE 0 text21 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_WriteTimer 364A 0 CODE 0 text73 dist/Config_2/debug/Bobinadora.X.debug.o
+_ACTCON FB5 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ADCON0 FC2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ADCON1 FC1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ADCON2 FC0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ADRESH FC4 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ADRESL FC3 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_FilaPop 214C 0 CODE 0 text38 dist/Config_2/debug/Bobinadora.X.debug.o
+_line_coding 1B0 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_ANSELA F5B 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ANSELB F5C 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_ANSELC F5D 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0_DefaultInterruptHandler 36CA 0 CODE 0 text81 dist/Config_2/debug/Bobinadora.X.debug.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcHhVsUsG.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcHhVsUsG.o
+_EECON1bits FA6 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_CCPR2H F91 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_CCPR2L F90 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlEPServiceComplete 25EE 0 CODE 0 text53 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_CDCTxService 1CF8 0 CODE 0 text41 dist/Config_2/debug/Bobinadora.X.debug.o
+?_malloc 74 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_INTERRUPT_InterruptManager A0 0 CODE 0 intcode dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_DefaultInterruptHandler 36C6 0 CODE 0 text74 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_CCP2_Initialize 3682 0 CODE 0 text31 dist/Config_2/debug/Bobinadora.X.debug.o
+?_USBTransferOnePacket 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBStdGetStatusHandler 2B46 0 CODE 0 text58 dist/Config_2/debug/Bobinadora.X.debug.o
+_EECON2 FA7 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_EEDATA FA8 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Config_2/debug/Bobinadora.X.debug.o
+main@buf 1B7 0 BANK1 1 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_SetupPkt 430 0 ABS 1 - dist/Config_2/debug/Bobinadora.X.debug.o
+USBEnableEndpoint@ep C 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintcodelo A0 0 CODE 0 intcodelo dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBStallHandler 3294 0 CODE 0 text48 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@cur DF 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@end 12C 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@new 7E 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of___aodiv 127E 0 CODE 0 text14 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of___aomod 199E 0 CODE 0 text13 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlTrfSetupHandler 2DA6 0 CODE 0 text52 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlEPAllowStatusStage 2924 0 CODE 0 text69 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlTrfRxService 2044 0 CODE 0 text68 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@m 78 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@n 74 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@p 7C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USBStdFeatureReqHandler@pUEP 17 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USBCtrlTrfRxService@byteToRead 2 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv@quotient 72 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?_strlen 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___aomod@dividend 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlTrfOutHandler 31C2 0 CODE 0 text67 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBBusIsSuspended E5 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_SetInterruptHandler 3698 0 CODE 0 text24 dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@tmp B 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_Initialize 3584 0 CODE 0 text21 dist/Config_2/debug/Bobinadora.X.debug.o
+_INTCON2bits FF1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_WriteTimer 362E 0 CODE 0 text73 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeferOUTDataStagePackets 46 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintcodelo A0 0 CODE 0 intcodelo dist/Config_2/debug/Bobinadora.X.debug.o
+?___simple_search_fl 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_PIN_MANAGER_Initialize 3502 0 CODE 0 text28 dist/Config_2/debug/Bobinadora.X.debug.o
+___aomod@divisor 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+start_initialization 2FD0 0 CODE 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+_CCPTMRSbits F59 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_OSCCON FD3 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBTransferOnePacket@ep 7 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCheckStdRequest 26CC 0 CODE 0 text55 dist/Config_2/debug/Bobinadora.X.debug.o
+_CCP2_Initialize 3672 0 CODE 0 text31 dist/Config_2/debug/Bobinadora.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@lock 10A 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_malloc 1F2C 0 CODE 0 text35 dist/Config_2/debug/Bobinadora.X.debug.o
+_device_dsc 892 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_memcpy 3252 0 CODE 0 text51 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_memset 1618 0 CODE 0 text19 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBTicksSinceSuspendEnd E4 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_SYSTEM_Initialize 34A8 0 CODE 0 text17 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBDeviceInit 1BDC 0 CODE 0 text18 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStdGetDscHandler 127E 0 CODE 0 text59 dist/Config_2/debug/Bobinadora.X.debug.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__pcstackBANK1 1B7 0 BANK1 1 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USER_USB_CALLBACK_EVENT_HANDLER 3166 0 CODE 0 text61 dist/Config_2/debug/Bobinadora.X.debug.o
+_T1GCON FCC 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_T3GCON FB4 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_IPR3bits FA5 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+___expand_heap@new_brkp 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_TABLAT FF5 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlTrfTxService 2798 0 CODE 0 text71 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStallHandler 3252 0 CODE 0 text48 dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_data_rx 540 0 ABS 1 - dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_data_tx 500 0 ABS 1 - dist/Config_2/debug/Bobinadora.X.debug.o
+isa$xinst 0 0 ABS 0 - /tmp/xcHhVsUsG.o
+TMR2_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBEnableEndpoint 3346 0 CODE 0 text65 dist/Config_2/debug/Bobinadora.X.debug.o
+_readBuffer 300 0 BANK3 1 bssBANK3 dist/Config_2/debug/Bobinadora.X.debug.o
+fputc@fp 62 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+fputs@fp 6A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?___expand_heap 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_UIEbits F64 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+i2_USBTransferOnePacket 2428 0 CODE 0 text64 dist/Config_2/debug/Bobinadora.X.debug.o
+_UIRbits F65 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+__Hconst 0 0 CONST 0 const dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBWakeFromSuspend 337C 0 CODE 0 text46 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_strcpy 3418 0 CODE 0 text39 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_strlen 3584 0 CODE 0 text8 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/Config_2/debug/Bobinadora.X.debug.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/Config_2/debug/Bobinadora.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/Config_2/debug/Bobinadora.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/Config_2/debug/Bobinadora.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/Config_2/debug/Bobinadora.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlEPService 2C80 0 CODE 0 text50 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/Config_2/debug/Bobinadora.X.debug.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcHhVsUsG.o
+_USBCheckStdRequest 25EE 0 CODE 0 text55 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBIncrement1msInternalTimers 35D2 0 CODE 0 text49 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_sprintf 32D4 0 CODE 0 text1 dist/Config_2/debug/Bobinadora.X.debug.o
+USBStdFeatureReqHandler@p 1A 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/Config_2/debug/Bobinadora.X.debug.o
+__Hconfig 30000E 0 CONFIG 4 config dist/Config_2/debug/Bobinadora.X.debug.o
+USER_USB_CALLBACK_EVENT_HANDLER@event D 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USER_USB_CALLBACK_EVENT_HANDLER@size 11 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+TMR3_WriteTimer@timerVal 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USBTransferOnePacket@handle 67 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USER_USB_CALLBACK_EVENT_HANDLER@pdata F 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_notice 100 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+__Lconst 0 0 CONST 0 const dist/Config_2/debug/Bobinadora.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/Config_2/debug/Bobinadora.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/Config_2/debug/Bobinadora.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/Config_2/debug/Bobinadora.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/Config_2/debug/Bobinadora.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/Config_2/debug/Bobinadora.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/Config_2/debug/Bobinadora.X.debug.o
+i2_memset 1618 0 CODE 0 text57 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/Config_2/debug/Bobinadora.X.debug.o
+i2_TMR2_StopTimer 36C0 0 CODE 0 text78 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlTrfRxService 214C 0 CODE 0 text68 dist/Config_2/debug/Bobinadora.X.debug.o
+_PORTBbits F81 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_strncmp 2BE4 0 CODE 0 text4 dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@d1 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@s1 3 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_INTCONbits FF2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_pCDCDst 11E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_pCDCSrc 121 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_INTERRUPT_Initialize 36BC 0 CODE 0 text30 dist/Config_2/debug/Bobinadora.X.debug.o
+CDCTxService@i 69 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hdata 0 0 ABS 0 data dist/Config_2/debug/Bobinadora.X.debug.o
+__Hheap 800 0 HEAP 7 heap dist/Config_2/debug/Bobinadora.X.debug.o
+__Hinit A4 0 CODE 0 init dist/Config_2/debug/Bobinadora.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/Config_2/debug/Bobinadora.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/Config_2/debug/Bobinadora.X.debug.o
+__Htemp 57 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext 0 0 ABS 0 text dist/Config_2/debug/Bobinadora.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ldata 0 0 ABS 0 data dist/Config_2/debug/Bobinadora.X.debug.o
+__Lheap 6C8 0 HEAP 7 heap dist/Config_2/debug/Bobinadora.X.debug.o
+__Linit A0 0 CODE 0 init dist/Config_2/debug/Bobinadora.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/Config_2/debug/Bobinadora.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltemp 56 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext 0 0 ABS 0 text dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@d 7 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@n 5 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+memcpy@s 9 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+memset@dest 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv@counter 70 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+memset@c 62 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+memset@k 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+memset@n 64 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+memset@s 6A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___aomod@sign 71 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+int$flags 56 0 COMRAM 1 temp dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_rx_len 45 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_device_dsc 8A4 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_ofi2_memset 174A 0 CODE 0 text57 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/Config_2/debug/Bobinadora.X.debug.o
+_USBSuspend 34A8 0 CODE 0 text47 dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_trf_state 44 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/Config_2/debug/Bobinadora.X.debug.o
+_BDT 400 0 ABS 1 - dist/Config_2/debug/Bobinadora.X.debug.o
+_PR2 FBB 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UIE F64 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UIR F65 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__S0 36CC 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__S1 6C8 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__S4 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__S5 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__S7 800 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_abs 3418 0 CODE 0 text12 dist/Config_2/debug/Bobinadora.X.debug.o
+_pad 2EC0 0 CODE 0 text7 dist/Config_2/debug/Bobinadora.X.debug.o
+?i2_USBTransferOnePacket 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_ADC_InterruptHandler 130 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBWakeFromSuspend 3346 0 CODE 0 text46 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_StopTimer 36B4 0 CODE 0 text15 dist/Config_2/debug/Bobinadora.X.debug.o
+main@CommandList 1CD 0 BANK1 1 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_cdc_tx_len 43 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStdFeatureReqHandler B26 0 CODE 0 text60 dist/Config_2/debug/Bobinadora.X.debug.o
+___freelist 34 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_BothEP0OutUOWNsSet 4C 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_UCONbits F60 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+USBCtrlTrfRxService@i 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBStdFeatureReqHandler D50 0 CODE 0 text60 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR0_DefaultInterruptHandler 36CC 0 CODE 0 text81 dist/Config_2/debug/Bobinadora.X.debug.o
+Fila_Agregar@comando 82 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+FilaPop@fila 6C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_BaudRateGen 116 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv@sign 71 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_DefaultInterruptHandler 36C8 0 CODE 0 text74 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/Config_2/debug/Bobinadora.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/Config_2/debug/Bobinadora.X.debug.o
+sprintf@fmt B2 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_writeBuffer@example_mcc_usb_cdc$F2201 264 0 BANK2 1 bssBANK2 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@remaining_size 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_SYSTEM_Initialize 347A 0 CODE 0 text17 dist/Config_2/debug/Bobinadora.X.debug.o
+_dtoa$4792 8B 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of___simple_search_fl F58 0 CODE 0 text36 dist/Config_2/debug/Bobinadora.X.debug.o
+_vfpfcnvrt$4821 AA 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+Fila_Agregar@fila 80 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_abs 344A 0 CODE 0 text12 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_pad 2F4A 0 CODE 0 text7 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_DefaultInterruptHandler 36C8 0 CODE 0 text77 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBAlternateInterface 52 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeviceState 51 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeviceTasks 1F2C 0 CODE 0 text44 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_ofi2_USBDeviceInit 1ABE 0 CODE 0 text45 dist/Config_2/debug/Bobinadora.X.debug.o
+malloc@sz 7A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBStdGetDscHandler 13B4 0 CODE 0 text59 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlTrfSetupHandler 2E34 0 CODE 0 text52 dist/Config_2/debug/Bobinadora.X.debug.o
+strcpy@d 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strcpy@s 64 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hramtop 800 0 RAM 0 ramtop dist/Config_2/debug/Bobinadora.X.debug.o
+strlen@a 62 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strlen@s 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strtok@p 124 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/Config_2/debug/Bobinadora.X.debug.o
+_USBEnableEndpoint 330E 0 CODE 0 text65 dist/Config_2/debug/Bobinadora.X.debug.o
+__pdataBANK1 1D3 0 BANK1 1 dataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__activetblptr 2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssBANK3 0 0 ABS 0 bssBANK3 dist/Config_2/debug/Bobinadora.X.debug.o
+__LbssBANK6 0 0 ABS 0 bssBANK6 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext21 0 0 ABS 0 text21 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext22 0 0 ABS 0 text22 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext23 0 0 ABS 0 text23 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext24 0 0 ABS 0 text24 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext25 0 0 ABS 0 text25 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext28 0 0 ABS 0 text28 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext29 0 0 ABS 0 text29 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext30 0 0 ABS 0 text30 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext31 0 0 ABS 0 text31 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext32 0 0 ABS 0 text32 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext33 0 0 ABS 0 text33 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext34 0 0 ABS 0 text34 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext35 0 0 ABS 0 text35 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext36 0 0 ABS 0 text36 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext37 0 0 ABS 0 text37 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext38 0 0 ABS 0 text38 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext39 0 0 ABS 0 text39 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext40 0 0 ABS 0 text40 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext41 0 0 ABS 0 text41 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext42 0 0 ABS 0 text42 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext44 0 0 ABS 0 text44 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext45 0 0 ABS 0 text45 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext46 0 0 ABS 0 text46 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext47 0 0 ABS 0 text47 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext48 0 0 ABS 0 text48 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext49 0 0 ABS 0 text49 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext50 0 0 ABS 0 text50 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext51 0 0 ABS 0 text51 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext52 0 0 ABS 0 text52 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext53 0 0 ABS 0 text53 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext54 0 0 ABS 0 text54 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext55 0 0 ABS 0 text55 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext56 0 0 ABS 0 text56 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext57 0 0 ABS 0 text57 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext58 0 0 ABS 0 text58 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext59 0 0 ABS 0 text59 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext60 0 0 ABS 0 text60 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext61 0 0 ABS 0 text61 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext62 0 0 ABS 0 text62 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext63 0 0 ABS 0 text63 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext64 0 0 ABS 0 text64 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext65 0 0 ABS 0 text65 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext66 0 0 ABS 0 text66 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext67 0 0 ABS 0 text67 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext68 0 0 ABS 0 text68 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext69 0 0 ABS 0 text69 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext70 0 0 ABS 0 text70 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext71 0 0 ABS 0 text71 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext72 0 0 ABS 0 text72 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext73 0 0 ABS 0 text73 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext74 0 0 ABS 0 text74 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext75 0 0 ABS 0 text75 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext76 0 0 ABS 0 text76 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext77 0 0 ABS 0 text77 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext78 0 0 ABS 0 text78 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext79 0 0 ABS 0 text79 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext80 0 0 ABS 0 text80 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext81 0 0 ABS 0 text81 dist/Config_2/debug/Bobinadora.X.debug.o
+__Htext82 0 0 ABS 0 text82 dist/Config_2/debug/Bobinadora.X.debug.o
+_control_signal_bitmap 41 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+vfpfcnvrt@fmt 9E 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlEPService 2D16 0 CODE 0 text50 dist/Config_2/debug/Bobinadora.X.debug.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBTransferOnePacket@data 2 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlTrfInHandler 2924 0 CODE 0 text70 dist/Config_2/debug/Bobinadora.X.debug.o
+_ADC_Initialize 364A 0 CODE 0 text32 dist/Config_2/debug/Bobinadora.X.debug.o
+_PIE1bits F9D 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_PIE2bits FA0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_PIE3bits FA3 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_malloc 1E12 0 CODE 0 text35 dist/Config_2/debug/Bobinadora.X.debug.o
+_memcpy 320E 0 CODE 0 text51 dist/Config_2/debug/Bobinadora.X.debug.o
+_memset 14E6 0 CODE 0 text19 dist/Config_2/debug/Bobinadora.X.debug.o
+pad@buf 6F 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USBConfigureEndpoint@handle 7 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@nuls 6C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+i2memset@c 3 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2memset@k 9 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2memset@n 5 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2memset@s B 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0_ISR 352E 0 CODE 0 text80 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_ISR 35AE 0 CODE 0 text75 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext10 2D16 0 CODE 0 text10 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext11 36C4 0 CODE 0 text11 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext12 3418 0 CODE 0 text12 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext13 187A 0 CODE 0 text13 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext14 1136 0 CODE 0 text14 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext15 36B4 0 CODE 0 text15 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext16 36B8 0 CODE 0 text16 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext17 347A 0 CODE 0 text17 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext18 1ABE 0 CODE 0 text18 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext19 14E6 0 CODE 0 text19 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext20 34D6 0 CODE 0 text20 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext21 3584 0 CODE 0 text21 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext22 368E 0 CODE 0 text22 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext23 35F4 0 CODE 0 text23 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext24 3698 0 CODE 0 text24 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext25 3612 0 CODE 0 text25 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext26 33B0 0 CODE 0 text26 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext27 36A2 0 CODE 0 text27 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext28 3502 0 CODE 0 text28 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext29 3660 0 CODE 0 text29 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext30 36BC 0 CODE 0 text30 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext31 3672 0 CODE 0 text31 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext32 364A 0 CODE 0 text32 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext33 32D4 0 CODE 0 text33 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext34 2248 0 CODE 0 text34 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext35 1E12 0 CODE 0 text35 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext36 D50 0 CODE 0 text36 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext37 2F4A 0 CODE 0 text37 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext38 214C 0 CODE 0 text38 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext39 33E4 0 CODE 0 text39 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext40 174A 0 CODE 0 text40 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext41 1BDC 0 CODE 0 text41 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext42 2340 0 CODE 0 text42 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext44 1F2C 0 CODE 0 text44 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext45 199E 0 CODE 0 text45 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext46 3346 0 CODE 0 text46 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext47 34A8 0 CODE 0 text47 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext48 3252 0 CODE 0 text48 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext49 35D2 0 CODE 0 text49 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext50 2C80 0 CODE 0 text50 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext51 320E 0 CODE 0 text51 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext52 2DA6 0 CODE 0 text52 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext53 250E 0 CODE 0 text53 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext54 2BE4 0 CODE 0 text54 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext55 25EE 0 CODE 0 text55 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext56 2798 0 CODE 0 text56 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext57 1618 0 CODE 0 text57 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext58 2AA0 0 CODE 0 text58 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext59 127E 0 CODE 0 text59 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext60 B26 0 CODE 0 text60 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext61 310A 0 CODE 0 text61 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext62 29E4 0 CODE 0 text62 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext63 3046 0 CODE 0 text63 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext64 2428 0 CODE 0 text64 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext65 330E 0 CODE 0 text65 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext66 2E34 0 CODE 0 text66 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext67 3166 0 CODE 0 text67 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext68 2044 0 CODE 0 text68 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext69 2860 0 CODE 0 text69 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext70 2924 0 CODE 0 text70 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext71 26CC 0 CODE 0 text71 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext72 344A 0 CODE 0 text72 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext73 362E 0 CODE 0 text73 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext74 36C6 0 CODE 0 text74 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext75 35AE 0 CODE 0 text75 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext76 30AA 0 CODE 0 text76 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext77 36C8 0 CODE 0 text77 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext78 36C0 0 CODE 0 text78 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext79 36AC 0 CODE 0 text79 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext80 352E 0 CODE 0 text80 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext81 36CA 0 CODE 0 text81 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext82 0 0 CODE 0 text82 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_ISR 344A 0 CODE 0 text72 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_SetInterruptHandler 368E 0 CODE 0 text22 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_StopTimer 36B8 0 CODE 0 text15 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_PIN_MANAGER_Initialize 352E 0 CODE 0 text28 dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv 1136 0 CODE 0 text14 dist/Config_2/debug/Bobinadora.X.debug.o
+___aomod 187A 0 CODE 0 text13 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_configDescriptor1 848 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR0_Initialize 33E4 0 CODE 0 text26 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBSuspend 34D6 0 CODE 0 text47 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl D50 0 CODE 0 text36 dist/Config_2/debug/Bobinadora.X.debug.o
+_USB_CD_Ptr 804 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_ep_data_in D8 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?_dtoa 7A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?_stoa 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBActiveConfiguration 55 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlEPAllowStatusStage 2860 0 CODE 0 text69 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/Config_2/debug/Bobinadora.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/Config_2/debug/Bobinadora.X.debug.o
+__end_ofi2_TMR2_StopTimer 36C4 0 CODE 0 text78 dist/Config_2/debug/Bobinadora.X.debug.o
+strncmp@l 65 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strncmp@n 62 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+strncmp@r 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR0_ISR 355A 0 CODE 0 text80 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR2_ISR 35D2 0 CODE 0 text75 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR3_ISR 347A 0 CODE 0 text72 dist/Config_2/debug/Bobinadora.X.debug.o
+_LATBbits F8A 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBTransferOnePacket 2428 0 CODE 0 text42 dist/Config_2/debug/Bobinadora.X.debug.o
+_RemoteWakeup 4E 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_pos_absoluta_Z 10E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBDeviceInit@i D 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBDeviceAttach 3502 0 CODE 0 text20 dist/Config_2/debug/Bobinadora.X.debug.o
+_strcpy 33E4 0 CODE 0 text39 dist/Config_2/debug/Bobinadora.X.debug.o
+_strlen 355A 0 CODE 0 text8 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBDeviceTasks 2044 0 CODE 0 text44 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0_SetInterruptHandler 36A2 0 CODE 0 text27 dist/Config_2/debug/Bobinadora.X.debug.o
+___expand_heap 2F4A 0 CODE 0 text37 dist/Config_2/debug/Bobinadora.X.debug.o
+_ep_data_out D5 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/Config_2/debug/Bobinadora.X.debug.o
+isa$std 1 0 ABS 0 - /tmp/xcHhVsUsG.o
+___simple_search_fl@best_last 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+i2_USBDeviceInit 199E 0 CODE 0 text45 dist/Config_2/debug/Bobinadora.X.debug.o
+USBEnableEndpoint@p A 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_dummy_encapsulated_cmd_response 1A8 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+stackhi 0 0 ABS 0 - /tmp/xcHhVsUsG.o
+stacklo 0 0 ABS 0 - /tmp/xcHhVsUsG.o
+_cdc_mem_type 42 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBConfigureEndpoint 2EC0 0 CODE 0 text66 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlEPAllowDataStage 2BE4 0 CODE 0 text54 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@cp 77 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+stoa@fp 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintcode 8 0 CODE 0 intcode dist/Config_2/debug/Bobinadora.X.debug.o
+_OSCCON2 FD2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_OSCTUNE F9B 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/Config_2/debug/Bobinadora.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/Config_2/debug/Bobinadora.X.debug.o
+_pos_relativa_Z 112 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_MY_TMR2_ISR 30AA 0 CODE 0 text76 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlEPAllowDataStage 2C80 0 CODE 0 text54 dist/Config_2/debug/Bobinadora.X.debug.o
+strcpy@dest 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?_vfpfcnvrt 9D 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssCOMRAM 2C 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_ofi2_USBTransferOnePacket 250E 0 CODE 0 text64 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR2_SetInterruptHandler 36A2 0 CODE 0 text24 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_ADC_Initialize 3660 0 CODE 0 text32 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlTrfOutHandler 3166 0 CODE 0 text67 dist/Config_2/debug/Bobinadora.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_PIR1bits F9E 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_PIR2bits FA1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_PIR3bits FA4 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv@divisor 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___aodiv@dividend 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USBStdSetCfgHandler@i 15 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@c 70 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@n 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+end_of_initialization 3038 0 CODE 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0_Initialize 33B0 0 CODE 0 text26 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeferStatusStagePacket 4A 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_RCONbits FD0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_CDCInitEP 30AA 0 CODE 0 text63 dist/Config_2/debug/Bobinadora.X.debug.o
+fputc@c 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+fputs@c 6B 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+fputs@i 6C 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+fputs@s 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USER_USB_CALLBACK_EVENT_HANDLER 310A 0 CODE 0 text61 dist/Config_2/debug/Bobinadora.X.debug.o
+?___aodiv 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+?___aomod 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___expand_heap@pn 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+vfprintf@fmt AD 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/Config_2/debug/Bobinadora.X.debug.o
+_inPipes C9 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_shortPacketStatus 50 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USB_CD_Ptr 805 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+USBTransferOnePacket@ep 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssBANK3 0 0 ABS 0 bssBANK3 dist/Config_2/debug/Bobinadora.X.debug.o
+__HbssBANK6 0 0 ABS 0 bssBANK6 dist/Config_2/debug/Bobinadora.X.debug.o
+_endpoint_number 4D 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Lramtop 800 0 RAM 0 ramtop dist/Config_2/debug/Bobinadora.X.debug.o
+USBConfigureEndpoint@EPNum 6 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/Config_2/debug/Bobinadora.X.debug.o
+_USB_SD_Ptr 801 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__pcinit 2FD0 0 CODE 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+vfpfcnvrt@ap 9F 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+vfpfcnvrt@cp A8 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+vfpfcnvrt@fp 9D 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+vfpfcnvrt@ll A0 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext0 13B4 0 CODE 0 text0 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext1 3294 0 CODE 0 text1 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext2 31C2 0 CODE 0 text2 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext3 F58 0 CODE 0 text3 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext4 2B46 0 CODE 0 text4 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext5 1CF8 0 CODE 0 text5 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext6 8E6 0 CODE 0 text6 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext7 2EC0 0 CODE 0 text7 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext8 355A 0 CODE 0 text8 dist/Config_2/debug/Bobinadora.X.debug.o
+__ptext9 337C 0 CODE 0 text9 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeviceAttach 34D6 0 CODE 0 text20 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/Config_2/debug/Bobinadora.X.debug.o
+vfprintf@ap AE 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+vfprintf@fp AC 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBIncrement1msInternalTimers 35F4 0 CODE 0 text49 dist/Config_2/debug/Bobinadora.X.debug.o
+vfprintf@cfmt AF 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext21 0 0 ABS 0 text21 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext22 0 0 ABS 0 text22 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext23 0 0 ABS 0 text23 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext24 0 0 ABS 0 text24 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext25 0 0 ABS 0 text25 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext26 0 0 ABS 0 text26 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext28 0 0 ABS 0 text28 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext29 0 0 ABS 0 text29 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext30 0 0 ABS 0 text30 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext31 0 0 ABS 0 text31 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext32 0 0 ABS 0 text32 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext33 0 0 ABS 0 text33 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext34 0 0 ABS 0 text34 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext35 0 0 ABS 0 text35 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext36 0 0 ABS 0 text36 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext37 0 0 ABS 0 text37 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext38 0 0 ABS 0 text38 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext39 0 0 ABS 0 text39 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext40 0 0 ABS 0 text40 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext41 0 0 ABS 0 text41 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext42 0 0 ABS 0 text42 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext44 0 0 ABS 0 text44 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext45 0 0 ABS 0 text45 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext46 0 0 ABS 0 text46 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext47 0 0 ABS 0 text47 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext48 0 0 ABS 0 text48 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext49 0 0 ABS 0 text49 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext50 0 0 ABS 0 text50 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext51 0 0 ABS 0 text51 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext52 0 0 ABS 0 text52 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext53 0 0 ABS 0 text53 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext54 0 0 ABS 0 text54 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext55 0 0 ABS 0 text55 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext56 0 0 ABS 0 text56 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext57 0 0 ABS 0 text57 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext58 0 0 ABS 0 text58 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext59 0 0 ABS 0 text59 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext60 0 0 ABS 0 text60 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext61 0 0 ABS 0 text61 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext62 0 0 ABS 0 text62 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext63 0 0 ABS 0 text63 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext64 0 0 ABS 0 text64 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext65 0 0 ABS 0 text65 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext66 0 0 ABS 0 text66 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext67 0 0 ABS 0 text67 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext68 0 0 ABS 0 text68 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext69 0 0 ABS 0 text69 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext70 0 0 ABS 0 text70 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext71 0 0 ABS 0 text71 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext72 0 0 ABS 0 text72 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext73 0 0 ABS 0 text73 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext74 0 0 ABS 0 text74 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext75 0 0 ABS 0 text75 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext76 0 0 ABS 0 text76 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext77 0 0 ABS 0 text77 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext78 0 0 ABS 0 text78 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext79 0 0 ABS 0 text79 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext80 0 0 ABS 0 text80 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext81 0 0 ABS 0 text81 dist/Config_2/debug/Bobinadora.X.debug.o
+__Ltext82 0 0 ABS 0 text82 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCheckCDCRequest 2AA0 0 CODE 0 text62 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USBCtrlTrfInHandler 29E4 0 CODE 0 text70 dist/Config_2/debug/Bobinadora.X.debug.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcHhVsUsG.o
+_sprintf 3294 0 CODE 0 text1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_Fila_Init 330E 0 CODE 0 text33 dist/Config_2/debug/Bobinadora.X.debug.o
+_CDCInitEP 3046 0 CODE 0 text63 dist/Config_2/debug/Bobinadora.X.debug.o
+_vfprintf 31C2 0 CODE 0 text2 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCtrlEPServiceComplete 250E 0 CODE 0 text53 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lpowerup A0 0 CODE 0 powerup dist/Config_2/debug/Bobinadora.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/Config_2/debug/Bobinadora.X.debug.o
+_configDescriptor1 805 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+FilaPop@str 6A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+sprintf@ap B5 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+USBStdFeatureReqHandler@current_ep_data 19 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR1_Initialize 362E 0 CODE 0 text25 dist/Config_2/debug/Bobinadora.X.debug.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_pBDTEntryEP0OutCurrent 3E 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USBTransferOnePacket@data 61 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/Config_2/debug/Bobinadora.X.debug.o
+_pBDTEntryOut 2C 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+Fila_Agregar@nuevo 88 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_vfprintf 320E 0 CODE 0 text2 dist/Config_2/debug/Bobinadora.X.debug.o
+_strncmp 2B46 0 CODE 0 text4 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_FilaPop 2248 0 CODE 0 text38 dist/Config_2/debug/Bobinadora.X.debug.o
+___heap_hi 800 0 HEAP 7 heap /tmp/xcHhVsUsG.o
+___heap_lo 6C8 0 HEAP 7 heap /tmp/xcHhVsUsG.o
+___param_bank 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStdSetCfgHandler 2798 0 CODE 0 text56 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/Config_2/debug/Bobinadora.X.debug.o
+strcpy@src 62 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of__initialization 3038 0 CODE 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+free@ptr 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/Config_2/debug/Bobinadora.X.debug.o
+_Fila_Init 32D4 0 CODE 0 text33 dist/Config_2/debug/Bobinadora.X.debug.o
+_timer0ReloadVal 38 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__pidataBANK1 3682 0 CODE 0 idataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3_InterruptHandler 138 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR2_DefaultInterruptHandler 36CA 0 CODE 0 text77 dist/Config_2/debug/Bobinadora.X.debug.o
+USBCtrlTrfTxService@byteToSend 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USTATcopy 54 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/Config_2/debug/Bobinadora.X.debug.o
+_timer1ReloadVal 134 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+Fila_Init@fila 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+___expand_heap@n 64 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBCheckCDCRequest 29E4 0 CODE 0 text62 dist/Config_2/debug/Bobinadora.X.debug.o
+_outPipes C1 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+free@cptr 66 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStatusStageTimeoutCounter 4B 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_T3CONbits FB1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_timer3ReloadVal 13A 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+sprintf@f B6 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+sprintf@s B0 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_USB_SD_Ptr 804 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_dtoa B26 0 CODE 0 text6 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_free 187A 0 CODE 0 text40 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_main 14E6 0 CODE 0 text0 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_stoa 1E12 0 CODE 0 text5 dist/Config_2/debug/Bobinadora.X.debug.o
+__pintcode 8 0 CODE 0 intcode dist/Config_2/debug/Bobinadora.X.debug.o
+_EEADR FA9 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_fputc 2DA6 0 CODE 0 text10 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_fputs 33B0 0 CODE 0 text9 dist/Config_2/debug/Bobinadora.X.debug.o
+?_sprintf B0 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_T0CON FD5 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_T1CON FCD 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_T2CON FBA 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_T3CON FB1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0H FD7 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR0L FD6 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR1H FCF 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR1L FCE 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3H FB3 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR3L FB2 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TRISA F92 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TRISB F93 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_TRISC F94 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_UADDR F63 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+_USTAT F61 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_putch 36C6 0 CODE 0 text11 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_sd000 8A8 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_sd001 87C 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_sd002 892 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+__HRAM 0 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/Config_2/debug/Bobinadora.X.debug.o
+__Hram 0 0 ABS 0 ram dist/Config_2/debug/Bobinadora.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/Config_2/debug/Bobinadora.X.debug.o
+__LRAM 1 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/Config_2/debug/Bobinadora.X.debug.o
+__Lram 0 0 ABS 0 ram dist/Config_2/debug/Bobinadora.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR1_Initialize 3612 0 CODE 0 text25 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStdGetStatusHandler 2AA0 0 CODE 0 text58 dist/Config_2/debug/Bobinadora.X.debug.o
+_errno 12A 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_flags DD 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_fputc 2D16 0 CODE 0 text10 dist/Config_2/debug/Bobinadora.X.debug.o
+_fputs 337C 0 CODE 0 text9 dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_InterruptHandler 136 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBDeferINDataStagePackets 47 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBTransferOnePacket@dir 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBTransferOnePacket@len 4 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_pasos 36 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_putch 36C4 0 CODE 0 text11 dist/Config_2/debug/Bobinadora.X.debug.o
+_sd000 8A4 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_sd001 848 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_sd002 87C 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_width 128 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+getTokens@F334 1DA 0 BANK1 1 dataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+_CCP2CON F97 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of___expand_heap 2FD0 0 CODE 0 text37 dist/Config_2/debug/Bobinadora.X.debug.o
+___simple_search_fl@split 6A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_OSCILLATOR_Initialize 3672 0 CODE 0 text29 dist/Config_2/debug/Bobinadora.X.debug.o
+?_strncmp 60 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__initialization 2FD0 0 CODE 0 cinit dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssBANK0 C1 0 BANK0 1 bssBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssBANK3 300 0 BANK3 1 bssBANK3 dist/Config_2/debug/Bobinadora.X.debug.o
+__pbssBANK6 600 0 BANK6 1 bssBANK6 dist/Config_2/debug/Bobinadora.X.debug.o
+_T2CONbits FBA 0 ABS 0 - dist/Config_2/debug/Bobinadora.X.debug.o
+USBDeviceTasks@i 1F 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+USBConfigureEndpoint@direction 1 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/Config_2/debug/Bobinadora.X.debug.o
+__Hsmallconst 8E6 0 SMALLCONST 0 smallconst dist/Config_2/debug/Bobinadora.X.debug.o
+_TMR2_StopTimer 36B8 0 CODE 0 text16 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@d 7B 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@i 9B 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@n 93 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@p 8D 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@s 91 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+dtoa@w 8F 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_readBuffer@example_mcc_usb_cdc$F2200 13E 0 BANK1 1 bssBANK1 dist/Config_2/debug/Bobinadora.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/Config_2/debug/Bobinadora.X.debug.o
+CDCTxService@byte_to_send 6A 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Config_2/debug/Bobinadora.X.debug.o
+__Hintcode A0 0 CODE 0 intcode dist/Config_2/debug/Bobinadora.X.debug.o
+free@c 68 0 BANK0 1 cstackBANK0 dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStatusStageEnabledFlag1 49 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_USBStatusStageEnabledFlag2 48 0 COMRAM 1 bssCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+_Fila_Agregar 2248 0 CODE 0 text34 dist/Config_2/debug/Bobinadora.X.debug.o
+_OSCILLATOR_Initialize 3660 0 CODE 0 text29 dist/Config_2/debug/Bobinadora.X.debug.o
+i2USBTransferOnePacket@handle 8 0 COMRAM 1 cstackCOMRAM dist/Config_2/debug/Bobinadora.X.debug.o
+__end_of_TMR2_Initialize 3612 0 CODE 0 text23 dist/Config_2/debug/Bobinadora.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_CtrlTrfData 1 438 8
+_SetupPkt 1 430 8
+_cdc_data_rx 1 540 40
+_cdc_data_tx 1 500 40
+_BDT 1 400 30
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text6 0 8E6 8E6 2DA7 1
+text22 0 368E 368E 3E 1
+cstackCOMRAM 1 1 1 56 1
+cstackBANK0 1 60 60 86 1
+heap 7 6C8 6C8 138 1
+reset_vec 0 0 0 4 1
+bssBANK1 1 100 100 DE 1
+bssBANK2 1 200 200 A4 1
+bssBANK3 1 300 300 64 1
+bssBANK6 1 600 600 C8 1
+intcode 0 8 8 9C 1
+smallconst 0 800 800 E6 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
