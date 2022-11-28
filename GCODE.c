@@ -18,7 +18,9 @@ float objetivo_Z=0;
 int (*F)(int feed,int nbits); //Retorna valor para setear el timer de pasos
 extern int pasos;
 extern uint8_t busy;
-
+extern float S;
+extern double inverse_S;
+extern uint8_t angulo;
 float feed;
 double inverse_time_feed;
 
@@ -41,8 +43,6 @@ void G_01(Comando_T* axis, int n){
       }
    }  
 }
- 
-extern uint8_t angulo;
 void G_53(Comando_T* axis, int n){
    for(int i=0;i<n;i++){
       if(axis[i].code  =='Z' || axis[i].code == 'z'){
@@ -52,7 +52,6 @@ void G_53(Comando_T* axis, int n){
    angulo=0;
    return;
 }
-
 void G_97(Comando_T* axis, int n){
    if(n==0) return;
    if(n>1){
@@ -64,6 +63,8 @@ void G_97(Comando_T* axis, int n){
    }
    if(axis[0].code == 'S'){
       encenderRotor();
+      S=axis[0].number;
+      inverse_S = 1/S;
    }
    return;
 }

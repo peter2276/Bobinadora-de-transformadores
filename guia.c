@@ -16,7 +16,7 @@ volatile int pasos; //Numero de pasos a realizar
 bool flag; //Toggle flag
 extern float feed;
 extern double inverse_time_feed;
-extern double inverse_S;
+extern float inverse_S;
 
 
 //#define feedtoTMR2 46665*60/(2*STEPS_PER_MM)
@@ -31,12 +31,12 @@ double distanciaRestante;
 void G01_TMR2_ISR(void){
    uint16_t period;
    STEP_PIN = ~STEP_PIN;
-   switch(feed_state){
-      case g95:
-         if(S_CHANGE){
+   if(S_CHANGE){
+      switch(feed_state){
+         case g95:
             ustep=1;
             period=feedtoTMR2*inverse_S*inverse_time_feed;
-            while((uint16_t)(ustep*period)>255){
+            while((uint16_t)(period/ustep)>255){
                ustep=ustep<<1;
                if(ustep>16){
                   ustep=16;
@@ -45,11 +45,13 @@ void G01_TMR2_ISR(void){
             }
             pasos =(int) (distanciaRestante* STEPS_PER_MM* ustep);
             setMicroStep(ustep);
-            TMR2_LoadPeriodRegister((uint8_t)(ustep*period));
-         }
-         break;
-      default:
-         break;
+            TMR2_LoadPeriodRegister((uint8_t)(period/ustep));
+
+            break;
+         default:
+            break;
+      }
+      S_CHANGE=0;
    }
    if(flag == 0) flag = 1;
    else{
@@ -161,8 +163,8 @@ void mover_2(float distancia){
    switch(feed_state){
       case g01:
          ustep=1;
-         S=(((feedtoTMR2*ustep)*inverse_time_feed));
-         while(((feedtoTMR2*ustep*inverse_time_feed)>255)){
+         //S=(((feedtoTMR2*ustep)*inverse_time_feed));
+         while(((feedtoTMR2*inverse_time_feed/ustep)>255)){
             ustep=ustep<<1;
             if(ustep>16){
                ustep=16;
@@ -171,12 +173,13 @@ void mover_2(float distancia){
          }
          pasos =(int) (distancia * STEPS_PER_MM * ustep);
          setMicroStep(ustep);
-         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep/feed));
+         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*inverse_time_feed/ustep));
          break;
       case g95:
          /*
          ustep=1;
-         while((uint16_t)(feedtoTMR2*ustep*inverse_S*inverse_time_feed)>255){
+         inverse_S=0.01;
+         while((uint16_t)(feedtoTMR2*inverse_S*inverse_time_feed/ustep)>255){
             ustep=ustep<<1;
             if(ustep>16){
                ustep=16;
@@ -185,8 +188,9 @@ void mover_2(float distancia){
          }
          pasos =(int) (distancia * STEPS_PER_MM * ustep);
          setMicroStep(ustep);
-         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*ustep*inverse_S*inverse_time_feed));
-          */
+         TMR2_LoadPeriodRegister((uint8_t)(feedtoTMR2*inverse_S*inverse_time_feed/ustep));
+          * */
+         
          TMR2_LoadPeriodRegister(255);
       break;
       default:

@@ -11,18 +11,14 @@
 #define NRANURAS 72
 #define encoder PORTCbits.RC2
 uint8_t prescaler; //Variable para prescaler del TMR0 por software
-//extern float S;
-double S; //Velocidad luego del filtro
-double inverse_S;
+float S; //Velocidad luego del filtro
+float inverse_S;
 void Timing_TMR0_ISR(){
    
    TMR0_WriteTimer(0);
    prescaler++;
    if(prescaler>=10){ //Si pasa mucho tiempo
-      //rtU.Input= 0;
-      //Ventana_step();
       S=0;
-      //inverse_S=1000000;
       prescaler=0;
    }
 }
@@ -31,38 +27,6 @@ void Timing_TMR0_ISR(){
 #define UMBRAL 2
 uint8_t index=0;
 uint8_t angulo=0;
-/*
-void Encoder_ISR(){
-   //TMR0_StopTimer();
-   
-   //Reading PORTC to fix mismatch of IOCIF
-   //Read INTCON register notes for more information
-   int a = PORTB;
-   a=PORTC;
-   int tmr0 = TMR0_ReadTimer();
-   TMR0_WriteTimer(0);
-   //Calculo de velocidad instantanea y paso por el filtro
-   int tics = tmr0 + prescaler*(2^NBITSTMR0);
-   float promedio[5];
-   if(tics>200){
-      //angulo++;
-      //angulo = angulo%100;
-      //rtU.Input= 1000000000*60/(nsPERCLOCK*tics*NRANURAS);
-      rtU.Input=(60*1000/nsPERCLOCK)*(1000/tics)*(1000/NRANURAS);
-      if(rtU.Input<UMBRAL){
-         //rtU.Input=tics;
-         Ventana_step();
-         index++;
-         index=index%5;
-         promedio[index]=rtY.Output;
-         S=(promedio[0]+promedio[1]+promedio[2]+promedio[3]+promedio[4])/5;
-         S=rtU.Input;
-      }
-   }
-   //Reseteo de prescaler
-   prescaler=0;
-   //TMR0_StartTimer();
-}*/
 
 #define TICS_TO_REVSEC 1000000000*60/(nsPERCLOCK*NRANURAS)
 #define TICS_TO_SECREV (double)(nsPERCLOCK*NRANURAS)/(1000000000*60)*65536

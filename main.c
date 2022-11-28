@@ -36,12 +36,13 @@
 #include "torque.h"
 #include "CommandHandler.h"
 
-
+#define FIN_CARRERA PORTCbits.RC1
 
 extern uint8_t writeBuffer[32];
 extern uint8_t numBytesRead=0;
 extern uint8_t busy;
 extern float S;
+//extern double inverse_S;
 extern uint8_t angulo;
 extern uint8_t largo;
 extern uint16_t current;
@@ -60,6 +61,7 @@ void main(void)
       executeCommand();
       
       medir_corriente();
+      error=(~FIN_CARRERA)&0x01;
       sprintf(writeBuffer,"%.3f %.3f %d %d %d ",S,pos_relativa_Z,angulo,current,error);
       
       MCC_USB_WRITE(writeBuffer,30);
